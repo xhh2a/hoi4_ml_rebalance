@@ -557,10 +557,27 @@
  JAP_tsf_equipment_F15J_short:0 "Type-89"
  SOV_tsf_equipment_F15U:0 "Mikoyam Guluvich 25 Sprt-Voz"
  SOV_tsf_equipment_F15U_short:0 "MiG-25"
+ JAP_tsf_equipment_F15EU:0 "F-15SEJ 月虹"
+ JAP_tsf_equipment_F15EU_short:0 "F-15SEJ 月虹"
+ JAP_tsf_equipment_F15EU_desc:0 "F-15SEをライセンス生産した戦術機。ある程度のステルス性能や、不知火弐型にも匹敵する機動性を持ち、第三世代戦術機としての役割を十分にこなせるだけの性能を持つ。"
+ tsf_equipment_M31U:0 "Mikoyam Guluvich 31 Plamya-Lisa"
+ tsf_equipment_M31U_short:0 "MiG-31"
+
+ ### TSF F16 Series ###
+ CHI_tsf_equipment_F16U:0 "Jian 10"
+ CHI_tsf_equipment_F16U_short:0 "J-10"
+
+ ### TSF F18 Series ###
+ CHI_tsf_equipment_F18U:0 "F-CK-1 Ching-kuo"
+ CHI_tsf_equipment_F18U_short:0 "F-CK-1"
 
  ### TSF 94 Series ###
  tsf_equipment_T94U:0 "TSF-Type 94 Shiranui"
  tsf_equipment_T94U_short:0 "Type-94"
+ tsf_equipment_T942U:0 "XFJ-01a/TSF-Type 04 Shiranui Second"
+ tsf_equipment_T942U_short:0 "TSF-Type 04"
+ tsf_equipment_T94FU:0 "XFJ-01b/TSF-Type 10 Shiranui Second"
+ tsf_equipment_T94FU_short:0 "TSF-Type 10"
 
  UNI_tsf_equipment_F14U:0 "F-14 Tomcat"
  UNI_tsf_equipment_F14U_short:0 "F-14"

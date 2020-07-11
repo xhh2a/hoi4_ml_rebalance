@@ -3574,7 +3574,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "2006"
+						text = "2005"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -3586,7 +3586,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "2015"
+						text = "2010"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -3599,7 +3599,15 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "UNI_basic_concept_research_tree"
-				position = { x = 10% y = 172 }
+				position = { x = 200 y = 172 }
+				size = { width = 90% height = 90% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "F35U_tree"
+				position = { x = 200 y = 172 }
 				size = { width = 90% height = 90% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
