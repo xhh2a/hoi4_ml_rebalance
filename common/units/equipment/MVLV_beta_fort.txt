@@ -1,0 +1,50 @@
+equipments = {
+
+	beta_fort = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 1.0
+		maximum_speed = 5
+
+		#Defensive Abilities
+		defense = 50
+		breakthrough = 50
+		hardness = 1
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 125
+		ap_attack = 120
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 125.0
+		resources = {
+			}
+		
+	}
+
+
+	beta_fort_0 = {
+		year = 1918
+
+		archetype = beta_fort
+		priority = 20
+		visual_level = 0
+		is_convertable = yes
+	}
+}
