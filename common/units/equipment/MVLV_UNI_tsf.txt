@@ -541,9 +541,10 @@ equipments = {
 		is_convertable = yes
 	}
 
-	#SAAG-37 Viggen#
+	# SAAG-37 Viggen - Focus on mobility anti laser
+	# Page 91, 374
 	tsf_equipment_JA37U = {
-		year = 1985
+		year = 1986
 
 		archetype = tsf_gen_2_equipment
 		parent = tsf_equipment_M2000U
@@ -555,65 +556,53 @@ equipments = {
 		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
-
+		maximum_speed = 15
 		#Defensive Abilities
-		defense = 70
-		breakthrough = 60
-		hardness = 0.99
-		armor_value = 70
+		defense = 19
+		breakthrough = 39
+		hardness = 0.8
+		armor_value = 85
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 60
-		ap_attack = 110
-		air_attack = 150
+		soft_attack = 12
+		air_attack = 11
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 60
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
+		build_cost_ic = 27
 	}
-	tsf_equipment_JA39U = {
-		year = 1994
 
-		archetype = tsf_gen_2_equipment 
+	# SAAG-39 Gripen
+	# Page 91, 374
+	tsf_equipment_JA39U = {
+		year = 1996
+
+		archetype = tsf_gen_3_equipment
 		parent = tsf_equipment_JA37U
 		priority = 16
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_JA37U
+		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
+		maximum_speed = 15
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 85
-		hardness = 0.99
-		armor_value = 80
+		defense = 37
+		hardness = 0.90
+		armor_value = 95
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 70
-		ap_attack = 125
-		air_attack = 170
+		soft_attack = 15
+		hard_attack = 16
+		air_attack = 14
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 80
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
+		build_cost_ic = 47 # Early Gen 3
 	}
+
+	# Close Quarters Combat - Simplified Lower Cost
+	# Page 90, 372
 	tsf_equipment_RAFU = {
-		year = 2001
+		year = 1998
 
 		archetype = tsf_gen_3_equipment
 		parent = tsf_equipment_JA39U
@@ -628,62 +617,51 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 95
-		breakthrough = 110
-		hardness = 0.99
-		armor_value = 90
+		defense = 37
+		breakthrough = 57
+		hardness = 0.93
+		armor_value = 97
 
 		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 70
-		ap_attack = 155
-		air_attack = 170
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 90
+		soft_attack = 15
+		hard_attack = 19
+		ap_attack = 120
+		air_attack = 14
+	
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
 		}
 	}
 
+	# Typhoon - Mainline Tier 3 Unit
 	#EF-2000#	
 	tsf_equipment_EF2000U = {
-		year = 2001
+		year = 2000
 
-		archetype = tsf_equipment
+		archetype = tsf_gen_3_equipment
 		parent = tsf_equipment_RAFU 
 		priority = 17
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 18
-		reliability = 0.8
+		maximum_speed = 18.5
+		reliability = 0.85
 
 		#Defensive Abilities
-		defense = 70
-		breakthrough = 120
-		hardness = 0.99
-		armor_value = 85
+		defense = 41
+		breakthrough = 59
+		hardness = 0.94
+		armor_value = 102
 
-		#Offensive Abilities
-		soft_attack = 85
-		hard_attack =75
-		ap_attack = 165
-		air_attack = 190
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 95
+		build_cost_ic = 43
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
 		}
 	}
-	
+
+	## JAPAN LINE ###
 	#不知火#	
 	tsf_equipment_T94U = {
 		year = 1994
@@ -898,6 +876,7 @@ equipments = {
 		}
 	}
 	
+	## SOVIET LINE ##
 	#Mig-23#	
 	tsf_equipment_MiG23U = {
 		year = 1985
@@ -933,7 +912,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	#Mig-27#	
 	tsf_equipment_MiG27U = {
 		year = 1985
@@ -968,6 +947,7 @@ equipments = {
 			steel = 1
 		}
 	}
+
 	#Mig-25#	
 	tsf_equipment_MiG25U = {
 		year = 1985
@@ -1002,7 +982,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	tsf_equipment_Su27U = {
 		year = 1983
 
@@ -1036,7 +1016,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	tsf_equipment_Su37U = {
 		year = 1995
 
@@ -1070,7 +1050,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	#Mig-29OVT/35#	
 	tsf_equipment_MiG29OVTU = {
 		year = 2001
@@ -1108,8 +1088,10 @@ equipments = {
 			steel = 1
 		}
 	}
-	
-#F-35#
+
+	## FUTURE LINE ##
+
+  #F-35#
 	tsf_equipment_F35U = {
 		year = 2002
 
@@ -1142,7 +1124,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	#Fenrir#
 	tsf_equipment_Fenrir = {
 		year = 2010
@@ -1176,7 +1158,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	#Typhon#
 	tsf_equipment_Typhon = {
 		year = 2010
@@ -1210,9 +1192,7 @@ equipments = {
 			steel = 1
 		}
 	}
-	#____________________________________________________________
 
-	#____________________________________________________________
 	#USA
 	#YF-23#
 	tsf_equipment_F23U = {
@@ -1283,7 +1263,7 @@ equipments = {
 		}
 	}
 	#____________________________________________________________
-
+	# OLD
 	#____________________________________________________________
 	#SOV
 	tsf_equipment_MiG21 = {

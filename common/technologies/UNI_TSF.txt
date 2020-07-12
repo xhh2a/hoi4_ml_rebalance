@@ -190,101 +190,6 @@ technologies = {
 		}
 	}
 
-	M2000U = {
-		enable_equipments = {
-			tsf_equipment_M2000U
-		}
-
-		research_cost = 2
-		start_year = 1981
-
-		dependencies = {
-			F5U = 1
-		}
-
-		sub_technologies = {
-			F5AU
-			M2000KU
-		}
-
-		allow_branch = {
-			NOT = {
-				OR = {
-					tag = SOV
-					tag = CHI
-					tag = JAP
-					tag = USA
-					tag = CEA
-					tag = SOA
-				}
-			}
-		}
-
-		path = {
-			leads_to_tech = JA37U
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 3 y = 3 }
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		ai_will_do = {
-			factor = 20000
-		}
-
-	}
-
-	# Tornado
-	F5AU = {
-		enable_equipments = {
-			tsf_equipment_F5AU
-		}
-
-		research_cost = 0.5
-		start_year = 1982
-
-  	folder = {
-			name = UNI_tsf_folder
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-	}
-
-	M2000KU = {
-		enable_equipments = {
-			tsf_equipment_M2000KU
-		}
-
-		research_cost = 2
-		start_year = 2001
-
-  	folder = {
-			name = UNI_tsf_folder
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-	}
-
 	# F-14 Series #
 	F14U = {
 		enable_equipments = {
@@ -433,6 +338,104 @@ technologies = {
 		}
 	}
 
+	## Europe Line ##
+	M2000U = {
+		enable_equipments = {
+			tsf_equipment_M2000U
+		}
+
+		research_cost = 2
+		start_year = 1981
+
+		dependencies = {
+			F5U = 1
+		}
+
+		sub_technologies = {
+			F5AU
+			M2000KU
+		}
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					tag = SOV
+					tag = CHI
+					tag = JAP
+					tag = USA
+					tag = CEA
+					tag = SOA
+				}
+			}
+		}
+
+		path = {
+			leads_to_tech = JA37U
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = UNI_tsf_folder
+			position = { x = 3 y = 3 }
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 20000
+		}
+
+	}
+
+
+
+	# Tornado
+	F5AU = {
+		enable_equipments = {
+			tsf_equipment_F5AU
+		}
+
+		research_cost = 0.5
+		start_year = 1982
+
+  	folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+	M2000KU = {
+		enable_equipments = {
+			tsf_equipment_M2000KU
+		}
+
+		research_cost = 2
+		start_year = 2001
+
+  	folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
 	JA37U = {
 		enable_equipments = {
 			tsf_equipment_JA37U
@@ -499,7 +502,7 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1998
-		
+
 		path = {
 			leads_to_tech = EF2000U
 			research_cost_coeff = 1
@@ -518,7 +521,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
-		
+
 	}
 
 	EF2000U = {

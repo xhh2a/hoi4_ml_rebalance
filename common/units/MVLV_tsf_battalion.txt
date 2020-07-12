@@ -121,7 +121,7 @@ sub_units = {
 		need = {
 			tsf_gen_2_equipment = 10
 		}
-		manpower = 500
+		manpower = 400
 		max_organisation = 30
 		max_strength = 20
 		default_morale = 1.5
@@ -214,7 +214,7 @@ sub_units = {
 		need = {
 			tsf_gen_3_equipment = 10
 		}
-		manpower = 500
+		manpower = 300
 		max_organisation = 30
 		max_strength = 20
 		default_morale = 1.5

@@ -1,6 +1,6 @@
 equipments = {
   tsf_gen_1_equipment = {
-		year = 1970
+		# year = 1970
 
 		picture = archetype_MVLV_tsf
 		is_archetype = yes
@@ -39,7 +39,7 @@ equipments = {
 	}
 
   tsf_gen_2_equipment = {
-		year = 1982
+		# year = 1982
 
 		picture = archetype_MVLV_tsf
 		is_archetype = yes
@@ -78,7 +78,7 @@ equipments = {
 	}
 
   tsf_gen_3_equipment = {
-		year = 1995
+		# year = 1995
 
 		picture = archetype_MVLV_tsf
 		is_archetype = yes
