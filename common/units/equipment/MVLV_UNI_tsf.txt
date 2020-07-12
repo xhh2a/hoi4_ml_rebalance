@@ -39,11 +39,13 @@ equipments = {
 			steel = 1
 		}
 	}
+
+	### Early TSF ###
 	#F-4#	
 	tsf_equipment_F4U = {
 		year = 1973
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_1_equipment 
 		priority = 15
 		visual_level = 0
 		is_convertable = yes
@@ -52,7 +54,7 @@ equipments = {
 	tsf_equipment_F5U = {
 		year = 1975
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_1_equipment 
 		priority = 10
 		parent = tsf_equipment_F4U
 		visual_level = 0
@@ -75,7 +77,7 @@ equipments = {
 	tsf_equipment_F4R = {
 		year = 1975
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_1_equipment 
 		priority = 10
 		visual_level = 0
 		is_convertable = yes
@@ -89,14 +91,14 @@ equipments = {
 		soft_attack = 4
 		hard_attack = 9
 	
-		build_cost_ic = 14
+		build_cost_ic = 14 # Cheaper Build
 	}
 
 	# F-4J Gekishin
 	tsf_equipment_F4J = {
 		year = 1977
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_1_equipment 
 		priority = 10
 		parent = tsf_equipment_F4U
 		visual_level = 0
@@ -113,8 +115,8 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 5
 		hard_attack = 10
-		ap_attack = 60
-		air_attack = 5
+		ap_attack = 65
+		air_attack = 7 # Improved anti-laser detection
 	
 		build_cost_ic = 15.1
 	}
@@ -123,38 +125,37 @@ equipments = {
 	tsf_equipment_F14U = {
 		year = 1982
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		priority = 16
 		parent = tsf_equipment_F4U
 		visual_level = 0
 		is_convertable = yes
 
-		hardness = 0.8
 		maximum_speed = 12
+		reliability = 0.75 # First 2nd Gen
 
 		#Defensive Abilities
-    defense = 15
-		breakthrough = 25
-		armor_value = 60
+		defense = 15
+		breakthrough = 35
+		hardness = 0.82
+		armor_value = 75
 
 		#Offensive Abilities
-		soft_attack = 7
+		soft_attack = 9
 		hard_attack = 12
-		ap_attack = 70
-		air_attack = 7
+		ap_attack = 85
+		air_attack = 10
 	
-		build_cost_ic = 18
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
+		build_cost_ic = 27
 	}
 
-	#F-14Ex#
-	tsf_equipment_F14ExU = {
+	# TODO
+	#F-14Ex, Page 78#
+	tsf_equipment_F14EU = {
 		year = 2001
 
-		archetype = tsf_equipment
+		# Gen 2.5
+		archetype = tsf_gen_2_equipment
 		parent = tsf_equipment_F14U 
 		priority = 17
 		visual_level = 0
@@ -188,48 +189,80 @@ equipments = {
 		}
 	}
 
-	#F-15#	
+	#F-15, Page 53#	
 	tsf_equipment_F15U = {
 		year = 1983
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		priority = 16
 		parent = tsf_equipment_F14U
+		can_convert_from = { 
+			tsf_equipment_F4U
+		}
 		visual_level = 0
 		is_convertable = yes
 
-		hardness = 0.82
 		maximum_speed = 13
+		reliability = 0.8
 
 		#Defensive Abilities
-    defense = 17
-		breakthrough = 25
-		armor_value = 65
+    defense = 19
+		breakthrough = 35
+		armor_value = 75
 
 		#Offensive Abilities
-		soft_attack = 7
-		hard_attack = 12
-		ap_attack = 75
+		ap_attack = 90
 		air_attack = 9
 	
-		build_cost_ic = 18
-		resources = {
-			aluminium = 2
-			steel = 1
-		}
 	}
 
-	#F-16#	
+	### USA LINE ###
+
+	#F-16, Page 80#
+	# This is a cheaper TSF than the F-15
 	tsf_equipment_F16U = {
 		year = 1985
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
+		can_convert_from = { 
+			tsf_equipment_F4U
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 12
 		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 17
+		breakthrough = 37
+		hardness = 0.83
+		armor_value = 72
+
+		#Offensive Abilities
+		soft_attack = 11
+		hard_attack = 14
+		ap_attack = 95 # Smaller more nimble
+		air_attack = 5
+
+		build_cost_ic = 21
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	# TODO
+	#F-16XL, Page 81#
+	tsf_equipment_F16XU = {
+		year = 1991
+
+		archetype = tsf_gen_2_equipment 
+		priority = 16
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
 
 		#Defensive Abilities
 		defense = 70
@@ -243,9 +276,6 @@ equipments = {
 		ap_attack = 105
 		air_attack = 120
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
 		build_cost_ic = 50
 		resources = {
 			aluminium = 1
@@ -253,45 +283,42 @@ equipments = {
 		}
 	}
 
-	#F-18#	
+	#F-18, Page 76#
+	# This is a naval batallion TODO
 	tsf_equipment_F18U = {
 		year = 1985
 
-		archetype = tsf_equipment
+		archetype = tsf_gen_2_equipment
 		parent = tsf_equipment_F16U
 		priority = 16
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 70
-		breakthrough = 60
-		hardness = 0.99
-		armor_value = 70
+		defense = 16
+		breakthrough = 35
+		hardness = 0.8
+		armor_value = 75
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 60
-		ap_attack = 110
-		air_attack = 150
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 60
+		hard_attack = 13
+		ap_attack = 90 # Armament problems
+		air_attack = 4
+	
+		build_cost_ic = 19
 		resources = {
 			aluminium = 1
 			steel = 1
 		}
 	}
+
+	# TODO
 	#F-18EF#	
 	tsf_equipment_F18EFU = {
 		year = 1994
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		parent = tsf_equipment_F18U
 		priority = 16
 		visual_level = 0
@@ -326,10 +353,10 @@ equipments = {
 	}
 
 	#F-15E#	
-	tsf_equipment_F15EUN = {
+	tsf_equipment_F15EU = {
 		year = 1995
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		parent = tsf_equipment_F15U
 		priority = 17
 		visual_level = 0
@@ -359,7 +386,7 @@ equipments = {
 			steel = 1
 		}
 	}
-#F-15ACTV#	
+  #F-15ACTV#	
 	tsf_equipment_F15ACTVU = {
 		year = 2001
 
@@ -396,81 +423,136 @@ equipments = {
 			steel = 1
 		}
 	}
+	
+  #F-15SE#	
+	tsf_equipment_F15SEU = {
+		year = 2001
+
+		archetype = tsf_equipment 
+		priority = 20
+		visual_level = 0
+		parent = tsf_equipment_F15EUN
+		can_convert_from = { 
+			tsf_equipment_F15EUN 
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 17
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 85
+		breakthrough = 90
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 80
+		ap_attack = 150
+		air_attack = 200
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	## EURO LINE ##
+  # Mirage 2000 Page 90
+	# Focus on survivalbility, close quarter, heavier, upgrade of Mirage 3
 	tsf_equipment_M2000U = {
 		year = 1981
 
-		archetype = tsf_equipment 
+		# Gen 1.5
+		archetype = tsf_gen_1_equipment 
 		priority = 16
 		parent = tsf_equipment_F4U
+		visual_level = 0
+		is_convertable = yes
+
+		reliability = 0.8
+		hardness = 0.8
+
+		#Defensive Abilities
+    defense = 14
+		breakthrough = 30
+		armor_value = 40 # lower agility
+		air_attack = 6
+		ap_attack = 55
+
+		build_cost_ic = 14 # More economical than F5
+
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+
+	# Tornado ADV, upgrade of M2000U, Page 75
+	tsf_equipment_F5AU = {
+		year = 1982
+
+		# Gen 1.5
+		archetype = tsf_gen_1_equipment 
+		parent = tsf_equipment_M2000U
+		priority = 16
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 12
 		reliability = 0.8
+		hardness = 0.83
 
 		#Defensive Abilities
-		defense = 70
-		breakthrough = 50
-		hardness = 0.99
-		armor_value = 72
+		defense = 17
+		breakthrough = 34
+		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 45
-		ap_attack = 105
-		air_attack = 120
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 50
+		soft_attack = 11
+		hard_attack = 13
+		ap_attack = 70
+		air_attack = 7
+	
+		build_cost_ic = 19
 		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
-	tsf_equipment_F5AU = {
-		year = 1982
-
-		archetype = tsf_equipment 
-		parent = tsf_equipment_F5U
-		priority = 16
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 14
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 65
-		breakthrough = 75
-		hardness = 0.99
-		armor_value = 70
-
-		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 60
-		ap_attack = 130
-		air_attack = 110
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 70
-		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
 		}
 	}
 
-	#ja37#	
-	tsf_equipment_JA37U = {
-		year = 1985
-
-		archetype = tsf_equipment
+	# TODO
+	# Page 91
+	tsf_equipment_M2000KU = {
+		year = 2001
+		# Gen 2.5
+		archetype = tsf_gen_2_equipment 
 		parent = tsf_equipment_F5AU
 		priority = 16
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F5AU
+		}
+		is_convertable = yes
+	}
+
+	#SAAG-37 Viggen#
+	tsf_equipment_JA37U = {
+		year = 1985
+
+		archetype = tsf_gen_2_equipment
+		parent = tsf_equipment_M2000U
+		priority = 16
+		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_M2000U
+			tsf_equipment_F5AU
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 13
@@ -500,7 +582,7 @@ equipments = {
 	tsf_equipment_JA39U = {
 		year = 1994
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		parent = tsf_equipment_JA37U
 		priority = 16
 		visual_level = 0
@@ -533,10 +615,13 @@ equipments = {
 	tsf_equipment_RAFU = {
 		year = 2001
 
-		archetype = tsf_equipment
+		archetype = tsf_gen_3_equipment
 		parent = tsf_equipment_JA39U
 		priority = 18
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_JA39U
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 16
@@ -593,44 +678,6 @@ equipments = {
 		lend_lease_cost = 50
 		
 		build_cost_ic = 95
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
-
-#F-15SE#	
-	tsf_equipment_F15SEU = {
-		year = 2001
-
-		archetype = tsf_equipment 
-		priority = 20
-		visual_level = 0
-		parent = tsf_equipment_F15EUN
-		can_convert_from = { 
-			tsf_equipment_F15EUN 
-		}
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 17
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 85
-		breakthrough = 90
-		hardness = 0.99
-		armor_value = 85
-
-		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 80
-		ap_attack = 150
-		air_attack = 200
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 80
 		resources = {
 			aluminium = 1
 			steel = 1

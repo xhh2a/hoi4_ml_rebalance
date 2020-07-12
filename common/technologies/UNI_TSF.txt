@@ -55,7 +55,6 @@ technologies = {
 		sub_technologies = {
 			F5U
 			F4J
-			M2000U
 		}
 
 		path = {
@@ -63,7 +62,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = F5AU
+			leads_to_tech = M2000U
 			research_cost_coeff = 1
 		}
 
@@ -196,51 +195,16 @@ technologies = {
 			tsf_equipment_M2000U
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1981
 
 		dependencies = {
 			F5U = 1
 		}
 
-		allow_branch = {
-			NOT = {
-				OR = {
-					tag = SOV
-					tag = CHI
-					tag = JAP
-					tag = USA
-					tag = CEA
-					tag = SOA
-				}
-			}
-		}
-
-		folder = {
-			name = UNI_tsf_folder
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		ai_will_do = {
-			factor = 20000
-		}
-
-	}
-
-	# Tornado
-	F5AU = {
-		enable_equipments = {
-			tsf_equipment_F5AU
-		}
-
-		research_cost = 2
-		start_year = 1982
-
-		dependencies = {
-			M2000U = 1
+		sub_technologies = {
+			F5AU
+			M2000KU
 		}
 
 		allow_branch = {
@@ -270,13 +234,56 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 20000
+		}
+
+	}
+
+	# Tornado
+	F5AU = {
+		enable_equipments = {
+			tsf_equipment_F5AU
+		}
+
+		research_cost = 0.5
+		start_year = 1982
+
+  	folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
 		
 		ai_will_do = {
 			factor = 20000
 		}
-		
+	}
 
-	}	
+	M2000KU = {
+		enable_equipments = {
+			tsf_equipment_M2000KU
+		}
+
+		research_cost = 2
+		start_year = 2001
+
+  	folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
 
 	# F-14 Series #
 	F14U = {
@@ -293,7 +300,11 @@ technologies = {
 			  tag = USA
 			}
 		}
-		
+
+		sub_technologies = {
+			F14EU
+		}
+
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = -3 y = 1 }
@@ -308,7 +319,38 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
-	}	
+	}
+
+	F14EU = {
+		enable_equipments = {
+			tsf_equipment_F14EU
+		}
+
+		research_cost = 2
+		start_year = 2001
+
+		allow_branch = {
+			or = {
+			  tag = UNI
+			  tag = USA
+			}
+		}
+
+		folder = {
+			name = UNI_tsf_folder
+			position = { x = -3 y = 1 }
+		}
+
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
 
 	F15U = {
 		enable_equipments = {
@@ -325,6 +367,11 @@ technologies = {
 
 		path = {
 			leads_to_tech = F16U
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = F15EU
 			research_cost_coeff = 1
 		}
 
@@ -556,6 +603,10 @@ technologies = {
 			}
 		}
 
+		sub_technologies = {
+			F16XU
+		}
+
 		if = {
 			limit = {
 				not = { tag = SOV }
@@ -585,24 +636,18 @@ technologies = {
 			factor = 20000
 		}
 
-	}	
-	
-	F18U = {
+	}
+
+	F16XU = {
 		enable_equipments = {
-			tsf_equipment_F18U
+			tsf_equipment_F16XU
 		}
 
-		research_cost = 2
-		start_year = 1987
-		
-		path = {
-			leads_to_tech = F15EU
-			research_cost_coeff = 1
-		}
+		research_cost = 1
+		start_year = 1991
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -3 y = 7 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -613,7 +658,57 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
+
+	}	
+	
+	F18U = {
+		enable_equipments = {
+			tsf_equipment_F18U
+		}
+
+		research_cost = 2
+		start_year = 1987
+
+		sub_technologies = {
+			F18EFU
+		}
+
+		folder = {
+			name = UNI_tsf_folder
+			position = { x = -6 y = 5 }
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
 		
+		ai_will_do = {
+			factor = 20000
+		}
+
+	}
+
+	F18EFU = {
+		enable_equipments = {
+			tsf_equipment_F18EFU
+		}
+
+		research_cost = 1
+		start_year = 1994
+
+		folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
 
 	}
 	
@@ -668,11 +763,17 @@ technologies = {
 	
 	F15EU = {
 		enable_equipments = {
-			tsf_equipment_F15EUN
+			tsf_equipment_F15EU
 		}
 
 		research_cost = 2
 		start_year = 1995
+
+		allow_branch = {
+			not = {
+				tag = SOV
+			}
+		}
 
 		path = {
 			leads_to_tech = F15SEU
