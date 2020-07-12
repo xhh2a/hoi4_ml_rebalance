@@ -112,7 +112,7 @@ technologies = {
 			tsf_equipment_F4J
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1977
 
 		allow_branch = {
@@ -263,7 +263,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1983
+		start_year = 1984
 
 		sub_technologies = {
 			F15J
@@ -1248,8 +1248,23 @@ technologies = {
     enable_equipments = {
 		  tsf_equipment_F4R
 	  }
+    on_research_complete = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech = F4U
+					}
+				}
+				add_tech_bonus = {
+					name = licensed_tsf_experience
+					bonus = 1
+					uses = 1
+					technology = F4U
+				}
+			}
+		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1975
 
 		allow_branch = {
@@ -1327,7 +1342,7 @@ technologies = {
 	
 	M27U = {
 		enable_equipments = {
-			tsf_equipment_MiG27U
+			tsf_equipment_M27U
 		}
 
 		research_cost = 1

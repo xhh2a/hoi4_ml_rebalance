@@ -232,6 +232,7 @@ equipments = {
 	
 		build_cost_ic = 14.5
 	}
+
 	#F-4R#
 	tsf_equipment_F4R = {
 		year = 1975
@@ -239,6 +240,10 @@ equipments = {
 		archetype = tsf_gen_1_equipment 
 		priority = 10
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F4U
+			tsf_equipment_F5U
+		}
 		is_convertable = yes
 		#Misc Abilities
 
@@ -254,6 +259,7 @@ equipments = {
 	}
 
 	# F-4J Gekishin
+	# Page
 	tsf_equipment_F4J = {
 		year = 1977
 
@@ -288,6 +294,10 @@ equipments = {
 		priority = 16
 		parent = tsf_equipment_F4U
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F4U
+			tsf_equipment_F5U
+		}
 		is_convertable = yes
 
 		maximum_speed = 12
@@ -350,7 +360,7 @@ equipments = {
 
 	#F-15, Page 53#
 	tsf_equipment_F15U = {
-		year = 1983
+		year = 1984
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
@@ -375,7 +385,7 @@ equipments = {
 	
 	}
 
-  # Type 89 Kagerou
+  # Type 89 Kagerou - Strengthened version no melee
   # Page 55
 	tsf_equipment_F15J = {
     year = 1989
@@ -384,12 +394,12 @@ equipments = {
 		priority = 16
 		parent = tsf_equipment_F14U
 		can_convert_from = { 
-			tsf_equipment_F4U
+			tsf_equipment_F15U
 		}
 		visual_level = 0
 		is_convertable = yes
 
-		maximum_speed = 14
+		maximum_speed = 13
 		reliability = 0.85
 
 		#Defensive Abilities
@@ -857,6 +867,9 @@ equipments = {
 		parent = tsf_equipment_F4U 
 		priority = 16
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F4J
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 13
@@ -1198,110 +1211,108 @@ equipments = {
 	}
 	
 	## SOVIET LINE ##
-	#Mig-23#	
+	# Mig-23 #
+	# Page 82, First Soviet pure domestic
 	tsf_equipment_M23U = {
-		year = 1985
+		year = 1980
 
-		archetype = tsf_equipment 
+		# Close to Gen 2
+		archetype = tsf_gen_1_equipment
 		priority = 16
 		visual_level = 0
-		parent = tsf_equipment_Su11
-		parent = tsf_equipment_F4U
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 10
-		reliability = 0.4
-
-		#Defensive Abilities
-		defense = 60
-		breakthrough = 45
-		hardness = 0.99
-		armor_value = 68
-
-		#Offensive Abilities
-		soft_attack = 55
-		hard_attack = 40
-		ap_attack = 100
-		air_attack = 100
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 47
-		resources = {
-			aluminium = 1
-			steel = 1
+		parent = tsf_equipment_F4R
+		can_convert_from = {
+			tsf_equipment_F4R
 		}
-	}
-
-	#Mig-27#	
-	tsf_equipment_MiG27U = {
-		year = 1985
-
-		archetype = tsf_equipment 
-		priority = 16
-		visual_level = 0
-		parent = tsf_equipment_MiG23U
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 12
-		reliability = 0.7
+		reliability = 0.70
 
 		#Defensive Abilities
-		defense = 70
-		breakthrough = 50
-		hardness = 0.99
-		armor_value = 72
+		defense = 15
+		breakthrough = 27
+		hardness = 0.8
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 50
-		ap_attack = 105
-		air_attack = 120
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 55
+		soft_attack = 9
+		hard_attack = 13
+		ap_attack = 80
+		air_attack = 7
+	
+		build_cost_ic = 20
 		resources = {
 			aluminium = 1
 			steel = 1
 		}
 	}
 
-	#Mig-25#	
-	tsf_equipment_MiG25U = {
-		year = 1985
+	# Mig-27 Alligator
+	# Page 82 New Parts, improvements#
+	tsf_equipment_M27U = {
+		year = 1983
 
-		archetype = tsf_equipment
-#		parent = tsf_equipment_2 
+		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
+		parent = tsf_equipment_MiG23U
+		can_convert_from = {
+			tsf_equipment_M23U
+		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 18
-		reliability = 0.5
+		maximum_speed = 13
+		reliability = 0.85
 
 		#Defensive Abilities
-		defense = 5
-		breakthrough = 40
-		hardness = 0.99
-		armor_value = 95
+		defense = 20
+		breakthrough = 30
+		hardness = 0.8
+		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 5
-		hard_attack = 10
-		ap_attack = 180
-		air_attack = 30
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 55
+		soft_attack = 10
+		hard_attack = 13
+		ap_attack = 85
+		air_attack = 8
+	
+		build_cost_ic = 25
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
 		}
+	}
+
+	# MiG31, Upgrade of F-15U/MiG-22#
+	# Page 354
+	tsf_equipment_M31U = {
+		year = 1990
+
+		archetype = tsf_gen_2_equipment 
+		parent = tsf_equipment_F15U
+		priority = 16
+		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F15U
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.8
+
+		#Defensive Abilities
+		hardness = 0.83
+		defense = 20
+		breakthrough = 40
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 13
+		ap_attack = 90
+		air_attack = 8
+
+		build_cost_ic = 23 # Cheaper and weaker than F-14
 	}
 
 	tsf_equipment_Su27U = {
@@ -1659,41 +1670,6 @@ equipments = {
 		lend_lease_cost = 50
 		
 		build_cost_ic = 70
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
-
-	#MiG31#	
-	tsf_equipment_M31U = {
-		year = 1990
-
-		archetype = tsf_gen_2_equipment 
-		parent = tsf_equipment_MiG25U
-		priority = 16
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 14
-		reliability = 0.6
-
-		#Defensive Abilities
-		defense = 65
-		breakthrough = 75
-		hardness = 0.99
-		armor_value = 70
-
-		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 60
-		ap_attack = 125
-		air_attack = 120
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 65
 		resources = {
 			aluminium = 1
 			steel = 1

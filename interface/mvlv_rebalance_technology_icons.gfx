@@ -5,6 +5,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/Mig-21.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_CHI_F4R_medium"
+		texturefile = "gfx/interface/technologies/j8.dds"
+	}
+
   SpriteType = {
 		name = "GFX_SOV_F15U_medium"
 		texturefile = "gfx/interface/technologies/Mig-25.dds"
@@ -129,5 +134,10 @@ spriteTypes = {
 	SpriteType = {
     name = "GFX_UNI_T00CU_medium"
     texturefile = "gfx/interface/technologies/Type-00UN.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_M27U_medium"
+    texturefile = "gfx/interface/technologies/Mig-27.dds"
   }
 }
