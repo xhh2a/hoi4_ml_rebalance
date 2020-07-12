@@ -329,16 +329,15 @@ technologies = {
 	}
 
 	M31U = {
-		enable_equipment = {
-		  tsf_equipment_M31U
+		enable_equipments = {
+			tsf_equipment_M31U
 		}
 
 		research_cost = 1
 		start_year = 1990
 
-	  folder = {
+		folder = {
 			name = UNI_tsf_folder
-			position = { x = 0 y = 5 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1028,11 +1027,11 @@ technologies = {
 	
 	T00FU = {
 		enable_equipments = {
-			tsf_equipment_T00CU
+			tsf_equipment_T00FU
 		}
 
-		research_cost = 2
-		start_year = 1998
+		research_cost = 4
+		start_year = 1998 # Mass Production Trial Craft
 
 		if {
 			limit = {
@@ -1057,6 +1056,81 @@ technologies = {
 			name = UNI_tsf_folder
 			position = { x = 0 y = 11 }
 		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+	T00RU = {
+
+		enable_equipments = {
+			tsf_equipment_T00RU
+		}
+
+		allow_branch = {
+			tag = JAP
+		}
+
+		research_cost = 0.5
+		start_year = 2000
+		
+		folder = {
+			name = UNI_tsf_folder
+			position = { x = -3 y = 12 }
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+		
+
+	}
+
+	T00AU = {
+
+		enable_equipments = {
+			tsf_equipment_T00AU
+		}
+
+		allow_branch = {
+			tag = JAP
+		}
+
+		research_cost = 0.5
+		start_year = 2000
+
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+		
+	}
+
+	T00CU = {
+
+		enable_equipments = {
+			tsf_equipment_T00CU
+		}
+
+		research_cost = 0.5
+		start_year = 2000
+
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1221,7 +1295,7 @@ technologies = {
 	
 	M23U = {
 		enable_equipments = {
-			tsf_equipment_MiG23U
+			tsf_equipment_M23U
 		}
 
 		research_cost = 2
@@ -1571,76 +1645,7 @@ technologies = {
 		}
 	}
 
-	T00RU = {
-		
-		enable_equipments = {
-			jeg_equipment_T00R
-		}
-
-		allow_branch = {
-			tag = JAP
-		}
-
-		research_cost = 1
-		start_year = 1999
-		
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = -3 y = 12 }
-		}
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-		
-
-	}
-
-	T00AU = {
-
-		enable_equipments = {
-			jeg_equipment_T00A
-		}
-
-		research_cost = 1
-		start_year = 2000
-
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-		
-	}
-
-	T00CU = {
-
-		enable_equipments = {
-			jeg_equipment_T00C
-		}
-
-		research_cost = 1
-		start_year = 2000
-
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-	}
+	
 
 #____________________________________________________________
 

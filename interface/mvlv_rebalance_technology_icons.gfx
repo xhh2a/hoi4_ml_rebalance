@@ -76,4 +76,58 @@ spriteTypes = {
     texturefile = "gfx/interface/technologies/F-15E.dds"
   }
 
+	SpriteType = {
+    name = "GFX_M31U_medium"
+    texturefile = "gfx/interface/technologies/Mig-31.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_SW_medium"
+    texturefile = "gfx/interface/technologies/SW.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_F35U_medium"
+    texturefile = "gfx/interface/technologies/f-35.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_SOV_F35U_medium"
+    texturefile = "gfx/interface/technologies/Su-57.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_Tempest_medium"
+    texturefile = "gfx/interface/technologies/Tempest.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_T00FU_medium"
+    texturefile = "gfx/interface/technologies/Type-00f.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_T00RU_medium"
+    texturefile = "gfx/interface/technologies/Type-00r.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_T00AU_medium"
+    texturefile = "gfx/interface/technologies/Type-00a.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_T00CU_medium"
+    texturefile = "gfx/interface/technologies/Type-00.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_UNI_T00FU_medium"
+    texturefile = "gfx/interface/technologies/UNI_T00F.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_UNI_T00CU_medium"
+    texturefile = "gfx/interface/technologies/Type-00UN.dds"
+  }
 }

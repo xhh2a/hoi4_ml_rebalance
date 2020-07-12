@@ -991,10 +991,10 @@ equipments = {
 		}
 	}
 	
-	tsf_equipment_T00CU = {
-		year = 1999
+	tsf_equipment_T00FU = {
+		year = 1998
 
-		archetype = tsf_equipment
+		archetype = tsf_elite_equipment
 		priority = 30
 		visual_level = 0
 		is_convertable = yes
@@ -1024,7 +1024,106 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+	tsf_equipment_T00RU = {
+		year = 2000
+
+		archetype = tsf_elite_equipment
+		priority = 30
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 19
+		reliability = 0.8
+                acclimatization_cold_climate_gain_factor = 0.25
+
+		#Defensive Abilities
+		defense = 95
+		breakthrough = 180
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 95
+		ap_attack = 250
+		air_attack = 240
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 145
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	tsf_equipment_T00AU = {
+		year = 2000
+
+		archetype = tsf_elite_equipment
+		priority = 30
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 19
+		reliability = 0.8
+                acclimatization_cold_climate_gain_factor = 0.25
+
+		#Defensive Abilities
+		defense = 95
+		breakthrough = 180
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 95
+		ap_attack = 250
+		air_attack = 240
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 145
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	tsf_equipment_T00CU = {
+		year = 2000
+
+		archetype = tsf_gen_3_equipment
+		priority = 30
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 19
+		reliability = 0.8
+    acclimatization_cold_climate_gain_factor = 0.25
+
+		#Defensive Abilities
+		defense = 95
+		breakthrough = 180
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 95
+		ap_attack = 250
+		air_attack = 240
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 145
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+
 	#T942#	
 	tsf_equipment_T942U = {
 		year = 2001
@@ -1100,7 +1199,7 @@ equipments = {
 	
 	## SOVIET LINE ##
 	#Mig-23#	
-	tsf_equipment_MiG23U = {
+	tsf_equipment_M23U = {
 		year = 1985
 
 		archetype = tsf_equipment 
@@ -1568,9 +1667,9 @@ equipments = {
 
 	#MiG31#	
 	tsf_equipment_M31U = {
-		year = 1994
+		year = 1990
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		parent = tsf_equipment_MiG25U
 		priority = 16
 		visual_level = 0
@@ -1792,9 +1891,7 @@ equipments = {
 		parent = tsf_equipment_EF2000
 		priority = 17
 		visual_level = 0
-#		can_convert_from = { 
-#			tsf_equipment_F14 
-#		}
+
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 18
@@ -1830,9 +1927,7 @@ equipments = {
 		parent = tsf_equipment_RAFU
 		priority = 18
 		visual_level = 0
-#		can_convert_from = { 
-#			tsf_equipment_F15E 
-#		}
+
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 20
@@ -2062,140 +2157,7 @@ equipments = {
 	}
 
 	#F-4JK瑞鶴#	
-	
 
-	jeg_equipment_T00R = {
-		year = 2000
-
-		archetype = jeg_equipment 
-		priority = 40
-		visual_level = 0
-		parent = jeg_equipment_F4JK
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 20
-		reliability = 1.0
-
-		#Defensive Abilities
-		defense = 130
-		breakthrough = 210
-		hardness = 0.99
-		armor_value = 110
-
-		#Offensive Abilities
-		soft_attack = 125
-		hard_attack = 135
-		ap_attack = 300
-		air_attack = 300
-
-		#Space taken in convoy
-		lend_lease_cost = 60000
-		
-		build_cost_ic = 300
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	}
-	jeg_equipment_T00F = {
-		year = 1999
-
-		archetype = jeg_equipment
-		priority = 40
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 20
-		reliability = 0.95
-
-		#Defensive Abilities
-		defense = 110
-		breakthrough = 200
-		hardness = 0.99
-		armor_value = 95
-
-		#Offensive Abilities
-		soft_attack = 115
-		hard_attack = 125
-		ap_attack = 270
-		air_attack = 270
-
-		#Space taken in convoy
-		lend_lease_cost = 50000
-		
-		build_cost_ic = 210
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	
-	}
-	jeg_equipment_T00A = {
-		year = 1999
-
-		archetype = jeg_equipment 
-		priority = 40
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 19
-		reliability = 0.9
-
-		#Defensive Abilities
-		defense = 105
-		breakthrough = 195
-		hardness = 0.99
-		armor_value = 90
-
-		#Offensive Abilities
-		soft_attack = 110
-		hard_attack = 120
-		ap_attack = 270
-		air_attack = 270
-
-		#Space taken in convoy
-		lend_lease_cost = 50000
-		
-		build_cost_ic = 180
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	}
-	jeg_equipment_T00C = {
-		year = 1999
-
-		archetype = jeg_equipment 
-		priority = 40
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 19
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 105
-		breakthrough = 190
-		hardness = 0.99
-		armor_value = 85
-
-		#Offensive Abilities
-		soft_attack = 105
-		hard_attack = 115
-		ap_attack = 250
-		air_attack = 240
-
-		#Space taken in convoy
-		lend_lease_cost = 50000
-		
-		build_cost_ic = 150
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	}
-	
-	
 ###戦術歩行攻撃機###
 	tsa_equipment = {
 		year = 1975
