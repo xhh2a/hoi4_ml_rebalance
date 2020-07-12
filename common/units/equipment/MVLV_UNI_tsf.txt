@@ -184,8 +184,8 @@ equipments = {
 		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 15
-		hard_attack = 20
+		soft_attack = 25
+		hard_attack = 30
 		ap_attack = 125
 		air_attack = 15
 
@@ -419,7 +419,7 @@ equipments = {
 	#F-16, Page 80#
 	# This is a cheaper TSF than the F-15
 	tsf_equipment_F16U = {
-		year = 1985
+		year = 1986
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
@@ -429,14 +429,14 @@ equipments = {
 		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 12
+		maximum_speed = 13.5
 		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 17
 		breakthrough = 37
 		hardness = 0.83
-		armor_value = 72
+		armor_value = 77
 
 		#Offensive Abilities
 		soft_attack = 11
@@ -444,7 +444,7 @@ equipments = {
 		ap_attack = 95 # Smaller more nimble
 		air_attack = 5
 
-		build_cost_ic = 21
+		build_cost_ic = 22
 		resources = {
 			aluminium = 1
 			steel = 1
@@ -452,13 +452,16 @@ equipments = {
 	}
 
 	# TODO
-	#F-16XL, Page 81#
-	tsf_equipment_F16XU = {
+	#F-16C, Page 82#
+	tsf_equipment_F16CU = {
 		year = 1991
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F16U
+		}
 		is_convertable = yes
 		#Misc Abilities
 
@@ -504,7 +507,7 @@ equipments = {
 		ap_attack = 90 # Armament problems
 		air_attack = 4
 	
-		build_cost_ic = 19
+		build_cost_ic = 20.5
 		resources = {
 			aluminium = 1
 			steel = 1
@@ -671,6 +674,9 @@ equipments = {
 		priority = 16
 		parent = tsf_equipment_F4U
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_F5U
+		}
 		is_convertable = yes
 
 		reliability = 0.8
@@ -700,6 +706,9 @@ equipments = {
 		parent = tsf_equipment_M2000U
 		priority = 16
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_M2000U
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 12
@@ -724,8 +733,8 @@ equipments = {
 		}
 	}
 
-	# TODO
-	# Page 91
+	# Mirage 2000 Kai
+	# Page 91, 320
 	tsf_equipment_M2000KU = {
 		year = 2001
 		# Gen 2.5
@@ -734,9 +743,33 @@ equipments = {
 		priority = 16
 		visual_level = 0
 		can_convert_from = {
+			tsf_equipment_M2000U
 			tsf_equipment_F5AU
 		}
 		is_convertable = yes
+
+    #Misc Abilities
+		maximum_speed = 14
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 39
+		hardness = 0.89
+		armor_value = 82
+
+		#Offensive Abilities
+		soft_attack = 13
+		hard_attack = 15
+		ap_attack = 85
+		air_attack = 9
+
+		build_cost_ic = 31
+
+		resources = {
+			aluminium = 2
+			steel = 2
+		}
 	}
 
 	# SAAG-37 Viggen - Focus on mobility anti laser
@@ -786,6 +819,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 37
+		breakthrough = 40
 		hardness = 0.90
 		armor_value = 95
 
@@ -829,18 +863,24 @@ equipments = {
 		resources = {
 			aluminium = 2
 			steel = 2
+			tungsten = 1
 		}
 	}
 
 	# Typhoon - Mainline Tier 3 Unit
 	#EF-2000#	
 	tsf_equipment_EF2000U = {
-		year = 2000
+		year = 1998
 
 		archetype = tsf_gen_3_equipment
 		parent = tsf_equipment_RAFU 
 		priority = 17
 		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_M2000U
+			tsf_equipment_F5AU
+			tsf_equipment_F15EU
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 18.5
@@ -856,6 +896,7 @@ equipments = {
 		resources = {
 			aluminium = 2
 			steel = 2
+			tungsten = 1
 		}
 	}
 
@@ -1167,7 +1208,7 @@ equipments = {
 		
 		build_cost_ic = 90
 		resources = {
-			aluminium =1
+			aluminium = 1
 			steel = 1
 		}
 	}
@@ -1256,7 +1297,7 @@ equipments = {
 		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
-		parent = tsf_equipment_MiG23U
+		parent = tsf_equipment_M23U
 		can_convert_from = {
 			tsf_equipment_M23U
 		}
@@ -1315,45 +1356,48 @@ equipments = {
 		build_cost_ic = 23 # Cheaper and weaker than F-14
 	}
 
-	tsf_equipment_Su27U = {
-		year = 1983
+	# Sufoni 27 Zhuravlik
+	# High quality version of high-low program, beat MiG-29
+	# Page 84
+	# Designed for hive infiltration
+	tsf_equipment_SU27U = {
+		year = 1992
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment
 		priority = 16
 		visual_level = 0
-#		parent = tsf_equipment_Su11
+		can_convert_from = {
+			tsf_equipment_F15U
+			tsf_equipment_M31U
+		}
 		is_convertable = yes
+
 		#Misc Abilities
 		maximum_speed = 15
-		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 80
-		hardness = 0.99
-		armor_value = 80
+		defense = 31
+		breakthrough = 41
+		armor_value = 87
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 68
-		ap_attack = 120
-		air_attack = 140
+		soft_attack = 17
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 68
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
 		}
+
+		build_cost_ic = 33
 	}
+
+	# TODO: tsf_equiment_SU33 - amphibious version
 
 	tsf_equipment_Su37U = {
 		year = 1995
 
 		archetype = tsf_equipment 
-		parent = tsf_equipment_Su27U
+		parent = tsf_equipment_SU27U
 		priority = 17
 		visual_level = 0
 		is_convertable = yes
@@ -1930,80 +1974,6 @@ equipments = {
 			steel = 1
 		}
 	}
-	#____________________________________________________________
-
-	#____________________________________________________________
-	#generic
-	#F-18HMRV#
-	tsf_equipment_4g = {
-		year = 2001
-
-		archetype = tsf_equipment 
-		priority = 30
-		visual_level = 0
-		parent = tsf_equipment_F18EFU
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 14
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 85
-		breakthrough = 105
-		hardness = 0.99
-		armor_value = 80
-
-		#Offensive Abilities
-		soft_attack = 80
-		hard_attack = 70
-		ap_attack = 140
-		air_attack = 180
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 75
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
-	#F-18AX#
-	tsf_equipment_4gg = {
-		year = 2001
-
-		archetype = tsf_equipment 
-		priority = 30
-		visual_level = 0
-		parent = tsf_equipment_F18EFU
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 16.5
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 80
-		breakthrough = 85
-		hardness = 0.99
-		armor_value = 75
-
-		#Offensive Abilities
-		soft_attack = 75
-		hard_attack = 75
-		ap_attack = 145
-		air_attack = 195
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 70
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
-	#____________________________________________________________
-
 ###強襲歩行攻撃機###	
 	asa_equipment = {
 		year = 1975

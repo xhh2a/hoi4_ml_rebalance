@@ -140,4 +140,14 @@ spriteTypes = {
     name = "GFX_M27U_medium"
     texturefile = "gfx/interface/technologies/Mig-27.dds"
   }
+
+  SpriteType = {
+    name = "GFX_SU27U_medium"
+    texturefile = "gfx/interface/technologies/Su-27.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_M2000KU_medium"
+    texturefile = "gfx/interface/technologies/M2000K.dds"
+  }
 }

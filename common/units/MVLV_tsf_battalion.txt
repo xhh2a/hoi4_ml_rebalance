@@ -304,9 +304,9 @@ sub_units = {
 			category_army
 			category_MVLV_tsf
 			category_special_forces
-		}		
+		}
 		
-		combat_width = 5
+		combat_width = 1
 
 		need = {
 			tsf_elite_equipment = 10
