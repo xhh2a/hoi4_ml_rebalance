@@ -40,10 +40,169 @@ equipments = {
 		}
 	}
 
+	## ARCHETYPES ##
+	tsf_gen_1_equipment = {
+		# year = 1970
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		#is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+
+		upgrades = { }
+		
+		#Misc Abilities
+		maximum_speed = 10
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 25
+		hardness = 0.75
+		armor_value = 50
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 10
+		ap_attack = 60
+		air_attack = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 15
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+  tsf_gen_2_equipment = {
+		# year = 1982
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		#is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+
+		upgrades = { }
+		
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 40
+		hardness = 0.85
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 15
+		ap_attack = 100
+		air_attack = 10
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 25
+		resources = {
+			aluminium = 2
+			steel = 1
+		}
+	}
+
+  tsf_gen_3_equipment = {
+		# year = 1995
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		#is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+
+		upgrades = { }
+		
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 60
+		hardness = 0.95
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 15
+		hard_attack = 20
+		ap_attack = 125
+		air_attack = 15
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 45
+		resources = {
+			aluminium = 3
+			steel = 2
+		}
+	}
+
+  # These are limited by special forces count
+  # TODO: Benchmark for these units
+  tsf_elite_equipment = {
+    # year = 1999
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		#is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+
+		upgrades = { }
+
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 60
+		hardness = 0.95
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 15
+		hard_attack = 20
+		ap_attack = 125
+		air_attack = 15
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 45
+		resources = {
+			aluminium = 3
+			steel = 2
+		}
+  }
+
 	### Early TSF ###
 	#F-4#	
 	tsf_equipment_F4U = {
-		year = 1973
+		year = 1974
 
 		archetype = tsf_gen_1_equipment 
 		priority = 15
@@ -52,7 +211,7 @@ equipments = {
 	}
 	#F-5#
 	tsf_equipment_F5U = {
-		year = 1975
+		year = 1976
 
 		archetype = tsf_gen_1_equipment 
 		priority = 10
@@ -189,7 +348,7 @@ equipments = {
 		}
 	}
 
-	#F-15, Page 53#	
+	#F-15, Page 53#
 	tsf_equipment_F15U = {
 		year = 1983
 
@@ -214,6 +373,35 @@ equipments = {
 		ap_attack = 90
 		air_attack = 9
 	
+	}
+
+  # Type 89 Kagerou
+  # Page 55
+	tsf_equipment_F15J = {
+    year = 1989
+
+		archetype = tsf_gen_2_equipment 
+		priority = 16
+		parent = tsf_equipment_F14U
+		can_convert_from = { 
+			tsf_equipment_F4U
+		}
+		visual_level = 0
+		is_convertable = yes
+
+		maximum_speed = 14
+		reliability = 0.85
+
+		#Defensive Abilities
+    defense = 21
+		breakthrough = 35
+		armor_value = 77
+
+    build_cost_ic = 25.5
+
+		#Offensive Abilities
+		ap_attack = 90
+		air_attack = 9
 	}
 
 	### USA LINE ###
@@ -662,6 +850,40 @@ equipments = {
 	}
 
 	## JAPAN LINE ###
+  tsf_equipment_F4JK = {
+		year = 1982
+
+		archetype = tsf_gen_1_equipment
+		parent = tsf_equipment_F4U 
+		priority = 16
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 13
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 70
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 110
+		air_attack = 150
+
+		#Space taken in convoy
+		lend_lease_cost = 50000
+		
+		build_cost_ic = 63
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
 	#不知火#	
 	tsf_equipment_T94U = {
 		year = 1994
@@ -1415,37 +1637,34 @@ equipments = {
 	}
 
 	#Su-47#	
-	tsf_equipment_Su47 = {
+	tsf_equipment_Su47U = {
 		year = 2001
 
-		archetype = tsf_equipment 
-		parent = tsf_equipment_Su37U
-		priority = 30
+		archetype = tsf_special_forces_batallion
+		priority = 40
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 22
-		reliability = 0.5
+		reliability = 0.55
 
 		#Defensive Abilities
-		defense = 185
-		breakthrough = 250
+		defense = 50
+		breakthrough = 70
 		hardness = 0.99
-		armor_value = 90
+		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 95
-		ap_attack = 230
-		air_attack = 220
+		soft_attack = 105
+		hard_attack = 105
+		ap_attack = 270
+		air_attack = 1270
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 105
+		build_cost_ic = 100
 		resources = {
-			aluminium =1
+			aluminium = 4
 			steel = 1
+			tungsten = 2
 		}
 	}
 
@@ -1843,39 +2062,7 @@ equipments = {
 	}
 
 	#F-4JK瑞鶴#	
-	jeg_equipment_F4JK = {
-		year = 1985
-
-		archetype = jeg_equipment
-		parent = tsf_equipment_F4U 
-		priority = 16
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 70
-		breakthrough = 70
-		hardness = 0.99
-		armor_value = 75
-
-		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 70
-		ap_attack = 110
-		air_attack = 150
-
-		#Space taken in convoy
-		lend_lease_cost = 50000
-		
-		build_cost_ic = 63
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
+	
 
 	jeg_equipment_T00R = {
 		year = 2000

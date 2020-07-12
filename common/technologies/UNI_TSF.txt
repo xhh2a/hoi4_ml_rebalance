@@ -50,7 +50,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1976
+		start_year = 1974
 
 		sub_technologies = {
 			F5U
@@ -138,7 +138,7 @@ technologies = {
   # Type 82/F4J Kai
 	F4JK = {
 		enable_equipments = {
-			jeg_equipment_F4JK
+			tsf_equipment_F4JK
 		}
 
 		research_cost = 2
@@ -301,6 +301,33 @@ technologies = {
 
 	}
 
+  # Type 89
+	F15J = {
+		enable_equipments = {
+			tsf_equipment_F15J
+		}
+
+		research_cost = 1
+		start_year = 1989
+
+		folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		allow_branch = {
+			tag = JAP
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
 	M31U = {
 		enable_equipment = {
 		  tsf_equipment_M31U
@@ -388,8 +415,6 @@ technologies = {
 		}
 
 	}
-
-
 
 	# Tornado
 	F5AU = {
@@ -592,6 +617,7 @@ technologies = {
 		}
 	}
 
+	## US LINE ##
 	F16U = {
 		enable_equipments = {
 			tsf_equipment_F16U
@@ -662,7 +688,7 @@ technologies = {
 			factor = 20000
 		}
 
-	}	
+	}
 	
 	F18U = {
 		enable_equipments = {
@@ -1397,10 +1423,10 @@ technologies = {
 			}
 		}
 		enable_equipments = {
-			tsf_equipment_Su37U
+			tsf_equipment_Su47U
 		}
 
-		research_cost = 2
+		research_cost = 4
 		start_year = 1999
 
 		folder = {

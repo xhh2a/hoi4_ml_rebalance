@@ -16,7 +16,6 @@ sub_units = {
 		group = armor
 		
 		categories = {
-			category_tanks
 			category_front_line
 			category_all_armor
 			category_army
@@ -109,7 +108,6 @@ sub_units = {
 		group = armor
 		
 		categories = {
-			category_tanks
 			category_front_line
 			category_all_armor
 			category_army
@@ -123,7 +121,7 @@ sub_units = {
 		}
 		manpower = 400
 		max_organisation = 30
-		max_strength = 20
+		max_strength = 25
 		default_morale = 1.5
 		training_time = 60
 		weight = 0.0
@@ -202,7 +200,6 @@ sub_units = {
 		group = armor
 
 		categories = {
-			category_tanks
 			category_front_line
 			category_all_armor
 			category_army
@@ -216,7 +213,7 @@ sub_units = {
 		}
 		manpower = 300
 		max_organisation = 30
-		max_strength = 20
+		max_strength = 30
 		default_morale = 1.5
 		training_time = 60
 		weight = 0.0
@@ -280,4 +277,132 @@ sub_units = {
 		}
 	}
 
+  # TODO: One for future TSF Models
+	# TODO: Need to rebalance the movement bonuses
+
+  tsf_special_forces_batallion = {
+		sprite = "tsf"
+		map_icon_category = armored
+		priority = 3500
+		ai_priority = 4000
+		active = yes
+		special_forces = yes
+
+		priority = 2
+		ai_priority = 2
+		active = no
+		
+		type = {
+			armor
+		}
+		
+		group = armor
+		
+		categories = {
+			category_front_line
+			category_all_armor
+			category_army
+			category_MVLV_tsf
+			category_special_forces
+		}		
+		
+		combat_width = 5
+
+		need = {
+			tsf_elite_equipment = 10
+		}
+		manpower = 10
+		max_organisation = 250
+		max_strength = 50
+		default_morale = 40
+		training_time = 160
+		weight = 0.0
+		supply_consumption = 0.01
+
+		recon = 0.25
+		initiative = 0.1
+
+		can_be_parachuted = yes
+
+		river = {
+			attack = 0.4
+			defence = 0.9
+			movement = 0.3
+		}
+
+		forest = {
+			attack = 0.5
+			defence = 0.9
+			movement = 0.2
+		}
+
+		hills = {
+			attack = 0.5
+			defence = 0.9
+			movement = 0.25
+		}
+
+		mountain = {
+			attack = 0.5
+			defence = 0.9
+			movement = 0.2
+		}
+
+		jungle = {
+			attack = 0.5
+			defence = 0.9
+			movement = 0.2
+		}
+
+		marsh = {
+			attack = 0.5
+			defence = 0.9
+			movement = 0.15
+		}
+
+		fort = {
+			attack = 0.55
+			defence = 0.9
+			movement = 0.2
+		}
+		amphibious = {
+			attack = 0.7
+			defence = 0.9
+		}
+		urban = {
+			attack = 0.5
+			movement = 0.5
+			defence = 0.9
+		}
+		
+		plains = {
+			attack = 0.5
+			movement = 0.5
+			defence = 0.9
+		}
+
+		hive_gateclass = {
+			attack = 0.95
+			defence = 0.9
+			movement = 0.75
+		}
+
+		hive_mainhall = {
+			attack = 0.9
+			defence = 0.5
+			movement = 0.85
+		}
+
+		hive_drift = {
+			attack = 0.95
+			defence = 0.5
+			movement = 0.85
+		}
+
+		hive_gate = {
+			attack = 0.95
+			defence = 0.5
+			movement = 0.85
+		}
+	}
 }

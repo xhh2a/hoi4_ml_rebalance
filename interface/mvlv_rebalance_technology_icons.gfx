@@ -1,0 +1,79 @@
+spriteTypes = {	
+	#####technology_icons#####	
+	SpriteType = {
+		name = "GFX_F4R_medium"
+		texturefile = "gfx/interface/technologies/Mig-21.dds"
+	}
+
+  SpriteType = {
+		name = "GFX_SOV_F15U_medium"
+		texturefile = "gfx/interface/technologies/Mig-25.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_F15U_medium"
+		texturefile = "gfx/interface/technologies/F-15.dds"
+	}\
+
+  SpriteType = {
+		name = "GFX_SOV_F5U_medium"
+		texturefile = "gfx/interface/technologies/Su-11.dds"
+	}
+
+  SpriteType = {
+    name = "GFX_F4J_medium"
+    texturefile = "gfx/interface/technologies/F-4J.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_M29U_medium"
+    texturefile = "gfx/interface/technologies/Mig-29.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_S47U_medium"
+    texturefile = "gfx/interface/technologies/Su-47.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_F5U_medium"
+    texturefile = "gfx/interface/technologies/F-5.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_F14EU_medium"
+    texturefile = "gfx/interface/technologies/F-14ex.dds"
+  }
+
+
+	SpriteType = {
+    name = "GFX_F15U_medium"
+    texturefile = "gfx/interface/technologies/UNI_F15C.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_USA_F15U_medium"
+    texturefile = "gfx/interface/technologies/F-15.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_F16XU_medium"
+    texturefile = "gfx/interface/technologies/F16XL.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_F15J_medium"
+    texturefile = "gfx/interface/technologies/T89_F15J.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_F15EU_medium"
+    texturefile = "gfx/interface/technologies/F-15EUN.dds"
+  }
+
+	SpriteType = {
+    name = "GFX_USA_F15EU_medium"
+    texturefile = "gfx/interface/technologies/F-15E.dds"
+  }
+
+}
