@@ -202,9 +202,7 @@ technologies = {
 
 		allow_branch = {
 			NOT = {
-				OR = {
-			    tag = SOV
-				}
+				tag = SOV
 			}
 		}
 
@@ -282,11 +280,19 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		# USA
 		path = {
 			leads_to_tech = F15EU
 			research_cost_coeff = 1
 		}
 
+		# SOV
+		path = {
+			leads_to_tech = SU27U
+			research_cost_coeff = 1
+		}
+
+		# JAP
 		path = {
 			leads_to_tech = T94U
 			research_cost_coeff = 1
@@ -409,7 +415,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 3 }
+			position = { x = 6 y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -482,7 +488,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 5 }
+			position = { x = 6 y = 5 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -513,7 +519,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 7 }
+			position = { x = 6 y = 7 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -540,7 +546,7 @@ technologies = {
 		
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 9 }
+			position = { x = 6 y = 9 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -590,28 +596,9 @@ technologies = {
 		research_cost = 6
 		start_year = 1998
 
-		if {
-			limit = {
-				NOT = {
-					OR = {
-						tag = SOV
-						tag = CHI
-						tag = JAP
-						tag = USA
-						tag = CEA
-						tag = SOA
-					}
-			  }
-			}
-			path = {
-				leads_to_tech = F35U
-				research_cost_coeff = 1
-			}
-		}
-
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 11 }
+			position = { x = 6 y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -839,7 +826,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 5 y = 3 }
+			position = { x = 8 y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -912,7 +899,7 @@ technologies = {
 		
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 5 y = 9 }
+			position = { x = 8 y = 9 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -947,18 +934,6 @@ technologies = {
 
 		research_cost = 2
 		start_year = 2002
-
-		if {
-			limit = {
-				NOT = {
-					tag = SOV
-				}
-			}
-			path = {
-				leads_to_tech = F35U
-				research_cost_coeff = 1
-			}
-		}
 
 		path = {
 			leads_to_tech = F22U
@@ -1088,19 +1063,6 @@ technologies = {
 
 		research_cost = 4
 		start_year = 1998 # Mass Production Trial Craft
-
-		if {
-			limit = {
-				OR = {
-					tag = UNI
-					tag = JAP
-				}
-			}
-			path = {
-				leads_to_tech = F35U
-				research_cost_coeff = 1
-			}
-		}
 
 		sub_technologies = {
 			T00RU
@@ -1352,8 +1314,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 8
-			 y = 1 }
+			position = { x = 11 y = 1 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1377,13 +1338,13 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = SU27U
+			leads_to_tech = M29U
 			research_cost_coeff = 1
 		}
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 8 y = 3 }
+			position = { x = 11 y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1426,18 +1387,32 @@ technologies = {
 		research_cost = 2
 		start_year = 1992
 
-  	path = {
-			leads_to_tech = M29U
+		path = {
+			leads_to_tech = S37U
 			research_cost_coeff = 1
 		}
 
 		dependencies = {
-			F15U = 1
+			M31U = 1
+		}
+
+		allow_branch = {
+			NOT = {
+				OR = {
+					tag = USA
+					tag = EUR
+					tag = CAN
+					tag = CEA
+					tag = SOA
+					tag = OSE
+					tag = JAP
+				}
+			}
 		}
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 8 y = 7 }
+			position = { x = 3 y = 7 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1452,25 +1427,24 @@ technologies = {
 
 	M29U = {
 		enable_equipments = {
-			tsf_equipment_MiG29
+			tsf_equipment_M29U
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1994
 
-		sub_technologies = {
-			M29OU
+		dependencies = {
+			M27U = 1
 		}
 
 		path = {
-			leads_to_tech = S37U
+			leads_to_tech = M35U
 			research_cost_coeff = 1
 		}
 
-
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 8 y = 9 }
+			position = { x = 11 y = 7 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1482,17 +1456,19 @@ technologies = {
 			factor = 20000
 		}
 	}
-	M29OU = {
+
+	M35U = {
 		enable_equipments = {
-			tsf_equipment_MiG29OVTU
+			tsf_equipment_M35U
 		}
 
-		research_cost = 2
-		start_year = 2000
+		research_cost = 3
+		start_year = 2001
 
 		folder = {
 			name = UNI_tsf_folder
-		}		
+			position = { x = 11 y = 13 }
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1503,6 +1479,7 @@ technologies = {
 			factor = 20000
 		}
 	}
+
 	S37U = {
 		enable_equipments = {
 			tsf_equipment_Su37U
@@ -1518,7 +1495,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 8 y = 11 }
+			position = { x = 3 y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1582,19 +1559,13 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 8 y = 13 }
+			position = { x = 3 y = 13 }
 		}
 
-		if {
-			limit = {
-				tag = SOV
-			}
-			path = {
-				leads_to_tech = F35U
-				research_cost_coeff = 1
-			}
+		path = {
+			leads_to_tech = Fenrir
+			research_cost_coeff = 1
 		}
-
 
 		categories = {
 			MVLV_tsf_tech
@@ -1710,7 +1681,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 13 }
+			position = { x = 7 y = 13 }
 		}
 		
 		path = {
@@ -1747,21 +1718,14 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 1 y = 15 }
+			position = { x = 9 y = 15 }
 		}
 
-		allow_branch = {
-			NOT = {
-				OR = {
-					tag = SOV
-					tag = CHI
-					tag = CEA
-					tag = SOA
-				}
-			}
+		XOR = {
+			SW
 		}
 
-		categories = {
+  	categories = {
 			MVLV_tsf_tech
 		}
 
@@ -1774,6 +1738,12 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20000
+			# OR = {
+			# 		tag = SOV
+			# 		tag = CHI
+			# 		tag = CEA
+			# 		tag = SOA
+			# 	}
 		}
 	}
 
@@ -1790,18 +1760,8 @@ technologies = {
 			position = { x = 5 y = 15 }
 		}
 
-		allow_branch = {
-			NOT = {
-				OR = {
-					tag = USA
-					tag = EUR
-					tag = CAN
-					tag = CEA
-					tag = SOA
-					tag = OSE
-					tag = JAP
-				}
-			}
+		XOR = {
+			Tempest
 		}
 
 		categories = {
@@ -1809,7 +1769,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = Fenrir
+			leads_to_tech = Typhon
 			research_cost_coeff = 1
 		}
 
@@ -1817,6 +1777,17 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20000
+			# NOT = {
+			# 	OR = {
+			# 		tag = USA
+			# 		tag = EUR
+			# 		tag = CAN
+			# 		tag = CEA
+			# 		tag = SOA
+			# 		tag = OSE
+			# 		tag = JAP
+			# 	}
+			# }
 		}
 	}
 
@@ -1831,7 +1802,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 1 y = 17 }
+			position = { x = 7 y = 17 }
 		}
 
 		categories = {
@@ -1856,7 +1827,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 5 y = 17 }
+			position = { x = 3 y = 17 }
 		}
 
 		categories = {

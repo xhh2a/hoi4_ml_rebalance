@@ -1346,6 +1346,7 @@ equipments = {
 		archetype = tsf_gen_2_equipment
 		priority = 16
 		visual_level = 0
+		parent = tsf_equipment_M31U
 		can_convert_from = {
 			tsf_equipment_F15U
 			tsf_equipment_M31U
@@ -1354,6 +1355,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 15
+		reliability = 0.85 # Worse reliability led to greenlighting M29
 
 		#Defensive Abilities
 		defense = 31
@@ -1373,52 +1375,56 @@ equipments = {
 
 	# TODO: tsf_equiment_SU33 - amphibious version
 
-  #Mig-29#	
-	tsf_equipment_MiG29 = {
-		year = 1985
+  # Mig-29 #
+	# Page 358 Cheaper based on F16/F18
+	# Focus on mobility
+	tsf_equipment_M29U = {
+		year = 1994
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
-		parent = tsf_equipment_MiG27U
+		parent = tsf_equipment_M27U
+		can_convert_from = {
+			tsf_equipment_M27U
+		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 12
-		reliability = 0.6
+		maximum_speed = 14.5
+		reliability = 0.9 # Focus on reliability per lore
 
 		#Defensive Abilities
-		defense = 80
-		breakthrough = 80
-		hardness = 0.99
-		armor_value = 75
+		defense = 21
+		breakthrough = 45
+		hardness = 0.81
+		armor_value = 92
 
 		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 55
-		ap_attack = 120
-		air_attack = 140
+		soft_attack = 11
+		hard_attack = 14
+		ap_attack = 100
+		air_attack = 12
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 55
+		build_cost_ic = 29
 		resources = {
-			aluminium = 1
+			aluminium = 2
 			steel = 1
 		}
 	}
 
-	#Mig-29OVT/35#	
-	tsf_equipment_MiG29OVTU = {
+	# Mig-29OVT/35 #
+	# Page 359 - more focus on speed, engines, durability
+	# Page 364 - M35 in trial in 2001
+	tsf_equipment_M35U = {
 		year = 2001
 
-		archetype = tsf_equipment
-#		parent = tsf_equipment_MiG29 
+		archetype = tsf_gen_3_equipment
+		parent = tsf_equipment_M29U
 		priority = 18
 		visual_level = 0
-#		can_convert_from = { 
-#			tsf_equipment_F15E 
-#		}
+		can_convert_from = { 
+			tsf_equipment_M29U
+		}
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 15

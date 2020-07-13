@@ -571,6 +571,11 @@
  tsf_equipment_EF2000U_short:0 "§GEF-2000§!"
  tsf_equipment_EF2000U_desc:0 "§GGen 3§! (1998) In 1980, development commenced under the European Combat Tactical Surface Fighter Program. However with Europe overrun by BETA, development suffered significant delays. In 1998, the advance mass production model, the EF-2000 underwent trails, and entered service in 2000. Much like crafts from the Soviet Union, with their vast plains and many hives, the EF-2000 Typhoon was designed with not only hive capturing in mind, but also dense, close quarters dogfighting"
 
+ ### MiG-29 Series ###
+ tsf_equipment_M29U:0 "§CMikoyam Guluvich 29§! Lastochka"
+ tsf_equipment_M29U_short:0 "§CMiG-29§!"
+ tsf_equipment_M29U_desc:0 "§CGen 2§! (1994) Part of the High-Low Mix Program of the USSR, the MiG-29 was given the official designation MiG-29 and the nickname Lastochka, Russian for 'swallow', because of its high mobility and maneuverability. However by the time it was deployed, the MiG-29 was already obsolete as 3rd generation TSFs had begun rollout."
+
  ### SU-27 Series ###
  tsf_equipment_SU27U:0 "§CSufoni 27§! Zhuravlik"
  tsf_equipment_SU27U_short:0 "§CSU-27§!"
