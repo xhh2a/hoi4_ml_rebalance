@@ -147,7 +147,42 @@ spriteTypes = {
   }
 
   SpriteType = {
+    name = "GFX_M35U_medium"
+    texturefile = "gfx/interface/technologies/Mig-35.dds"
+  }
+
+  SpriteType = {
     name = "GFX_M2000KU_medium"
     texturefile = "gfx/interface/technologies/M2000K.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_subtech_tsf_variant_a"
+    texturefile = "gfx/texticons/navy_experience_20x20.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_subtech_tsf_variant_b"
+    texturefile = "gfx/texticons/air_experience_20x20.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_subtech_tsf_variant_c"
+    texturefile = "gfx/texticons/army_experience_20x20.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_subtech_tsf_gear_variant_a"
+    texturefile = "gfx/texticons/navy_experience_20x20.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_subtech_tsf_gear_variant_b"
+    texturefile = "gfx/texticons/air_experience_20x20.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_subtech_tsf_gear_variant_c"
+    texturefile = "gfx/texticons/army_experience_20x20.dds"
   }
 }

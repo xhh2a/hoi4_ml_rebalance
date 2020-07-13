@@ -93,8 +93,7 @@ sub_units = {
 		}
 	}
 
-	# TODO: update the OOBs and rename this to be consistent
-	MVLV_tsf_battalion = {
+	tsf_gen_two_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
 		priority = 3500
@@ -120,7 +119,7 @@ sub_units = {
 			tsf_gen_2_equipment = 10
 		}
 		manpower = 400
-		max_organisation = 30
+		max_organisation = 40
 		max_strength = 25
 		default_morale = 1.5
 		training_time = 60
@@ -212,7 +211,7 @@ sub_units = {
 			tsf_gen_3_equipment = 10
 		}
 		manpower = 300
-		max_organisation = 30
+		max_organisation = 50
 		max_strength = 30
 		default_morale = 1.5
 		training_time = 60
@@ -290,7 +289,6 @@ sub_units = {
 
 		priority = 2
 		ai_priority = 2
-		active = no
 		
 		type = {
 			armor

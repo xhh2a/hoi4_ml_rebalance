@@ -1,0 +1,13 @@
+technology_categories = {
+  tsf_gear_tech
+  tsf_vehicle_tech
+  tsf_strategy_tech
+}
+
+technology_folders = {
+  tsf_gear_folder = {
+    available = {
+			NOT = { tag = BET }
+		}
+  }
+}

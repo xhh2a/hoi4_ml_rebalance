@@ -1,0 +1,252 @@
+technologies = {
+
+  # Y Coordinate Variables based on Year
+  @rank_1_y = 4
+  @rank_2_y = 6
+  @rank_3_y = 8
+  @rank_4_y = 10
+  @rank_5_y = 12
+
+  @rank_1_year = 1975
+  @rank_2_year = 1980
+  @rank_3_year = 1985
+  @rank_4_year = 1990
+  @rank_5_year = 1995
+
+  # X Coordinate variables based on type
+  @gun = -10
+  @missile = -7
+  @melee = -4
+  @armor = -1
+  @avionics = 2
+  @supplies = 5
+
+  ### Armament ###
+	tsf_gun = {
+
+		research_cost = 1
+		start_year = @rank_1_year
+
+    category_MVLV_tsf = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_gun_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @gun y = @rank_1_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_gun_2 = {
+
+		research_cost = 1
+		start_year = @rank_2_year
+
+    category_MVLV_tsf = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_gun_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @gun y = @rank_2_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_gun_3 = {
+
+		research_cost = 1
+		start_year = @rank_3_year
+
+    category_MVLV_tsf = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_gun_4
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @gun y = @rank_3_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_missile = {
+
+		research_cost = 1
+		start_year = @rank_1_year
+
+    category_MVLV_tsf = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_missile_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @missile y = @rank_1_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_melee = {
+
+		research_cost = 1
+		start_year = @rank_1_year
+
+    category_MVLV_tsf = {
+			urban = {
+        attack = 0.1
+        defence = 0.1
+      }
+		}
+
+		path = {
+			leads_to_tech = tsf_hard_attack_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @melee y = @rank_1_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_armor = {
+
+		research_cost = 1
+		start_year = @rank_1_year
+
+    category_MVLV_tsf = {
+			defensiveness = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_hard_attack_4
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @armor y = @rank_1_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_avionics = {
+
+		research_cost = 1
+		start_year = @rank_1_year
+
+    category_MVLV_tsf = {
+			armor = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_hard_attack_4
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @avionics y = @rank_1_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+  tsf_supplies = {
+
+		research_cost = 1
+		start_year = @rank_1_year
+
+    category_MVLV_tsf = {
+			breakthrough = 0.05
+		}
+
+		path = {
+			leads_to_tech = tsf_hard_attack_4
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = tsf_gear_folder
+			position = { x = @supplies y = @rank_1_y }
+		}		
+		categories = {
+			MVLV_tsf_tech
+			tsf_gear_tech
+		}
+
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+}

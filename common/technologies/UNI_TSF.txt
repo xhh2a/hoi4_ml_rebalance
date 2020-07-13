@@ -66,12 +66,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		# Armament
-		path = {
-			leads_to_tech = UNI_Assault_gun_improvement
-			research_cost_coeff = 1
-		}
-
 		path = {
 			leads_to_tech = F15U
 			research_cost_coeff = 1
@@ -796,49 +790,6 @@ technologies = {
 
 	}
 	
-	UNI_Assault_gun_improvement = {
-
-		research_cost = 1
-		start_year = 1978
-
-		MVLV_tsf_battalion = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		
-		MVLV_asa_battalion = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		
-		MVLV_tsa_battalion = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		
-		path = {
-			leads_to_tech = UNI_Jumping_unit_improvement
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 8 y = 3 }
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		ai_will_do = {
-			factor = 20000
-		}
-		
-
-	}
-	
 	F15EU = {
 		enable_equipments = {
 			tsf_equipment_F15EU
@@ -1482,7 +1433,7 @@ technologies = {
 
 	S37U = {
 		enable_equipments = {
-			tsf_equipment_Su37U
+			tsf_equipment_SU37U
 		}
 
 		research_cost = 2
@@ -1495,7 +1446,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 11 }
+			position = { x = 3 y = 9 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1536,22 +1487,9 @@ technologies = {
 					technology = Typhon
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_tech = Fenrir
-					}
-				}
-				add_tech_bonus = {
-					name = future_research_bonus
-					bonus = 0.5
-					uses = 1
-					technology = Fenrir
-				}
-			}
 		}
 		enable_equipments = {
-			tsf_equipment_Su47U
+			tsf_equipment_SU47U
 		}
 
 		research_cost = 4
@@ -1675,7 +1613,8 @@ technologies = {
 			tsf_equipment_F35U
 		}
 
-		research_cost = 6
+		#research_cost = 6
+		research_cost = 9999 # TODO: When finished with rebalance
 
 		start_year = 2004
 
@@ -2000,4 +1939,6 @@ technologies = {
 			factor = 1
 		}
 	}	
+
+	
 }

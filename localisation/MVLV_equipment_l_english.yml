@@ -575,6 +575,9 @@
  tsf_equipment_M29U:0 "§CMikoyam Guluvich 29§! Lastochka"
  tsf_equipment_M29U_short:0 "§CMiG-29§!"
  tsf_equipment_M29U_desc:0 "§CGen 2§! (1994) Part of the High-Low Mix Program of the USSR, the MiG-29 was given the official designation MiG-29 and the nickname Lastochka, Russian for 'swallow', because of its high mobility and maneuverability. However by the time it was deployed, the MiG-29 was already obsolete as 3rd generation TSFs had begun rollout."
+ tsf_equipment_M35U:0 "§GMikoyam Guluvich 35§! Foxhound"
+ tsf_equipment_M35U_short:0 "§GMiG-35§!"
+ tsf_equipment_M35U_desc:0 "§GGen 3§! (2001) The MiG-35 is a 3rd generation craft based off of the MiG-29OVT. The MiG-35 received many refurbishments as part of an official technological cooperation with Northrock Grunnan. It achieved such a great improvement in specifications, that it was called the 'Eagle of the East'."
 
  ### SU-27 Series ###
  tsf_equipment_SU27U:0 "§CSufoni 27§! Zhuravlik"
@@ -583,6 +586,9 @@
  CHI_equipment_SU27U:0 "§CJian 11§!/Sufoni 27SK"
  CHI_equipment_SU27U_short:0 "§CJ-11§!/SU-27SK"
  CHI_equipment_SU27U_desc:0 "§CGen 2§! (1992/1996) While being a large craft, equivalent in size to an F-14 Tomcat, its mobility and close quarters dogfighting abilities rivaled those of the F-16 Fighting Falcon."
+ tsf_equipment_SU37U:0 "§CSufoni 37§! Terminator"
+ tsf_equipment_SU37U_short:0 "§CSU-37§!"
+ tsf_equipment_SU37U_desc:0 "§CGen 2§! (1997) By 1996, Sufoni was continuing its independent research and development of the Su-27M2 demonstrator trial craft. In order to avoid falling behind the west, they gave the 2nd Generation TSF the designation of Su-37. Its close quarters dogfighting abilities were further strengthened, and the number of blade vanes on each shoulder block was increased from two to four. Finally, vectoring thrusters were added to its waist block in order to increase mobility and maneuverability"
 
  ### Future ###
  tsf_equipment_SW:0 "Starker Wind"

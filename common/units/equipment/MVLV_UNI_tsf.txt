@@ -351,7 +351,7 @@ equipments = {
 		priority = 10
 		parent = tsf_equipment_F4U
 		visual_level = 0
-		can_convert_from = { 
+		can_convert_from = {
 			tsf_equipment_F4U
 		}
 		is_convertable = yes
@@ -378,8 +378,8 @@ equipments = {
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
-		parent = tsf_equipment_F14U
-		can_convert_from = { 
+		parent = tsf_equipment_F4U
+		can_convert_from = {
 			tsf_equipment_F4U
 		}
 		visual_level = 0
@@ -406,7 +406,7 @@ equipments = {
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
-		parent = tsf_equipment_F14U
+		parent = tsf_equipment_F4U
 		can_convert_from = { 
 			tsf_equipment_F15U
 		}
@@ -542,9 +542,9 @@ equipments = {
 		archetype = tsf_equipment 
 		priority = 20
 		visual_level = 0
-		parent = tsf_equipment_F15EUN
+		parent = tsf_equipment_F15EU
 		can_convert_from = { 
-			tsf_equipment_F15EUN 
+			tsf_equipment_F15EU
 		}
 		is_convertable = yes
 		#Misc Abilities
@@ -1412,9 +1412,10 @@ equipments = {
 		}
 	}
 
-	# Mig-29OVT/35 #
+	# Mig-29OVT/35 Fulcrum/Foxhound #
 	# Page 359 - more focus on speed, engines, durability
 	# Page 364 - M35 in trial in 2001
+	# Heavy western collaboration due to limits of USSR
 	tsf_equipment_M35U = {
 		year = 2001
 
@@ -1427,70 +1428,72 @@ equipments = {
 		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 15
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 90
-		breakthrough = 90
-		hardness = 0.99
-		armor_value = 85
-
-		#Offensive Abilities
-		soft_attack = 75
-		hard_attack = 75
-		ap_attack = 155
-		air_attack = 190
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 90
-		resources = {
-			aluminium = 1
-			steel = 1
-		}
-	}
-
-	tsf_equipment_Su37U = {
-		year = 1995
-
-		archetype = tsf_equipment 
-		parent = tsf_equipment_SU27U
-		priority = 17
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
 		maximum_speed = 16.5
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 80
-		hardness = 0.99
-		armor_value = 85
+		defense = 32
+		breakthrough = 50
+		hardness = 0.83
+		armor_value = 96
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack =70
-		ap_attack = 125
-		air_attack = 190
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 75
+		soft_attack = 14
+		hard_attack = 16
+		ap_attack = 110
+		air_attack = 14
+	
+		build_cost_ic = 37.5
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
+		}
+	}
+
+  # SU-37 Zhuravlik/Terminator
+	# SU-27M2
+	# Rushed 3rd Generation Craft, improved CQC, reliability, cooperation with west
+	# Page 85
+	tsf_equipment_SU37U = {
+		year = 1997
+
+		# Gen 2.5
+		archetype = tsf_gen_2_equipment 
+		parent = tsf_equipment_SU27U
+		priority = 17
+		visual_level = 0
+		can_convert_from = {
+			tsf_equipment_SU27U
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 16
+		reliability = 0.875
+
+		#Defensive Abilities
+		defense = 34
+		breakthrough = 41
+		hardness = 0.87
+		armor_value = 95
+
+		#Offensive Abilities
+		soft_attack = 20
+		hard_attack = 16
+		ap_attack = 120
+		air_attack = 12
+	
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			steel = 2
 		}
 	}
 
 	#Su-47#	
-	tsf_equipment_Su47U = {
+	tsf_equipment_SU47U = {
 		year = 2001
 
-		archetype = tsf_special_forces_batallion
+		archetype = tsf_elite_equipment
 		priority = 40
 		visual_level = 0
 		is_convertable = yes
@@ -1559,7 +1562,7 @@ equipments = {
 		year = 2004
 
 		archetype = tsf_equipment
-		parent = tsf_equipment_EF2000
+		parent = tsf_equipment_EF2000U
 		priority = 17
 		visual_level = 0
 
