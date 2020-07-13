@@ -18,7 +18,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_F15U_medium"
 		texturefile = "gfx/interface/technologies/F-15.dds"
-	}\
+	}
 
   SpriteType = {
 		name = "GFX_SOV_F5U_medium"

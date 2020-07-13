@@ -236,12 +236,6 @@
  tsf_equipment_F14ExU:0 "F-14 Super Tomcat"
  tsf_equipment_F14ExU_short:0 "F-14Ex"
  tsf_equipment_F14ExU_desc:0 "F-14Exはイラン陸軍とノースロック・グラナン社が共同開発した準第三世代戦術機である。F-14を近接格闘戦性能強化型にアップグレードしている。F-14は最古の第二世代機でありながら大型機であるが故に多くの設計的余剰を担保しており、改修を重ねる事によって、最新型のD型はF-15Cと同等の総合性能を獲得するに至っている。"
- tsf_equipment_F18U:0 "F-18 Hornet"
- tsf_equipment_F18U_short:0 "F-18"
- tsf_equipment_F18U_desc:0 "F-18はマクダエル・ドグラム社が開発した第2世代戦術機である。F-15やF-14に比して費用対効果に優れた多任務戦術機として評価され、オーストラリアを始めとする数ヶ国でF-4を置換する主力機として制式採用された。だが、実戦に於ける垂直上昇能力など、機体強度に比例する機動性や運動性が他の主力機に見劣りするなどの理由から、前線衛士の性能評価は凡庸なものに止まった。"
- tsf_equipment_F18EFU:0 "F-18E/F Super Hornet"
- tsf_equipment_F18EFU_short:0 "F-18E/F"
- tsf_equipment_F18EFU_desc:0 "F-18E/Fスーパーホーネットは、マクダエル・ドグラム社がF-18にF-14を凌駕する性能を与えるべく再設計とも言える大規模改修を行った第2.5世代戦術機である。数値上の個別性能ではF-14の優位性は未だ揺るがないが、多様な運用局面に於ける総合的な性能評価となればF-18E/FはF-14に優るとも劣らず、その低い性能評価に免罪符の如く付きまとってきた「コストパフォーマンス」という言葉は、同機の優秀性を強調する意味で用いられるだろう。"
  tsf_equipment_F15EU:0 "F-15E Strike Eagle"
  tsf_equipment_F15EU_short:0 "F-15E"
  tsf_equipment_F15EU_desc:0 "F-15をベースに、兵装搭載量の増加、アビオニクスの強化、複合装甲の採用等に加え、機体構造の見直しによる統合的な改修を施した最新のE型は、第2世代最強の戦術機と謂われている。F15と比して別物と言っても過言ではないため最新の世代分類では2.5世代に分類されている。初期型のF-15Aの配備から20年近く経過し、第3世代機の配備が始まった後も、その信頼性、交換部品の安定供給を含む整備性や豊富なアフターパーツに裏打ちされた発展性の高さから、米軍や世界各国で未だ主力機の座を堅持している。"
@@ -525,6 +519,8 @@
  tsf_equipment_M31U_short:0 "§CMiG-31§!"
  tsf_equipment_M31U_desc:0 "§CGen 2§! (1990) Mikoyam Guluvich began to develop the MiG-31 by upgrading the MiG-25 so that it could use the AIM-54 Phoenix, an American anti-BETA cluster missile. The retrofitting of American-made avionics accompanying the AIM-54's adoption allowed for greater abilities in detection and electronic warfare, as well as an astonishing increase in the craft's own capabilities, like its responsiveness"
 
+ ### TSF/TSA F14 Series ###
+
  ### TSF F16 Series ###
  tsf_equipment_F16U:0 "§CF-16§! Fighting Falcon"
  tsf_equipment_F16U_short:0 "§CF-16§!"
@@ -536,16 +532,22 @@
  CHI_tsf_equipment_F16CU_short:0 "§CJ-10§!/Lavi"
  AFR_tsf_equipment_F16CU:0 "§CLavi§!/Jian-10"
  AFR_tsf_equipment_F16CU_short:0 "§CLavi§!/J-10"
- F16XU:0 "§CF-16XL§! Prototype Project"
- F16XU_desc:0 "The F-16XL was a prototype built for the Dual-Role TSF Program. The F-15E Strike Eagle was selected instead, but data that had been collected by the F-16XL has seen use in the development of the F-35 Lightning II"
+ USA_tsf_equipment_F16CU:0 "§CF-16XL§!"
+ USA_tsf_equipment_F16CU_desc:0 "The F-16XL was a prototype built for the Dual-Role TSF Program. The F-15E Strike Eagle was selected instead, but data that had been collected by the F-16XL has seen use in the development of the F-35 Lightning II"
 
- ### TSF F18 Series ###
- CHI_tsf_equipment_F18U:0 "Ching-kuo"
- CHI_tsf_equipment_F18U_short:0 "F-CK-1"
- GEA_tsf_equipment_F18EFU:0 "F-18AX Raging Hornet"
- GEA_tsf_equipment_F18EFU_short:0 "F-18AX"
- OSE_tsf_equipment_F18EFU:0 "F-18AX Raging Hornet"
- OSE_tsf_equipment_F18EFU_short:0 "F-18AX"
+ ### TSF/TSA F18 Series ###
+ tsa_equipment_F18U:0 "F-18 Hornet"
+ tsa_equipment_F18U_short:0 "F-18"
+ tsa_equipment_F18U_desc:0 "F-18はマクダエル・ドグラム社が開発した第2世代戦術機である。F-15やF-14に比して費用対効果に優れた多任務戦術機として評価され、オーストラリアを始めとする数ヶ国でF-4を置換する主力機として制式採用された。だが、実戦に於ける垂直上昇能力など、機体強度に比例する機動性や運動性が他の主力機に見劣りするなどの理由から、前線衛士の性能評価は凡庸なものに止まった。"
+ tsa_equipment_F18EFU:0 "F-18E/F Super Hornet"
+ tsa_equipment_F18EFU_short:0 "F-18E/F"
+ tsa_equipment_F18EFU_desc:0 "F-18E/Fスーパーホーネットは、マクダエル・ドグラム社がF-18にF-14を凌駕する性能を与えるべく再設計とも言える大規模改修を行った第2.5世代戦術機である。数値上の個別性能ではF-14の優位性は未だ揺るがないが、多様な運用局面に於ける総合的な性能評価となればF-18E/FはF-14に優るとも劣らず、その低い性能評価に免罪符の如く付きまとってきた「コストパフォーマンス」という言葉は、同機の優秀性を強調する意味で用いられるだろう。"
+ CHI_tsa_equipment_F18U:0 "Ching-kuo"
+ CHI_tsa_equipment_F18U_short:0 "F-CK-1"
+ GEA_tsa_equipment_F18EFU:0 "F-18AX Raging Hornet"
+ GEA_tsa_equipment_F18EFU_short:0 "F-18AX"
+ OSE_tsa_equipment_F18EFU:0 "F-18AX Raging Hornet"
+ OSE_tsa_equipment_F18EFU_short:0 "F-18AX"
 
  ### TSF 94 Series ###
  tsf_equipment_T94U:0 "TSF-Type 94 Shiranui"

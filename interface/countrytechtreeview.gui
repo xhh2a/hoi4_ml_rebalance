@@ -3623,7 +3623,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "UNI_tsf_subtitle_tsf"
-					position = { x = 265 y = -52  }
+					position = { x = 220 y = -52  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3635,8 +3635,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "UNI_tsf_subtitle_Hi"
-					position = { x = 125 y = 55 }
+					name = "UNI_tsf_subtitle_Advanced"
+					position = { x = -325 y = 930 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3646,27 +3646,14 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}	
-				
-				instantTextBoxType = {
-					name = "UNI_tsf_subtitle_low"
-					position = { x = 405 y = 55 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "TSF_TITLE_Low"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}		
-				
+		
 				instantTextBoxType = {
 					name = "UNI_tsf_subtitle_asa"
 					position = { x = -325 y = -10  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "TSF_TITLE_Assault"
+					text = "TSF_TITLE_Amphibious"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
