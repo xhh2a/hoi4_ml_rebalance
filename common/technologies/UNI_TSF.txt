@@ -1339,7 +1339,7 @@ technologies = {
 		start_year = 1992
 
 		path = {
-			leads_to_tech = S37U
+			leads_to_tech = SU37U
 			research_cost_coeff = 1
 		}
 
@@ -1431,7 +1431,7 @@ technologies = {
 		}
 	}
 
-	S37U = {
+	SU37U = {
 		enable_equipments = {
 			tsf_equipment_SU37U
 		}
@@ -1440,7 +1440,7 @@ technologies = {
 		start_year = 1997
 
 		path = {
-			leads_to_tech = S47U
+			leads_to_tech = SU47U
 			research_cost_coeff = 1
 		}
 
@@ -1459,7 +1459,7 @@ technologies = {
 		}
 	}
 
-	S47U = {
+	SU47U = {
 		on_research_complete = {
 			if = {
 				limit = {
@@ -1517,31 +1517,6 @@ technologies = {
 	}
 
 #____________________________________________________________
-
-	F18FU = {
-		
-		enable_equipments = {
-			tsf_equipment_F18EFU
-		}
-
-		research_cost = 2
-		start_year = 1994
-
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 3 y = 12 }
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-	}
-
 	F22U = {
 
 		enable_equipments = {

@@ -33,3 +33,72 @@ is_beta_faction = {
 is_mankind_faction = {
   not = { is_beta_faction = yes }
 }
+
+low_army_count = {
+  set_temp_variable { _total_army_count = THIS.num_divisions }
+  set_temp_variable { _current_ic = THIS.num_of_military_factories }
+  clamp_temp_variable { var = _current_ic min = 1 } # Avoid divide by zero problems
+  divide_temp_variable = { _total_army_count = _current_ic }
+  check_variable = {
+    var = _total_army_count
+    compare = less_than
+    value = THIS.low_army_ratio_threshold?1.0 # Desired Ratio
+  }
+
+}
+
+has_sufficient_tsf_first_gen = {
+  OR = {
+    check_variable = {
+      var = THIS.num_armies_with_type@tsf_gen_one_batallion
+      compare = greather_than
+      value = THIS.too_many_first_gen_threshold?15 # Build higher quality units if too many
+    }
+  }
+}
+
+has_sufficient_tsf_second_gen = {
+  OR = {
+    check_variable = {
+      var = THIS.num_armies_with_type@tsf_gen_two_batallion
+      compare = greather_than
+      value = THIS.too_many_second_gen_threshold?25 # Build higher quality units if too many
+    }
+  }
+}
+
+has_sufficient_tsf_third_gen = {
+  OR = {
+    check_variable = {
+      var = THIS.num_armies_with_type@tsf_gen_three_batallion
+      compare = greather_than
+      value = THIS.too_many_third_gen_threshold?20 # Build lower quality units if too many
+    }
+  }
+}
+
+has_tsf_first_gen_tech = {
+  OR = {
+    has_tech = F4U
+    has_tech = F4R
+  }
+}
+
+has_tsf_second_gen_tech = {
+  OR = {
+    has_tech = JA37U
+    has_tech = M27U
+    has_tech = M2000KU
+    has_tech = F15U
+    has_tech = F16U
+  }
+}
+
+has_tsf_third_gen_tech = {
+  OR = {
+    has_tech = M35U
+    has_tech = JA39U
+    has_tech = T94U
+    has_tech = F15SEU
+  }
+}

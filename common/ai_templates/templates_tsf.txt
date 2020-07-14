@@ -1,12 +1,12 @@
-tsf_1st_generation = {
+tsf_generic = {
 
 	# Desired stat weighting for this template
   @default_morale = 0.00
 	@defense = 0.25
 	@breakthrough = 0.50
 	@hardness = 0.50
-	@soft_attack = 0.05
-	@hard_attack = 0.1
+	@soft_attack = 0.10
+	@hard_attack = 0.25
 	@recon = 0.01
 	@entrenchment = 0.00
 	@initiative = 0.05
@@ -15,6 +15,18 @@ tsf_1st_generation = {
 	@supply_consumption = -0.02
 	@suppression = 0.0
 	@suppression_factor = 0.0
+	@experience_loss_factor = 0.0
+	@equipment_capture_factor = 0.0
+	@air_attack = 0.5
+	@max_organisation = 0.25
+	@max_strength = 0.1
+	@maximum_speed = 0.1
+	@armor_value = 0.1
+	@ap_attack = 0.1
+	@reliability = 0.0
+	@reliability_factor = 0.0
+	@weight = -0.02
+	@build_cost_ic = 0.0
 
 	blocked_for = {
 		BET H02 H03 H04 H05 H06 H07 H08 H09 H10 H11 H12 H13 H14 H15 H16 H17 H18 H19 H20 H21 H25 H26
@@ -26,21 +38,49 @@ tsf_1st_generation = {
 	
 	match_to_count = 0.5
 
-	tsf_1st_generation = {
+	tsf_1st_generation_template = {
 		upgrade_prio = {
-			factor = 2
+			factor = 10
 
 			modifier = {
-				factor = 2
+				has_tsf_first_gen_tech = no
+				factor = 0
+			}
+			modifier = {
+				factor = 1.5
 				date > 1978.1.1
 			}
 			modifier = {
-				factor = 2
+				factor = 1.5
 				date > 1982.1.1
 			}
 			modifier = {
-				factor = 0
+				factor = 0.05
 				date > 1985.1.1
+			}
+		}
+
+		production_prio = {
+			factor = 10
+			modifier = {
+				has_tsf_first_gen_tech = no
+				factor = 0
+			}
+			modifier = {
+				has_sufficient_tsf_first_gen = yes
+				factor = 0.5
+			}
+			modifier = {
+				low_army_count = yes
+				factor = 5
+			}
+			modifier = {
+				has_tsf_second_gen_tech = yes
+				factor = 0.75
+			}
+			modifier = {
+				has_tsf_third_gen_tech = yes
+				factor = 0.5
 			}
 		}
 		
@@ -49,36 +89,36 @@ tsf_1st_generation = {
 		column_swap_factor = 0.5
 		
 		stat_weights = {
-			0.00 #-- default_morale
-			0.25 #-- defense
-			0.50 #-- breakthrough
-			0.50 #-- hardness
-			0.05 #-- soft_attack
-			0.10 #-- hard_attack	
-			0.01 #-- recon
-			0.00 #-- entrenchment
-			0.05 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.02 #-- supply_consumption_factor
-			-0.02 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
+			@default_morale #-- default_morale
+			@defense #-- defense
+			@breakthrough #-- breakthrough
+			@hardness #-- hardness
+			@soft_attack #-- soft_attack
+			@hard_attack #-- hard_attack	
+			@recon #-- recon
+			@entrenchment #-- entrenchment
+			@initiative #-- initiative
+			@casualty_trickleback #-- casualty_trickleback
+			@supply_consumption_factor #-- supply_consumption_factor
+			@supply_consumption #-- supply_consumption
+			@suppression #-- suppression
+			@suppression_factor #-- suppression_factor
+			@experience_loss_factor #-- experience_loss_factor
+			@equipment_capture_factor #-- equipment_capture_factor
 			#-- Air Values
-			0.05 #-- air_attack
+			@air_attack #-- air_attack
 			#-- Common Values
-			0.05 #-- max_organisation
-			0.05 #-- max_strength
-			0.10 #-- maximum_speed
-			0.25 #-- armor_value
-			0.10 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			-0.02 #-- weight
-			0.00 #-- build_cost_ic
+			@max_organisation #-- max_organisation
+			@max_strength #-- max_strength
+			@maximum_speed #-- maximum_speed
+			@armor_value #-- armor_value
+			@ap_attack #-- ap_attack
+			@reliability #-- reliability
+			@reliability_factor #-- reliability_factor
+			@weight #-- weight
+			@build_cost_ic #-- build_cost_ic
 		}
-		
+
 		target_template = {
 			weight = 40
 
@@ -91,10 +131,244 @@ tsf_1st_generation = {
 		allowed_types = {
 			armor
 			engineer
+			tsf_gen_one_batallion
+			tsf_gen_two_batallion
+			tsf_gen_three_batallion
 		}
 
 		replace_at_match = 0.4
-		replace_with = tsf_2nd_generation
+		replace_with = tsf_2nd_generation_template
 		target_min_match = 0.5
 	}
+
+	tsf_2nd_generation_template = {
+		upgrade_prio = {
+			factor = 10
+
+			modifier = {
+				has_tsf_second_gen_tech = no
+				factor = 0
+			}
+			modifier = {
+				factor = 0.5
+				date < 1994.1.1
+			}
+			modifier = {
+				factor = 2
+				date > 1996.1.1
+			}
+			modifier = {
+				factor = 0.5
+				date > 2001.1.1
+			}
+			modifier = {
+				factor = 0.1
+				date > 2004.1.1
+			}
+		}
+
+		production_prio = {
+			factor = 10
+			modifier = {
+				has_tsf_second_gen_tech = no
+				factor = 0
+			}
+			modifier = {
+				has_sufficient_tsf_first_gen = no
+				factor = 0.5
+			}
+			modifier = {
+				has_sufficient_tsf_second_gen = yes
+				factor = 0.5
+			}
+			modifier = {
+				low_army_count = yes
+				factor = 2.5
+			}
+			modifier = {
+				AND = {
+					has_tsf_third_gen_tech = yes
+					has_sufficient_tsf_second_gen = no
+					date < 2004.1.1
+				}
+				factor = 5
+			}
+			modifier = {
+				AND = {
+					has_tsf_third_gen_tech = yes
+					OR = {
+						has_sufficient_tsf_second_gen = yes
+						date > 2004.1.1
+					}
+				}
+				factor = 0.1
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			@default_morale #-- default_morale
+			@defense #-- defense
+			@breakthrough #-- breakthrough
+			@hardness #-- hardness
+			@soft_attack #-- soft_attack
+			@hard_attack #-- hard_attack	
+			@recon #-- recon
+			@entrenchment #-- entrenchment
+			@initiative #-- initiative
+			@casualty_trickleback #-- casualty_trickleback
+			@supply_consumption_factor #-- supply_consumption_factor
+			@supply_consumption #-- supply_consumption
+			@suppression #-- suppression
+			@suppression_factor #-- suppression_factor
+			@experience_loss_factor #-- experience_loss_factor
+			@equipment_capture_factor #-- equipment_capture_factor
+			#-- Air Values
+			@air_attack #-- air_attack
+			#-- Common Values
+			@max_organisation #-- max_organisation
+			@max_strength #-- max_strength
+			@maximum_speed #-- maximum_speed
+			@armor_value #-- armor_value
+			@ap_attack #-- ap_attack
+			@reliability #-- reliability
+			@reliability_factor #-- reliability_factor
+			@weight #-- weight
+			@build_cost_ic #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 40
+
+			regiments = {
+				tsf_gen_two_batallion = 10
+			}
+		}
+
+		allowed_types = {
+			armor
+			engineer
+			tsf_gen_one_batallion
+			tsf_gen_two_batallion
+			tsf_gen_three_batallion
+		}
+
+		replace_at_match = 0.4
+		replace_with = tsf_3rd_generation_template
+		target_min_match = 0.5
+	}
+
+	tsf_3rd_generation_template = {
+		upgrade_prio = {
+			factor = 10
+
+			modifier = {
+				factor = 0
+				has_tsf_third_gen_tech = no
+			}
+			modifier = {
+				factor = 0.75
+				date < 1997.1.1
+			}
+			modifier = {
+				factor = 2
+				date > 2001.1.1
+			}
+			modifier = {
+				factor = 2
+				date > 2004.1.1
+			}
+			modifier = {
+				low_army_count = yes
+				factor = 0.25
+			}
+		}
+
+		production_prio = {
+			factor = 10
+			modifier = {
+				has_tsf_second_gen_tech = no
+				factor = 0
+			}
+			modifier = {
+				has_sufficient_tsf_first_gen = no
+				factor = 0.9
+			}
+			modifier = {
+				has_sufficient_tsf_second_gen = no
+				factor = 0.75
+			}
+			modifier = {
+				low_army_count = yes
+				factor = 0.5
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			@default_morale #-- default_morale
+			@defense #-- defense
+			@breakthrough #-- breakthrough
+			@hardness #-- hardness
+			@soft_attack #-- soft_attack
+			@hard_attack #-- hard_attack	
+			@recon #-- recon
+			@entrenchment #-- entrenchment
+			@initiative #-- initiative
+			@casualty_trickleback #-- casualty_trickleback
+			@supply_consumption_factor #-- supply_consumption_factor
+			@supply_consumption #-- supply_consumption
+			@suppression #-- suppression
+			@suppression_factor #-- suppression_factor
+			@experience_loss_factor #-- experience_loss_factor
+			@equipment_capture_factor #-- equipment_capture_factor
+			#-- Air Values
+			@air_attack #-- air_attack
+			#-- Common Values
+			@max_organisation #-- max_organisation
+			@max_strength #-- max_strength
+			@maximum_speed #-- maximum_speed
+			@armor_value #-- armor_value
+			@ap_attack #-- ap_attack
+			@reliability #-- reliability
+			@reliability_factor #-- reliability_factor
+			@weight #-- weight
+			@build_cost_ic #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 40
+
+			regiments = {
+				tsf_gen_three_batallion = 10
+			}
+		}
+
+		allowed_types = {
+			armor
+			engineer
+			tsf_gen_one_batallion
+			tsf_gen_two_batallion
+			tsf_gen_three_batallion
+		}
+
+		# replace_at_match = 0.4
+		# replace_with = tsf_4th_generation_template
+		# target_min_match = 0.5
+	}
+
+	# tsf_special_forces_template = {
+	# 	target_template = {
+	# 		weight = 40
+	#     regiments = {
+	#	      tsf_special_forces_batallion = 5
+	#     }
+	# 	}
+	# }
 }

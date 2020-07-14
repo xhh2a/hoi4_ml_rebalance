@@ -29,7 +29,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 24
-		max_organisation = 45
+		max_organisation = 80 # TODO: Make this tied to tech
 		default_morale = 0.2
 		manpower = 1000
 
