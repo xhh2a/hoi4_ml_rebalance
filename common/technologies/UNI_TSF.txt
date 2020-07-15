@@ -1760,17 +1760,15 @@ technologies = {
 ###ASA###
 	
 	A6U = {
-
 		enable_equipments = {
-			asa_equipment_0U
+			asa_equipment_A6U
 		}
 
 		research_cost = 2
 		start_year = 1977
 
-		path = {
-			leads_to_tech = UNI_Manipulator_improvement
-			research_cost_coeff = 1
+		sub_technologies = {
+      T81U
 		}
 		path = {
 			leads_to_tech = A10U
@@ -1788,31 +1786,24 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+	}
 
-	}	
-	
-	UNI_Manipulator_improvement = {
+	T81U = {
+		enable_equipments = {
+			asa_equipment_T81U
+		}
 
 		research_cost = 1
-		start_year = 1980
-		
-		MVLV_asa_battalion = {
-			maximum_speed = 0.05
-		}
-		
-		MVLV_tsa_battalion = {
-			maximum_speed = 0.05
-		}
+		start_year = 1981
 
-		path = {
-			leads_to_tech = UNI_Carrying_ammunition_increase
-			research_cost_coeff = 1
+		allow_branch = {
+			OR = {
+				tag = UNI
+				tag = JAP
+			}
 		}
-
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -9 y = 3}
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1821,55 +1812,15 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-		
-
-	}	
-	
-	UNI_Carrying_ammunition_increase = {
-
-		research_cost = 1
-		start_year = 1990
-		
-		MVLV_asa_battalion = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		
-		MVLV_tsa_battalion = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-
-		path = {
-			leads_to_tech = A12U
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = -9 y = 7 }
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-
-	}	
+	}
 	
 	A12U = {
-
 		enable_equipments = {
-			asa_equipment_1U
+			asa_equipment_A12U
 		}
 
 		research_cost = 2
-		start_year = 1997
+		start_year = 1999
 
 		path = {
 			leads_to_tech = MVLV_
@@ -1878,7 +1829,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -9 y = 9 }
+			position = { x = -9 y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1887,24 +1838,26 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-		
-
 	}	
 	
 ###TSA###	
 	
 	A10U = {
-
 		enable_equipments = {
-			tsa_equipment_0U
+			tsa_equipment_A10U
 		}
 
 		research_cost = 2
 		start_year = 1978
 
+		path = {
+			leads_to_tech = A12U
+			research_cost_coeff = 1
+		}
+
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -11 y = 3 }
+			position = { x = -9 y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1913,7 +1866,5 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
-
-	
+	}
 }

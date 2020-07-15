@@ -539,7 +539,7 @@
  AFR_tsf_equipment_F16CU:0 "§CLavi§!/Jian-10"
  AFR_tsf_equipment_F16CU_short:0 "§CLavi§!/J-10"
  USA_tsf_equipment_F16CU:0 "§CF-16XL§!"
- USA_tsf_equipment_F16CU_desc:0 "The F-16XL was a prototype built for the Dual-Role TSF Program. The F-15E Strike Eagle was selected instead, but data that had been collected by the F-16XL has seen use in the development of the F-35 Lightning II"
+ USA_tsf_equipment_F16CU_desc:0 "§CGen 2§! (1994) The F-16XL was a prototype built for the Dual-Role TSF Program. The F-15E Strike Eagle was selected instead, but data that had been collected by the F-16XL has seen use in the development of the F-35 Lightning II"
 
  ### TSF/TSA F18 Series ###
  tsa_equipment_F18U:0 "§CF-18§! Hornet"
@@ -548,12 +548,18 @@
  tsa_equipment_F18EFU:0 "§CF-18E/F§! Super Hornet"
  tsa_equipment_F18EFU_short:0 "§CF-18E/F§!"
  tsa_equipment_F18EFU_desc:0 "§CGen 2 TSA§! (1994) The F-18E/F Super Hornet is a 2.5th generation TSF based on the F-18 Hornet. The F-18 Hornet itself was met with a mediocre reception, but McDaell Doglam responded by proposing the 'Hornet 2000 Program', which was based on the F-15 Eagle refurbishment program. New materials and a redesign helped to improve the airframe's rigidity and toughness, and this also helped to increase the output of the jump unit's main engine. Its vertical climbing ability, which was once considered its weakness, was also dramatically improved. By increasing the thrust-weight ratio and the size of the airframe, it could solve the craft's armament mounting problem"
- CHI_tsa_equipment_F18U:0 "Ching-kuo"
- CHI_tsa_equipment_F18U_short:0 "F-CK-1"
- GEA_tsa_equipment_F18EFU:0 "F-18AX Raging Hornet"
- GEA_tsa_equipment_F18EFU_short:0 "F-18AX"
- OSE_tsa_equipment_F18EFU:0 "F-18AX Raging Hornet"
- OSE_tsa_equipment_F18EFU_short:0 "F-18AX"
+ CHI_tsa_equipment_F18U:0 "§CChing-kuo§!"
+ CHI_tsa_equipment_F18U_short:0 "§CF-CK-1§!"
+ CHI_tsa_equipment_F18U_desc:0 "§CGen 2 TSA§! (1987/1990) A licensed production of the F-18 Hornet for culling operations performed around the Taiwan Strait. The F-18 was selected due to factors such as its long operational time and its high versatility. Its cruising range was extended by enlarging the fuel tank to increase the amount of propellant that could be loaded, as well as by an overall weight reduction."
+ tsa_equipment_F18AXU:0 "§GF-18AX§! Raging Hornet"
+ tsa_equipment_F18AXU_short:0 "§GF-18AX§!"
+ asa_equipment_A6U:0 "§YA-6§! Intruder"
+ asa_equipment_A6U_short:0 "§YA-6§!"
+ asa_equipment_A6U_desc:0 "§YGen 1 ASA§! (1977) The A-6 is an amphibious assault craft with many fixed armaments for close quarters combat. Unlike TSFs, it does not have a jump unit, and is instead limited to short distance jumps by using a rocket motor. It mainly conducts long-range operations underwater in conjunction with Swordfish-class support submarines."
+ asa_equipment_T81U:0 "§YType-81§! Wadatsumi"
+ asa_equipment_T81U_short:0 "§YType-81§!"
+ asa_equipment_T81U_desc:0 "§YGen 1 ASA§! (1981) A modification of the A-6, its suppressive ability when landing was increased in exchange for its underwater movement range, by replacing the quadruple 36mm autocannons on each arm with a sextuple version"
+
 
  ### TSF 94 Series ###
  tsf_equipment_T94U:0 "TSF-Type 94 Shiranui"

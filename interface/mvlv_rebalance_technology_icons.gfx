@@ -30,6 +30,16 @@ spriteTypes = {
     texturefile = "gfx/interface/technologies/F-4J.dds"
   }
 
+  SpriteType = {
+    name = "GFX_A6U_medium"
+    texturefile = "gfx/interface/technologies/A-6.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_T81U_medium"
+    texturefile = "gfx/interface/technologies/A-6J.dds"
+  }
+
 	SpriteType = {
     name = "GFX_M29U_medium"
     texturefile = "gfx/interface/technologies/Mig-29.dds"
