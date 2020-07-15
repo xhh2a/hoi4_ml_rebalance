@@ -451,6 +451,18 @@
 # AFR_tsf_equipment_3_short:0 "F-14Ex"
 # AFR_tsf_equipment_3_desc:0 "イランとアメリカの共同開発で開発されたF-14の改修機。フェニックスミサイルの運用機能を排除し、スラスターを増設して中近距離戦向きの機体となった。"
 
+ ### New Mechanics ###
+ COMBAT_ARMOR_DESC:0 "$PIERCING|H$ of $TOTAL|H$ Enemy Divisions can counter this Division's agility."
+ COMBAT_PIERCING_DESC:0 "This Division can successfully hit $PIERCING|H$ of $TOTAL|H$ Enemy Divisions."
+ PIERCING_COMBAT_DESC:0 "If attacking an enemy with higher Agility than this division has Dexterity, attacks are halved."
+ STAT_COMMON_ARMOR:0 "Agility: "
+ STAT_COMMON_ARMOR_DESC:0 "Having §HAgility§! that is higher than the opponents §HDexterity§! value makes you take less damage and also makes it possible to perform more attacks in combat as the unit has more freedom of movement."
+ STAT_COMMON_ARMOR_VALUE:0 "$VALUE|H1$"
+ STAT_COMMON_ARMOR_DIFF:0 " $VALUE|=+1$"
+ STAT_COMMON_PIERCING:0 "Dexterity: "
+ STAT_COMMON_PIERCING_DESC:0 "Having equal or greater §HDexterity§! to the targets §HAgility§! value allow you to do more damage and more effectively pin down their quick forces"
+ STAT_COMMON_PIERCING_VALUE:0 "$VALUE|H1$"
+ STAT_COMMON_PIERCING_DIFF:0 " $VALUE|=+1$"
  ### NEW TREE ###
  ### TSF F4 Series ###
  tsf_equipment_F4U:0 "§YF-4§! Phantom"
@@ -559,7 +571,9 @@
  asa_equipment_T81U:0 "§YType-81§! Wadatsumi"
  asa_equipment_T81U_short:0 "§YType-81§!"
  asa_equipment_T81U_desc:0 "§YGen 1 ASA§! (1981) A modification of the A-6, its suppressive ability when landing was increased in exchange for its underwater movement range, by replacing the quadruple 36mm autocannons on each arm with a sextuple version"
-
+ tsa_equipment_A10U:0 "§YA-10§! Thunderbolt II"
+ tsa_equipment_A10U_short:0 "§YA-10§!"
+ tsa_equipment_A10U_desc:0 "§YGen 1 TSA§! (1978) The A-10 Thunderbolt II pushed the concepts of heavy fire power and armor, to the limits. Its supply was prioritized to the European NATO forces, which were facing worsening battle conditions at the time. As expected, its low mobility were panned by frontline Surface Pilots. However, its high survivability in dense close quarters combat, and its firepower, outperforming a flight of F-4 Phantoms, were well received by both the East and West German armies, which had taken on city defenses"
 
  ### TSF 94 Series ###
  tsf_equipment_T94U:0 "TSF-Type 94 Shiranui"

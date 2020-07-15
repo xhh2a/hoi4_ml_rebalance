@@ -1842,6 +1842,10 @@ technologies = {
 	
 ###TSA###	
 	
+	# Extremly heavy armor variant
+	# Very short speed
+	# Improved suirvivability
+	# Cheap cost
 	A10U = {
 		enable_equipments = {
 			tsa_equipment_A10U
