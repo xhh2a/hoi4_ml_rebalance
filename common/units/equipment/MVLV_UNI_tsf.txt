@@ -65,7 +65,7 @@ equipments = {
 		armor_value = 50
 
 		#Offensive Abilities
-		soft_attack = 5
+		soft_attack = 10
 		hard_attack = 10
 		ap_attack = 60
 		air_attack = 5
@@ -104,7 +104,7 @@ equipments = {
 		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 10
+		soft_attack = 15
 		hard_attack = 15
 		ap_attack = 100
 		air_attack = 10
@@ -143,7 +143,7 @@ equipments = {
 		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 15
+		soft_attack = 20
 		hard_attack = 20
 		ap_attack = 125
 		air_attack = 15
@@ -200,7 +200,7 @@ equipments = {
   }
 
 	tsa_equipment = {
-		year = 1975
+		year = 1977
 
 		picture = archetype_MVLV_tsa
 		is_archetype = yes
@@ -215,27 +215,27 @@ equipments = {
 		upgrades = { }
 		
 		#Misc Abilities
-		maximum_speed = 8
-		reliability = 0.8
+		maximum_speed = 14
+		reliability = 0.9
 
 		#Defensive Abilities
-		defense = 65
-		breakthrough = 45
-		hardness = 0.99
-		armor_value = 100
+		defense = 20
+		breakthrough = 40
+		hardness = 0.85
+		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 150
-		hard_attack = 10
-		ap_attack = 55
-		air_attack = 100
+		soft_attack = 10
+		hard_attack = 15
+		ap_attack = 100
+		air_attack = 10
 
 		#Space taken in convoy
 		lend_lease_cost = 5
 		
-		build_cost_ic = 55
+		build_cost_ic = 25
 		resources = {
-			tungsten = 1
+			aluminium = 2
 			steel = 1
 		}
 	}
@@ -312,7 +312,7 @@ equipments = {
     defense = 11
 
 		#Offensive Abilities
-		soft_attack = 7
+		soft_attack = 12
 	
 		build_cost_ic = 14.5
 	}
@@ -336,7 +336,7 @@ equipments = {
 		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 4
+		soft_attack = 9
 		hard_attack = 9
 	
 		build_cost_ic = 14 # Cheaper Build
@@ -362,7 +362,7 @@ equipments = {
 		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 5
+		soft_attack = 10
 		hard_attack = 10
 		ap_attack = 65
 		air_attack = 7 # Improved anti-laser detection
@@ -453,7 +453,7 @@ equipments = {
 		armor_value = 77
 
 		#Offensive Abilities
-		soft_attack = 11
+		soft_attack = 16
 		hard_attack = 14
 		ap_attack = 95 # Smaller more nimble
 		air_attack = 5
@@ -465,8 +465,9 @@ equipments = {
 		}
 	}
 
-	# TODO
 	#F-16C, Page 82#
+	# Collaboration between Isreal and China
+	# Focus on CQC
 	tsf_equipment_F16CU = {
 		year = 1991
 
@@ -477,24 +478,29 @@ equipments = {
 			tsf_equipment_F16U
 		}
 		is_convertable = yes
-		#Misc Abilities
+		# Misc Abilities
+		maximum_speed = 15
+		reliability = 0.95
 
 		#Defensive Abilities
-		defense = 70
-		breakthrough = 50
-		hardness = 0.99
-		armor_value = 72
+		defense = 29
+		breakthrough = 43
+		hardness = 0.85
+		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 60
-		hard_attack = 45
-		ap_attack = 105
-		air_attack = 120
+		soft_attack = 23
+		hard_attack = 15
+		ap_attack = 115
+		air_attack = 6
 
-		build_cost_ic = 50
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 33.5
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 3
+			steel = 2
 		}
 	}
 
@@ -673,7 +679,7 @@ equipments = {
 		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 11
+		soft_attack = 16
 		hard_attack = 13
 		ap_attack = 70
 		air_attack = 7
@@ -711,7 +717,7 @@ equipments = {
 		armor_value = 82
 
 		#Offensive Abilities
-		soft_attack = 13
+		soft_attack = 18
 		hard_attack = 15
 		ap_attack = 85
 		air_attack = 9
@@ -721,6 +727,7 @@ equipments = {
 		resources = {
 			aluminium = 2
 			steel = 2
+			tungsten = 1
 		}
 	}
 
@@ -747,7 +754,7 @@ equipments = {
 		armor_value = 85
 
 		#Offensive Abilities
-		soft_attack = 12
+		soft_attack = 17
 		air_attack = 11
 
 		build_cost_ic = 27
@@ -776,7 +783,7 @@ equipments = {
 		armor_value = 95
 
 		#Offensive Abilities
-		soft_attack = 15
+		soft_attack = 20
 		hard_attack = 16
 		air_attack = 14
 
@@ -807,7 +814,7 @@ equipments = {
 		armor_value = 97
 
 		#Offensive Abilities
-		soft_attack = 15
+		soft_attack = 20
 		hard_attack = 19
 		ap_attack = 120
 		air_attack = 14
@@ -843,6 +850,9 @@ equipments = {
 		breakthrough = 59
 		hardness = 0.94
 		armor_value = 102
+
+		hard_attack = 22
+		soft_attack = 22
 
 		build_cost_ic = 43
 		resources = {
@@ -1229,7 +1239,7 @@ equipments = {
 		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 9
+		soft_attack = 14
 		hard_attack = 13
 		ap_attack = 80
 		air_attack = 7
@@ -1265,7 +1275,7 @@ equipments = {
 		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 10
+		soft_attack = 15
 		hard_attack = 13
 		ap_attack = 85
 		air_attack = 8
@@ -1300,7 +1310,7 @@ equipments = {
 		breakthrough = 40
 
 		#Offensive Abilities
-		soft_attack = 12
+		soft_attack = 17
 		hard_attack = 13
 		ap_attack = 90
 		air_attack = 8
@@ -1335,7 +1345,7 @@ equipments = {
 		armor_value = 87
 
 		#Offensive Abilities
-		soft_attack = 17
+		soft_attack = 22
 
 		resources = {
 			aluminium = 2
@@ -1372,7 +1382,7 @@ equipments = {
 		armor_value = 92
 
 		#Offensive Abilities
-		soft_attack = 11
+		soft_attack = 16
 		hard_attack = 14
 		ap_attack = 100
 		air_attack = 12
@@ -1410,8 +1420,8 @@ equipments = {
 		armor_value = 96
 
 		#Offensive Abilities
-		soft_attack = 14
-		hard_attack = 16
+		soft_attack = 19
+		hard_attack = 18
 		ap_attack = 110
 		air_attack = 14
 	
@@ -1449,7 +1459,7 @@ equipments = {
 		armor_value = 95
 
 		#Offensive Abilities
-		soft_attack = 20
+		soft_attack = 25
 		hard_attack = 16
 		ap_attack = 120
 		air_attack = 12
@@ -1485,7 +1495,7 @@ equipments = {
 		ap_attack = 270
 		air_attack = 1270
 
-		build_cost_ic = 100
+		build_cost_ic = 200
 		resources = {
 			aluminium = 4
 			steel = 1
@@ -1753,8 +1763,8 @@ equipments = {
 		build_cost_ic = 27
 	}
 
-	# TODO
 	# F-14Ex, Page 78 #
+	# Better than the F15C, but not as good as F18E, peddled off to Iran
 	tsa_equipment_F14EU = {
 		year = 2001
 
@@ -1764,32 +1774,32 @@ equipments = {
 		priority = 17
 		visual_level = 0
 		can_convert_from = { 
-			tsa_equipment_F14U 
+			tsa_equipment_F14U
 		}
 		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 15
-		reliability = 0.8
+		maximum_speed = 13
+		reliability = 0.9
 
 		#Defensive Abilities
-		defense = 65
-		breakthrough = 80
-		hardness = 0.99
-		armor_value = 75
+		defense = 29
+		breakthrough = 38
+		hardness = 0.85
+		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 80
-		hard_attack =70
-		ap_attack = 155
-		air_attack = 150
+		soft_attack = 13
+		hard_attack = 15
+		ap_attack = 90
+		air_attack = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 50
+		lend_lease_cost = 5
 		
-		build_cost_ic = 75
+		build_cost_ic = 33 # Was expensive
 		resources = {
-			aluminium = 1
+			aluminium = 2
 			steel = 1
+			tungsten = 1
 		}
 	}
 
@@ -1827,8 +1837,8 @@ equipments = {
 		}
 	}
 
-	# TODO
-	#F-18EF#	
+	#F-18EF#
+	# Page 76, better than the F-14E. Redesign. New Materials. New Jump, more armor, actual weapons
 	tsa_equipment_F18EFU = {
 		year = 1994
 
@@ -1840,29 +1850,29 @@ equipments = {
 			tsa_equipment_F18U 
 		}
 		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
+		# Misc Abilities
+		maximum_speed = 16
+		reliability = 0.95
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 65
-		hardness = 0.99
-		armor_value = 75
+		defense = 27
+		breakthrough = 39
+		hardness = 0.85
+		armor_value = 85
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 60
-		ap_attack = 125
-		air_attack = 170
+		soft_attack = 16
+		hard_attack = 14
+		ap_attack = 95
+		air_attack = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 50
+		lend_lease_cost = 5
 		
-		build_cost_ic = 65
+		build_cost_ic = 35
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 3
+			steel = 2
 		}
 	}
 

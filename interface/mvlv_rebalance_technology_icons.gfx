@@ -81,6 +81,21 @@ spriteTypes = {
     texturefile = "gfx/interface/technologies/F-15E.dds"
   }
 
+  SpriteType = {
+    name = "GFX_CHI_F16CU_medium"
+    texturefile = "gfx/interface/technologies/J-10.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_F16CU_medium"
+    texturefile = "gfx/interface/technologies/lavi.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_F18EFU_medium"
+    texturefile = "gfx/interface/technologies/F-18E.dds"
+  }
+
 	SpriteType = {
     name = "GFX_M31U_medium"
     texturefile = "gfx/interface/technologies/Mig-31.dds"
@@ -149,6 +164,11 @@ spriteTypes = {
   SpriteType = {
     name = "GFX_M35U_medium"
     texturefile = "gfx/interface/technologies/Mig-35.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_SU37U_medium"
+    texturefile = "gfx/interface/technologies/Su-37UB.dds"
   }
 
   SpriteType = {

@@ -164,7 +164,7 @@ equipments = {
 		max_strength = 40
 
 		#Defensive Abilities
-		defense = 40
+		defense = 35
 		breakthrough = 30
 		hardness = 0.55
 		armor_value = 85

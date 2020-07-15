@@ -520,14 +520,20 @@
  tsf_equipment_M31U_desc:0 "§CGen 2§! (1990) Mikoyam Guluvich began to develop the MiG-31 by upgrading the MiG-25 so that it could use the AIM-54 Phoenix, an American anti-BETA cluster missile. The retrofitting of American-made avionics accompanying the AIM-54's adoption allowed for greater abilities in detection and electronic warfare, as well as an astonishing increase in the craft's own capabilities, like its responsiveness"
 
  ### TSF/TSA F14 Series ###
+ tsa_equipment_F14U:0 "§CF-14§! Tomcat"
+ tsa_equipment_F14U_short:0 "§CF-14§!"
+ tsa_equipment_F14U_desc:0 "§CGen 2 TSA§! (1982) The F-14 Tomcat was the world's first 2nd generation TSF. It was expected to be used in offshore deployment forces, centering around mobile carrier task forces, and it mainly conducts landing support by using long range missile attacks. The craft was also designed with medium to close range area control combat in mind"
+ tsa_equipment_F14EU:0 "§CF-14Ex§! Super Tomcat"
+ tsa_equipment_F14EU_short:0 "§CF-14Ex§!"
+ tsa_equipment_F14EU_desc:0 "§CGen 2 TSA§! (2001) Northrock Grunnan proposed the 'Super Tomcat Program' to the Navy, which would upgrade the existing F-14 Tomcat into a 2.5th generation craft through refurbishments alone. However the program was shelved as the refurbished F-18E/F Super Hornet was completed with better specifications."
 
  ### TSF F16 Series ###
  tsf_equipment_F16U:0 "§CF-16§! Fighting Falcon"
  tsf_equipment_F16U_short:0 "§CF-16§!"
  tsf_equipment_F16U_desc:0 "§CGen 2§! (1986) Compared to the F-15 Eagle, it was smaller and lighter, giving it less design space for further improvements. However, it had adopted many innovative technologies across many of its parts, and demonstrated extremely high mobility and maneuverability during combat"
- tsf_equipment_F16CU:0 "§CF-16C§!"
+ tsf_equipment_F16CU:0 "§CF-16C§! Lavi/Jian-10"
  tsf_equipment_F16CU_short:0 "§CF-16C§!"
- tsf_equipment_F16CU_desc:0 "MISSING NEED TO BE BALANCED"
+ tsf_equipment_F16CU_desc:0 "§CGen 2§! (1994) Israel, which had hoped to reclaim its territory ahead of its Arab neighbors, was dissatisfied with the close quarters dogfighting abilities and mobility of the TSFs supplied to them by the US. Without sufficient funds, Israel was essentially forced to suspend the program. Development was able to continue with a proposal for a collaborative development from the Third United Front, which was hoping to launch its own independent TSF development"
  CHI_tsf_equipment_F16CU:0 "§CJian 10§!/Lavi"
  CHI_tsf_equipment_F16CU_short:0 "§CJ-10§!/Lavi"
  AFR_tsf_equipment_F16CU:0 "§CLavi§!/Jian-10"
@@ -536,12 +542,12 @@
  USA_tsf_equipment_F16CU_desc:0 "The F-16XL was a prototype built for the Dual-Role TSF Program. The F-15E Strike Eagle was selected instead, but data that had been collected by the F-16XL has seen use in the development of the F-35 Lightning II"
 
  ### TSF/TSA F18 Series ###
- tsa_equipment_F18U:0 "F-18 Hornet"
- tsa_equipment_F18U_short:0 "F-18"
- tsa_equipment_F18U_desc:0 "F-18はマクダエル・ドグラム社が開発した第2世代戦術機である。F-15やF-14に比して費用対効果に優れた多任務戦術機として評価され、オーストラリアを始めとする数ヶ国でF-4を置換する主力機として制式採用された。だが、実戦に於ける垂直上昇能力など、機体強度に比例する機動性や運動性が他の主力機に見劣りするなどの理由から、前線衛士の性能評価は凡庸なものに止まった。"
- tsa_equipment_F18EFU:0 "F-18E/F Super Hornet"
- tsa_equipment_F18EFU_short:0 "F-18E/F"
- tsa_equipment_F18EFU_desc:0 "F-18E/Fスーパーホーネットは、マクダエル・ドグラム社がF-18にF-14を凌駕する性能を与えるべく再設計とも言える大規模改修を行った第2.5世代戦術機である。数値上の個別性能ではF-14の優位性は未だ揺るがないが、多様な運用局面に於ける総合的な性能評価となればF-18E/FはF-14に優るとも劣らず、その低い性能評価に免罪符の如く付きまとってきた「コストパフォーマンス」という言葉は、同機の優秀性を強調する意味で用いられるだろう。"
+ tsa_equipment_F18U:0 "§CF-18§! Hornet"
+ tsa_equipment_F18U_short:0 "§CF-18§!"
+ tsa_equipment_F18U_desc:0 "§CGen 2 TSA§! (1987) The US Navy, which was being pressured by the significant procurement and operating costs of the F-14 Tomcat, turned their attention to this craft's cost-effective armament mounting ability and its balance of operational time and mobility."
+ tsa_equipment_F18EFU:0 "§CF-18E/F§! Super Hornet"
+ tsa_equipment_F18EFU_short:0 "§CF-18E/F§!"
+ tsa_equipment_F18EFU_desc:0 "§CGen 2 TSA§! (1994) The F-18E/F Super Hornet is a 2.5th generation TSF based on the F-18 Hornet. The F-18 Hornet itself was met with a mediocre reception, but McDaell Doglam responded by proposing the 'Hornet 2000 Program', which was based on the F-15 Eagle refurbishment program. New materials and a redesign helped to improve the airframe's rigidity and toughness, and this also helped to increase the output of the jump unit's main engine. Its vertical climbing ability, which was once considered its weakness, was also dramatically improved. By increasing the thrust-weight ratio and the size of the airframe, it could solve the craft's armament mounting problem"
  CHI_tsa_equipment_F18U:0 "Ching-kuo"
  CHI_tsa_equipment_F18U_short:0 "F-CK-1"
  GEA_tsa_equipment_F18EFU:0 "F-18AX Raging Hornet"
@@ -569,7 +575,7 @@
  tsf_equipment_RAFU_desc:0 "§GGen 3§! (1998) The Rafale is a 3rd generation TSF specializing in medium to close range combat. France embraced simplifications across the craft, but remained uncompromising in fundamental parts such as the control block, the armor material, carbonic actuators, and the shells used."
  tsf_equipment_EF2000U:0 "§GEuro Fightas 2000§! Typhoon"
  tsf_equipment_EF2000U_short:0 "§GEF-2000§!"
- tsf_equipment_EF2000U_desc:0 "§GGen 3§! (1998) In 1980, development commenced under the European Combat Tactical Surface Fighter Program. However with Europe overrun by BETA, development suffered significant delays. In 1998, the advance mass production model, the EF-2000 underwent trails, and entered service in 2000. Much like crafts from the Soviet Union, with their vast plains and many hives, the EF-2000 Typhoon was designed with not only hive capturing in mind, but also dense, close quarters dogfighting"
+ tsf_equipment_EF2000U_desc:0 "§GGen 3§! (1998/2000) In 1980, development commenced under the European Combat Tactical Surface Fighter Program. However with Europe overrun by BETA, development suffered significant delays. In 1998, the advance mass production model, the EF-2000 underwent trails, and entered service in 2000. Much like crafts from the Soviet Union, with their vast plains and many hives, the EF-2000 Typhoon was designed with not only hive capturing in mind, but also dense, close quarters dogfighting"
 
  ### MiG-29 Series ###
  tsf_equipment_M29U:0 "§CMikoyam Guluvich 29§! Lastochka"

@@ -26,6 +26,7 @@
 		# TSA/ASA
 		F14U = 1
 		F18U = 1
+		F18EFU = 1
 		A6U = 1
 		A10U = 1
 
@@ -49,6 +50,7 @@
 		F15U = 1
 		F16U = 1
 		F15EU = 1
+
 
 		# JAP
 		F4J = 1

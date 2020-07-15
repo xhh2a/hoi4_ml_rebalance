@@ -1,6 +1,6 @@
 ﻿l_english:
  UNI_tsf_folder:0 "TSF"
- UNI_tsf_folder_desc:0 "Tactical Surface Fighters were developed to fight BETA. The TSF is a new conceptual weapon primarily used in combat where air support is unavailable."
+ UNI_tsf_folder_desc:0 "Tactical Surface Fighters were developed to fight BETA. The TSF is a new conceptual weapon primarily used in combat where air support is unavailable. Four variants are available. TSF, TSA, ASA, and Elite. TSA and ASA are amphibious versions designed for naval warfare. ASA do not have a jump pack and are slower on land. while TSA are all terrain craft. Elite TSF are reserved for the special forces as well as hive infiltration and have much higher production cost."
  UNI_basic_concept_research:0 "NCAF-X1"
  UNI_basic_concept_research_desc:0 "The NCAF-X1 and Feedback Protectors were precursors to modern TSFs, a leagacy of the Lunar War."
  SOV_UNI_basic_concept_research:0 "Sufoni-11"

@@ -714,7 +714,7 @@ technologies = {
 			tsa_equipment_F18EFU
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 		start_year = 1994
 
 		folder = {
