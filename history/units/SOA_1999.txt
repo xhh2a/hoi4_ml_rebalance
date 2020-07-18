@@ -1,0 +1,6 @@
+﻿# Allow reuse of templates
+instant_effect = {
+	unlock_1999_starting_technology = yes
+	load_oob = "1999_templates"
+	load_oob = "1999_SOA"
+}
