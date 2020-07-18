@@ -102,3 +102,63 @@ has_tsf_third_gen_tech = {
     has_tech = F15SEU
   }
 }
+
+can_research_soviet_tsf = {
+  NOT = {
+    OR = {
+      tag = USA
+      tag = EUR
+      tag = CAN
+      tag = CEA
+      tag = SOA
+      tag = OSE
+      tag = JAP
+    }
+  }
+}
+
+can_research_japan_tsf = {
+  OR = {
+    tag = UNI
+    tag = JAP
+  }
+}
+
+can_research_japan_exclusive = {
+  tag = JAP
+}
+
+can_research_us_tsf = {
+  NOT = {
+    OR = {
+      tag = SOV
+      tag = EEA
+    }
+  }
+}
+
+can_research_us_exclusive = {
+  tag = USA
+}
+
+can_research_euro_tsf = {
+  NOT = {
+    OR = {
+      tag = SOV
+      tag = EEA
+      tag = CHI
+      tag = JAP
+      tag = USA
+      tag = CEA
+      tag = SOA
+    }
+  }
+}
+
+can_research_f4variant_tsf = {
+  OR = {
+    tag = JAP
+    tag = UNI
+    tag = AFR
+  }
+}

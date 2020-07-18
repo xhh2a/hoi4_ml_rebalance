@@ -1,6 +1,7 @@
 @gen_one_tsf_division = "Gen 1 TSF"
 @gen_two_tsf_division = "Gen 2 TSF"
 @gen_three_tsf_division = "Gen 3 TSF"
+@tsa_division = "TSA Division"
 
 unlock_tsf_gen_1 = {
   limit = {
@@ -8,7 +9,7 @@ unlock_tsf_gen_1 = {
       OR = {
         has_template_containing_unit = tsf_gen_one_battalion
         has_variable = THIS.unlocked_tsf_gen_1
-        has_template = @gen_two_tsf_division
+        has_template = @gen_one_tsf_division
       }
     }
     load_oob = "unlock_tsf_gen_1"
@@ -45,59 +46,161 @@ unlock_tsf_gen_3 = {
   }
 }
 
+unlock_tsf_gen_3 = {
+  limit = {
+    NOT = {
+      OR = {
+        has_template_containing_unit = MVLV_tsa_battalion
+        has_variable = THIS.unlocked_tsa
+        has_template = @tsa_division
+      }
+    }
+    load_oob = "unlock_tsa"
+    set_variable = { THIS.unlocked_tsa }
+  }
+}
+
 # Using this instead so we don't need to override country file with base mod
-unlock_starting_technology = {
-  set_technology = { 
+unlock_1999_starting_technology = {
+  # Common
+  set_technology = {
     ###TSF
     UNI_basic_concept_research = 1
     F4U = 1
     F5U = 1
-
-    # TSA/ASA
-    F14U = 1
-    F18U = 1
-    F18EFU = 1
-    A6U = 1
-    T81 = 1
-    A10U = 1
-
-    # EU
-    M2000U = 1
-    JA37U = 1
-    JA39U = 1
-    RAFU = 1
-    F5AU = 1
-
-    # SOV
-    F4R = 1
-    M23U = 1
-    M27U = 1
-    M29U = 1
-    M31U = 1
-    SU27U = 1
-    SU37U = 1
-
-    # USA
     F15U = 1
-    F16U = 1
-    F15EU = 1
+    # TSA/ASA
+    A6U = 1
+    A10U = 1
+  }
+  # EURO
+  if = {
+    limit = {
+      can_research_euro_tsf = yes
+    }
+    set_technology = {
+      M2000U = 1
+      JA37U = 1
+      JA39U = 1
+      F5AU = 1
+    }
+  }
+  # Don't give latest EUR tech to all countries
+  if = {
+    limit = {
+      OR = {
+        tag = EUR
+        tag = UNI
+      }
+    }
+    set_technology = {
+      RAFU = 1
+    }
+  }
+  # USA TSF
+  if = {
+    limit = {
+      can_research_us_tsf = yes
+    }
+    set_technology = {
+      # TSA
+      F14U = 1
+      F18U = 1
+      F18EFU = 1
+      # TSF
+      F16U = 1
+      F15EU = 1 
+    }
+  }
+  # SOV TSF
+  if = {
+    limit = {
+      can_research_soviet_tsf = yes
+    }
+    set_technology = {
+      F4R = 1
+      M23U = 1
+      M27U = 1
+      M29U = 1
+      M31U = 1
+      SU27U = 1
+    }
+  }
+  # Don't give latest SOV to all countries
+  if = {
+    limit = {
+      OR = {
+        tag = UNI
+        tag = EEA
+        tag = SOV
+      }
+    }
+    set_technology = {
+      SU37U = 1
+    }
+  }
+  # Japan TSF
+  if = {
+    limit = {
+      can_research_japan_tsf = yes
+    }
+    set_technology = {
+      # ASA
+      T81U = 1
 
-
-    # JAP
-    F4J = 1
-    T94U = 1
-    T97U = 1
-    T00FU = 1
-
+      T94U = 1
+      T941C = 1
+      T97U = 1
+    }
+  }
+  # Export 4J TSF
+  if = {
+    limit = {
+      can_research_f4variant_tsf = yes
+    }
+    set_technology = {
+      F4J = 1
+    }
+  }
+  # F16C Lavi/Jian
+  if = {
+    limit = {
+      OR = {
+        tag = AFR
+        tag = CHI
+      }
+    }
+    set_technology = {
+      F16CU = 1
+    }
+  }
+  if = {
+    limit = {
+      can_research_japan_exclusive = yes
+    }
+    set_technology = {
+      F4JK = 1
+      F15J = 1
+    }
+  }
+  # Secret Weapons
+  if = {
+    limit = {
+      tag = UNI
+    }
+    set_technology = {
+      MVLV_XG_basic_concept_research = 1
+      MVLV_xg_2nd = 1
+    }
+  }
+  # Misc Technology
+  set_technology = { 
     # Misc TODO
     MVLV_space_tec = 1
     interwar_antiair = 1
     tech_special_forces = 1
     ###陸軍ドクトリン
     mobile_warfare = 1
-
-    MVLV_XG_basic_concept_research = 1
-    MVLV_xg_2nd = 1
     generic_tsa_1st = 1
 
     basic_medium_tank = 1

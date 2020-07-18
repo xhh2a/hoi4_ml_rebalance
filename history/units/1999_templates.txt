@@ -1,10 +1,10 @@
-@armor_division = "Armor Support"
+@support_division = "Armor Support"
 @amphibious_tsf_division = "Amphibious TSF"
 @defensive_division = "Defensive Division"
 
 # Second Wave
 division_template = {
-	name = @armor_division
+	name = @support_division
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
@@ -55,4 +55,5 @@ instant_effect = {
 	load_oob = "unlock_tsf_gen_1"
 	load_oob = "unlock_tsf_gen_2"
 	load_oob = "unlock_tsf_gen_3"
+	load_oob = "unlock_tsa"
 }

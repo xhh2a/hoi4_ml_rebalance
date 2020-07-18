@@ -130,11 +130,7 @@ technologies = {
 		start_year = 1977
 
 		allow_branch = {
-			or = {
-				tag = JAP
-				tag = UNI
-				tag = AFR
-			}
+			can_research_f4variant_tsf = yes
 		}
 
 		folder = {
@@ -159,7 +155,7 @@ technologies = {
 		start_year = 1982
 
 		allow_branch = {
-			tag = JAP
+			can_research_japan_exclusive = yes
 		}
 
 		folder = {
@@ -182,12 +178,6 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1976
-
-		allow_branch = {
-			not = { 
-				tag = CHI
-			}
-		}
 
 		folder = {
 			name = UNI_tsf_folder
@@ -219,9 +209,12 @@ technologies = {
 		start_year = 1982
 
 		allow_branch = {
-			NOT = {
-				tag = SOV
-			}
+			can_research_us_tsf = yes
+		}
+
+		on_research_complete = {
+		  unlock_tsa = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		sub_technologies = {
@@ -258,10 +251,7 @@ technologies = {
 		start_year = 2001
 
 		allow_branch = {
-			or = {
-			  tag = UNI
-			  tag = USA
-			}
+			can_research_us_exclusive = yes
 		}
 
 		folder = {
@@ -358,7 +348,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			tag = JAP
+			can_research_japan_exclusive = yes
 		}
 
 		show_effect_as_desc = no
@@ -384,17 +374,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			NOT = {
-				OR = {
-					tag = USA
-					tag = EUR
-					tag = CAN
-					tag = CEA
-					tag = SOA
-					tag = OSE
-					tag = JAP
-				}
-			}
+			can_research_soviet_tsf = yes
 		}
 
 		show_effect_as_desc = no
@@ -423,16 +403,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			NOT = {
-				OR = {
-					tag = SOV
-					tag = CHI
-					tag = JAP
-					tag = USA
-					tag = CEA
-					tag = SOA
-				}
-			}
+			can_research_euro_tsf = yes
 		}
 
 		path = {
@@ -673,9 +644,7 @@ technologies = {
 		start_year = 1986
 
 		allow_branch = {
-			not = {
-				tag = SOV
-			}
+			can_research_us_tsf = yes
 		}
 
 		sub_technologies = {
@@ -859,9 +828,7 @@ technologies = {
 		start_year = 1995
 
 		allow_branch = {
-			not = {
-				tag = SOV
-			}
+			can_research_us_tsf = yes
 		}
 
 		path = {
@@ -999,10 +966,7 @@ technologies = {
 		start_year = 1994
 
 		allow_branch = {
-			OR = {
-				tag = UNI
-				tag = JAP
-			}
+			can_research_japan_tsf = yes
 		}
 
 		sub_technologies = {
@@ -1119,7 +1083,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			tag = JAP
+			can_research_japan_exclusive = yes
 		}
 
 		research_cost = 0.5
@@ -1147,7 +1111,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			tag = JAP
+			can_research_japan_exclusive = yes
 		}
 
 		research_cost = 0.5
@@ -1312,17 +1276,7 @@ technologies = {
 		start_year = 1975
 
 		allow_branch = {
-			NOT = {
-				OR = {
-					tag = USA
-					tag = EUR
-					tag = CAN
-					tag = CEA
-					tag = SOA
-					tag = OSE
-					tag = JAP
-				}
-			}
+			can_research_soviet_tsf = yes
 		}
 
 		path = {
@@ -1432,17 +1386,7 @@ technologies = {
 		}
 
 		allow_branch = {
-			NOT = {
-				OR = {
-					tag = USA
-					tag = EUR
-					tag = CAN
-					tag = CEA
-					tag = SOA
-					tag = OSE
-					tag = JAP
-				}
-			}
+			can_research_soviet_tsf = yes
 		}
 
 		folder = {
@@ -1633,7 +1577,7 @@ technologies = {
 		start_year = 2000
 
 		allow_branch = {
-			tag = USA
+			can_research_us_exclusive = yes
 		}
 
 		XOR = {
@@ -1672,7 +1616,7 @@ technologies = {
 		start_year = 2000
 
 		allow_branch = {
-			tag = USA
+			can_research_us_exclusive = yes
 		}
 
 		XOR = {
@@ -1919,10 +1863,7 @@ technologies = {
 		start_year = 1981
 
 		allow_branch = {
-			OR = {
-				tag = UNI
-				tag = JAP
-			}
+			can_research_japan_tsf = yes
 		}
 		folder = {
 			name = UNI_tsf_folder
@@ -1975,6 +1916,11 @@ technologies = {
 
 		enable_subunits = {
 			MVLV_tsa_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsa = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
