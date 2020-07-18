@@ -357,7 +357,7 @@
  tsa_equipment_A10U_short:0 "§YA-10§!"
  tsa_equipment_A10U_desc:0 "§YGen 1 TSA§! (1978) The A-10 Thunderbolt II pushed the concepts of heavy fire power and armor, to the limits. Its supply was prioritized to the European NATO forces, which were facing worsening battle conditions at the time. As expected, its low mobility were panned by frontline Surface Pilots. However, its high survivability in dense close quarters combat, and its firepower, outperforming a flight of F-4 Phantoms, were well received by both the East and West German armies, which had taken on city defenses"
  asa_equipment_A12U:0 "§GA-12§! Avenger"
- asa_equipment_A12U_short:0 "§GA-10§!"
+ asa_equipment_A12U_short:0 "§GA-12§!"
  asa_equipment_A12U_desc:0 "§GGen 3 ASA§! (1999) It sought to surpass the A-6 Intruder in suppressive abilities, resulting in it becoming more heavily armed. It is equipped with four multi-purpose armament storage modules, each of which can be mounted with a replaceable 120mm smoothbore cannon. Its fixed armaments include twin linked 36mm autocannons and 12.7mm heavy machine guns on each upper arm, as well as spiked manipulators for close quarters combat. Its procurement price rose after the absorption and merging of the developers, as well as the adoption of a complex variable transformation mechanism and advanced technology."
 
  ### TSF F22/F23 Series ###
@@ -429,6 +429,7 @@
  tsf_equipment_SU37U_desc:0 "§CGen 2§! (1997) By 1996, Sufoni was continuing its independent research and development of the Su-27M2 demonstrator trial craft. In order to avoid falling behind the west, they gave the 2nd Generation TSF the designation of Su-37. Its close quarters dogfighting abilities were further strengthened, and the number of blade vanes on each shoulder block was increased from two to four. Finally, vectoring thrusters were added to its waist block in order to increase mobility and maneuverability"
  tsf_equipment_SU47U:0 "§gSufoni 47§! Berkut"
  tsf_equipment_SU47U_short:0 "§gSU-47§!"
+ tsf_equipment_SU47U_desc:0 "§gElite§! (1999) Developed by Sufoni as frontline equipment for special forces specialized, the SU-47 focuses on dense dogfighting that occurs during combat to capture or suppress hives. It has actively introduced state-of-the-art technologies from the West, including cutting-edge avionics and OBL. Newly designed large main legs also increase the amount of fuel that could be stored in the craft's airframe, important in terms of hive capturing missions where supplies can't easily be obtained"
  ### Future ###
  tsf_equipment_F35U:0 "F-35"
  SOV_tsf_equipment_F35U:0 "SU-57"

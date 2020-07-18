@@ -1,0 +1,31 @@
+@gen_one_tsf_division = "Gen 1 TSF"
+
+if = {
+  limit = {
+    NOT = {
+      OR = {
+        has_template_containing_unit = tsf_gen_one_battalion
+        has_variable = THIS.unlocked_tsf_gen_1
+        has_template = @gen_one_tsf_division
+      }
+    }
+  }
+  division_template = {
+    name = @gen_one_tsf_division
+
+    regiments = {
+      tsf_gen_one_battalion= { x = 0 y = 0 }
+      tsf_gen_one_battalion= { x = 0 y = 1 }
+      tsf_gen_one_battalion= { x = 0 y = 2 }
+      tsf_gen_one_battalion= { x = 0 y = 3 }
+      tsf_gen_one_battalion= { x = 0 y = 4 }
+      medium_armor= { x = 1 y = 0 }
+      medium_armor= { x = 1 y = 1 }
+      medium_armor= { x = 1 y = 2 }
+      medium_armor= { x = 1 y = 3 }
+      medium_armor= { x = 1 y = 4 }
+    }
+    priority = 0
+  }
+  set_variable = { THIS.unlocked_tsf_gen_1 }
+}

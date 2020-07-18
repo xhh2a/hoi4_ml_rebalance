@@ -1,0 +1,112 @@
+@gen_one_tsf_division = "Gen 1 TSF"
+@gen_two_tsf_division = "Gen 2 TSF"
+@gen_three_tsf_division = "Gen 3 TSF"
+
+unlock_tsf_gen_1 = {
+  limit = {
+    NOT = {
+      OR = {
+        has_template_containing_unit = tsf_gen_one_battalion
+        has_variable = THIS.unlocked_tsf_gen_1
+        has_template = @gen_two_tsf_division
+      }
+    }
+    load_oob = "unlock_tsf_gen_1"
+    set_variable = { THIS.unlocked_tsf_gen_1 }
+  }
+
+}
+
+unlock_tsf_gen_2 = {
+  limit = {
+    NOT = {
+      OR = {
+        has_template_containing_unit = tsf_gen_two_battalion
+        has_variable = THIS.unlocked_tsf_gen_2
+        has_template = @gen_two_tsf_division
+      }
+    }
+    load_oob = "unlock_tsf_gen_2"
+    set_variable = { THIS.unlocked_tsf_gen_2 }
+  }
+}
+
+unlock_tsf_gen_3 = {
+  limit = {
+    NOT = {
+      OR = {
+        has_template_containing_unit = tsf_gen_three_battalion
+        has_variable = THIS.unlocked_tsf_gen_3
+        has_template = @gen_three_tsf_division
+      }
+    }
+    load_oob = "unlock_tsf_gen_3"
+    set_variable = { THIS.unlocked_tsf_gen_3 }
+  }
+}
+
+# Using this instead so we don't need to override country file with base mod
+unlock_starting_technology = {
+  set_technology = { 
+    ###TSF
+    UNI_basic_concept_research = 1
+    F4U = 1
+    F5U = 1
+
+    # TSA/ASA
+    F14U = 1
+    F18U = 1
+    F18EFU = 1
+    A6U = 1
+    T81 = 1
+    A10U = 1
+
+    # EU
+    M2000U = 1
+    JA37U = 1
+    JA39U = 1
+    RAFU = 1
+    F5AU = 1
+
+    # SOV
+    F4R = 1
+    M23U = 1
+    M27U = 1
+    M29U = 1
+    M31U = 1
+    SU27U = 1
+    SU37U = 1
+
+    # USA
+    F15U = 1
+    F16U = 1
+    F15EU = 1
+
+
+    # JAP
+    F4J = 1
+    T94U = 1
+    T97U = 1
+    T00FU = 1
+
+    # Misc TODO
+    MVLV_space_tec = 1
+    interwar_antiair = 1
+    tech_special_forces = 1
+    ###陸軍ドクトリン
+    mobile_warfare = 1
+
+    MVLV_XG_basic_concept_research = 1
+    MVLV_xg_2nd = 1
+    generic_tsa_1st = 1
+
+    basic_medium_tank = 1
+    
+    ###軍需・民需建築許可
+    MVLV_EnableBuilding_arms_factory = 1
+    MVLV_EnableBuilding_industrial_complex = 1
+
+    ###戦術###
+    human_combat_tactics = 1
+  }
+}

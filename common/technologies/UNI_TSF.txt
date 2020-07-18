@@ -60,6 +60,15 @@ technologies = {
 			tsf_equipment_F4U
 		}
 
+		enable_subunits = {
+			tsf_gen_one_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_1 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
 		research_cost = 2
 		start_year = 1974
 
@@ -202,6 +211,10 @@ technologies = {
 			tsa_equipment_F14U
 		}
 
+		enable_subunits = {
+			MVLV_tsa_battalion
+		}
+
 		research_cost = 2
 		start_year = 1982
 
@@ -270,6 +283,15 @@ technologies = {
 	F15U = {
 		enable_equipments = {
 			tsf_equipment_F15U
+		}
+
+		enable_subunits = {
+			tsf_gen_two_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_2 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -483,6 +505,15 @@ technologies = {
 			tsf_equipment_JA37U
 		}
 
+		enable_subunits = {
+		  tsf_gen_two_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_2 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
 		research_cost = 2
 		start_year = 1986
 
@@ -511,6 +542,15 @@ technologies = {
 
 		enable_equipments = {
 			tsf_equipment_JA39U
+		}
+
+		enable_subunits = {
+		  tsf_gen_three_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_3 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -618,6 +658,15 @@ technologies = {
 	F16U = {
 		enable_equipments = {
 			tsf_equipment_F16U
+		}
+
+		enable_subunits = {
+			tsf_gen_two_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_2 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -904,6 +953,15 @@ technologies = {
 			tsf_equipment_F15SEU
 		}
 
+		enable_subunits = {
+		  tsf_gen_three_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_3 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
 		research_cost = 2
 		start_year = 2002
 
@@ -926,6 +984,15 @@ technologies = {
 	T94U = {
 		enable_equipments = {
 			tsf_equipment_T94U
+		}
+
+		enable_subunits = {
+		  tsf_gen_three_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_3 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -1011,6 +1078,10 @@ technologies = {
 	T00CU = {
 		enable_equipments = {
 			tsf_equipment_T00CU
+		}
+
+		enable_subunits = {
+		  tsf_special_forces_battalion
 		}
 
 		research_cost = 4
@@ -1216,6 +1287,9 @@ technologies = {
     enable_equipments = {
 		  tsf_equipment_F4R
 	  }
+		enable_subunits = {
+		  tsf_gen_one_battalion
+		}
     on_research_complete = {
 			if = {
 				limit = {
@@ -1230,6 +1304,8 @@ technologies = {
 					technology = F4U
 				}
 			}
+			unlock_tsf_gen_1 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 1
@@ -1310,6 +1386,15 @@ technologies = {
 	M27U = {
 		enable_equipments = {
 			tsf_equipment_M27U
+		}
+
+		enable_subunits = {
+		  tsf_gen_two_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_2 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -1412,6 +1497,15 @@ technologies = {
 			tsf_equipment_M35U
 		}
 
+		enable_subunits = {
+		  tsf_gen_three_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_3 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
 		research_cost = 3
 		start_year = 2001
 
@@ -1445,7 +1539,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = @sufoni_column y = 11 }
+			position = { x = @sufoni_column y = 9 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1491,12 +1585,16 @@ technologies = {
 			tsf_equipment_SU47U
 		}
 
+		enable_subunits = {
+		  tsf_special_forces_battalion
+		}
+
 		research_cost = 4
 		start_year = 1999
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = @sufoni_column y = 13 }
+			position = { x = @sufoni_column y = 11 }
 		}
 
 		path = {
@@ -1520,6 +1618,15 @@ technologies = {
 
 		enable_equipments = {
 			tsf_equipment_F22U
+		}
+
+		enable_subunits = {
+		  tsf_gen_three_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_3 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -1550,6 +1657,15 @@ technologies = {
 
 		enable_equipments = {
 			tsf_equipment_F23U
+		}
+
+		enable_subunits = {
+		  tsf_gen_three_battalion
+		}
+
+		on_research_complete = {
+		  unlock_tsf_gen_3 = yes
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		research_cost = 2
@@ -1766,6 +1882,10 @@ technologies = {
 			asa_equipment_A6U
 		}
 
+		enable_subunits = {
+			MVLV_asa_battalion
+		}
+
 		research_cost = 2
 		start_year = 1977
 
@@ -1851,6 +1971,10 @@ technologies = {
 	A10U = {
 		enable_equipments = {
 			tsa_equipment_A10U
+		}
+
+		enable_subunits = {
+			MVLV_tsa_battalion
 		}
 
 		research_cost = 2
