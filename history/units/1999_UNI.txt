@@ -2,6 +2,7 @@
 @gen_two_tsf_division = "Gen 2 TSF"
 @gen_three_tsf_division = "Gen 3 TSF"
 @amphibious_tsf_division = "Amphibious TSF"
+@tsa_division = "TSA Division"
 @defensive_division = "Defensive Division"
 
 # Canon Total Deployed Strength 3 Million
