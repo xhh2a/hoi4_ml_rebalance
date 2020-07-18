@@ -900,7 +900,8 @@ equipments = {
 	}
 
 	## JAPAN LINE ###
-	# TODO
+	# Type 82
+	# Page 51
   tsf_equipment_F4JK = {
 		year = 1982
 
@@ -912,6 +913,27 @@ equipments = {
 			tsf_equipment_F4J
 		}
 		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 12
+
+		#Defensive Abilities
+    defense = 12
+		breakthrough = 26
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 10
+		ap_attack = 70
+		air_attack = 7 # Improved anti-laser detection
+	
+		build_cost_ic = 18
+
+		resources = {
+			aluminium = 2
+			steel = 1
+		}
 	}
 
 	# Type 97

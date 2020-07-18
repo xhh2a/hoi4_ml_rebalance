@@ -4,10 +4,10 @@ tags={
 	"Translation"
 }
 name="Muv Luv Rebalance"
-supported_version="1.9.*"
-path="/"
-
 picture="thumbnail.png"
 dependencies={
 	"muvluv sub"
 }
+supported_version="1.9.*"
+path="D:/"
+remote_file_id="2170086439"

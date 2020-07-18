@@ -146,6 +146,7 @@ technologies = {
 	}
 
   # Type 82/F4J Kai
+	# Page 50, improved melee, lower weight
 	F4JK = {
 		enable_equipments = {
 			tsf_equipment_F4JK

@@ -249,6 +249,9 @@
  AFR_tsf_equipment_F4J:0 "§YF-4E§! Phantom"
  AFR_tsf_equipment_F4J_short:0 "§YF-4E§!"
  AFR_tsf_equipment_F4J_desc:0 "§YGen 1§! (1977/1981) The final production model of the F-4 with specifications meant to be adapted to desert combat. By refitting its avionics and jump unit engine, and reducing the weight of the armor material, it has been granted quasi-2nd-generation capabilities."
+ tsf_equipment_F4JK:0 "§YF-4JK/TSF-Type 82 §! Kuikaku"
+ tsf_equipment_F4JK_short:0 "§YType-82 F-4JK§!"
+ tsf_equipment_F4JK_desc:0 "§YGen 1§! (1982) Based on the F-4J Gekishin, the F-4J Kai Zuikaku is a 1.5th generation craft that has been significantly refurbished for exclusive use by the Imperial Japanese Royal Guard. Many design changes were implemented to reduce the rate of crafts taking damage, such as developing new materials to significantly increase the toughness of the resin armor, and weight reductions to increase mobility and maneuverability "
  tsf_equipment_F4R:0 "§YF-4R§! Phantom"
  tsf_equipment_F4R_short:0 "§YF-4R§!"
  tsf_equipment_F4R_desc:0 "§YGen 1§! (1975) The F-4R was a cheaper export version of the F-4. It was developed by McDaell, an American corporation. At the time of its deployment in 1974, the CIWS-1A (Short Blade) and WS-16 (Assault Cannon) were simultaneously adopted as supporting armaments"
@@ -390,10 +393,10 @@
  tsf_equipment_T00RU_short:0 "§gType-00R§!"
  tsf_equipment_T00RU_desc:0 "§gElite§! (2000) As a variation of the Takemikazuchi, which is famous for disregarding production potential, maintainability, and procurement cost, the R Type has had even further modifications to it, essentially making it a one-off craft. Reserved for the Shogun, Regent Houses, and Royal Guard, the main engine and the jump unit have had their maximum output increased by 10 percent compared to the F Type"
  tsf_equipment_T04U:0 "§GXFJ-01a/TSF-Type 04§! Shiranui Second"
- tsf_equipment_T04U_short:0 "§GType 04§!"
- tsf_equipment_T04U_desc:0 "§GGen 3 TST§! (2003/2004) The XFJ Project aimed to overcome the limitations of the Type-94-1C by cooperating with US manufacturers. The jump unit's main engine was also retrofitted to one with higher output, the FE140, made by General Electronics. A test TSF was deployed in 2003 as part of Operation Sledgehammer, and production began in 2004."
+ tsf_equipment_T04U_short:0 "§GType-04§!"
+ tsf_equipment_T04U_desc:0 "§GGen 3§! (2003/2004) The XFJ Project aimed to overcome the limitations of the Type-94-1C by cooperating with US manufacturers. The jump unit's main engine was also retrofitted to one with higher output, the FE140, made by General Electronics. A test TSF was deployed in 2003 as part of Operation Sledgehammer, and production began in 2004."
  tsf_equipment_T94FU:0 "XFJ-01a/TSF-Type 10 Kyokkou"
- tsf_equipment_T94FU_short:0 "Type 10"
+ tsf_equipment_T94FU_short:0 "Type-10"
 
  ### Euro Series ###
  tsf_equipment_JA37U:0 "§CSAAG 37§! Viggen"

@@ -46,7 +46,7 @@ unlock_tsf_gen_3 = {
   }
 }
 
-unlock_tsf_gen_3 = {
+unlock_tsa = {
   limit = {
     NOT = {
       OR = {
