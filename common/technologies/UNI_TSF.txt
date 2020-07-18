@@ -1,5 +1,16 @@
 technologies = {
 
+ ## Columns
+ @ax_amphibious_column = -12
+ @us_amphibious_column = -9
+ @us_variant_column = -6
+ @us_column = -3
+ @main_column = 0
+ @japan_column = 0
+ @sufoni_column = 3
+ @european_column = 6
+ @european_variant_column = 9
+ @mig_column = 11
 ###TSF###
 	
 	UNI_basic_concept_research= {
@@ -89,7 +100,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 0 y = 1 }
+			position = { x = @main_column y = 1 }
 		}
 		categories = {
 			MVLV_tsf_tech
@@ -206,7 +217,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -6 y = 1 }
+			position = { x = @us_amphibious_column y = 1 }
 		}
 
 		path = {
@@ -294,7 +305,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 0 y = 5 }
+			position = { x = @main_column y = 5 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -409,7 +420,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 6 y = 3 }
+			position = { x = @european_column y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -482,7 +493,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 6 y = 5 }
+			position = { x = @european_column y = 5 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -513,7 +524,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 6 y = 7 }
+			position = { x = @european_column y = 9 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -540,7 +551,7 @@ technologies = {
 		
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 6 y = 9 }
+			position = { x = @european_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -592,7 +603,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 6 y = 11 }
+			position = { x = @european_variant_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -634,7 +645,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -3 y = 5 }
+			position = { x = @us_column y = 5 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -695,7 +706,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -6 y = 5 }
+			position = { x = @us_amphibious_column y = 5 }
 		}
 		categories = {
 			MVLV_tsf_tech
@@ -750,7 +761,7 @@ technologies = {
 		}
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -6 y = 13 }
+			position = { x = @us_amphibious_column y = 13 }
 		}
 		categories = {
 			MVLV_tsf_tech
@@ -820,7 +831,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -3 y = 9 }
+			position = { x = @us_column y = 9 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -898,7 +909,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -3 y = 11 }
+			position = { x = @us_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -909,7 +920,6 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
-		
 
 	}	
 
@@ -929,63 +939,9 @@ technologies = {
 		}
 
 		sub_technologies = {
+			T97U
 			T941C
-			T942U
-			T94FU
 		}
-
-		path = {
-			leads_to_tech = T97U
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 0 y = 7 }
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-		
-
-	}
-
-		# Page 87 Codex ##
-	T941C = {
-		enable_equipments = {
-			tsf_equipment_T94HU
-		}
-
-		research_cost = 2
-		start_year = 1998
-
-		folder = {
-			name = UNI_tsf_folder
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
-		
-		ai_will_do = {
-			factor = 20000
-		}
-	}
-	
-	T97U = {
-		enable_equipments = {
-			tsf_equipment_T97U
-		}
-
-		research_cost = 2
-		start_year = 1997
 
 		path = {
 			leads_to_tech = T00FU
@@ -994,7 +950,52 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 0 y = 9 }
+			position = { x = @japan_column y = 9 }
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+	T97U = {
+		enable_equipments = {
+			tsf_equipment_T97U
+		}
+
+		research_cost = 2
+		start_year = 1997
+
+		folder = {
+			name = UNI_tsf_folder
+		}		
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		show_effect_as_desc = no
+		
+		ai_will_do = {
+			factor = 20000
+		}
+	}
+
+	# Page 87 Codex ##
+	T941C = {
+		enable_equipments = {
+			tsf_equipment_T94CU
+		}
+
+		research_cost = 2
+		start_year = 1998
+
+		folder = {
+			name = UNI_tsf_folder
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1021,6 +1022,11 @@ technologies = {
 			T00CU
 	  }
 
+		path = {
+			leads_to_tech = T942U
+			research_cost_coeff = 1
+		}
+
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = 0 y = 11 }
@@ -1037,7 +1043,6 @@ technologies = {
 	}
 
 	T00RU = {
-
 		enable_equipments = {
 			tsf_equipment_T00RU
 		}
@@ -1136,15 +1141,13 @@ technologies = {
 		research_cost = 2
 		start_year = 2001
 
-		allow_branch = {
-			OR = {
-				tag = JAP
-				tag = UNI
-			}
+		sub_technologies = {
+			T94FU
 		}
 
 		folder = {
 			name = UNI_tsf_folder
+			position = { x = @japan_column y = 13 }
 		}
 
 		dependencies = {
@@ -1265,7 +1268,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 11 y = 1 }
+			position = { x = @mig_column y = 1 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1295,7 +1298,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 11 y = 3 }
+			position = { x = @mig_column y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1363,7 +1366,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 7 }
+			position = { x = @sufoni_column y = 7 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1395,7 +1398,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 11 y = 7 }
+			position = { x = @mig_column y = 7 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1418,7 +1421,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 11 y = 13 }
+			position = { x = @mig_column y = 13 }
 		}
 		categories = {
 			MVLV_tsf_tech
@@ -1446,7 +1449,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 9 }
+			position = { x = @sufoni_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1497,7 +1500,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 13 }
+			position = { x = @sufoni_column y = 13 }
 		}
 
 		path = {
@@ -1536,7 +1539,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -3 y = 13 }
+			position = { x = @us_column y = 13 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1566,7 +1569,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 0 y = 13 }
+			position = { x =@us_variant_column y = 13 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1737,12 +1740,13 @@ technologies = {
 			tsf_equipment_Fenrir
 		}
 
-		research_cost = 2
+		#research_cost = 2
+		research_cost = 9999
 		start_year = 2010
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 3 y = 17 }
+			position = { x = @sufoni_column y = 17 }
 		}
 
 		categories = {
@@ -1752,7 +1756,8 @@ technologies = {
 		show_effect_as_desc = no
 		
 		ai_will_do = {
-			factor = 20000
+			#factor = 20000
+			factor = 0
 		}
 	}	
 
@@ -1778,7 +1783,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -9 y = 1 }
+			position = { x = @ax_amphibious_column y = 1 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1830,7 +1835,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -9 y = 11 }
+			position = { x = @ax_amphibious_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1862,7 +1867,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = -9 y = 3 }
+			position = { x = @ax_amphibious_column y = 3 }
 		}		
 		categories = {
 			MVLV_tsf_tech

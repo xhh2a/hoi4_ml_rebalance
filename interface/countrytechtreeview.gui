@@ -3461,7 +3461,7 @@ guiTypes = {
 						
 					instantTextBoxType = {
 						name = "MVLV_tsf_year1"
-						position = { x = 60 y = -20 }
+						position = { x = 30 y = -20 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3474,7 +3474,7 @@ guiTypes = {
 						
 					instantTextBoxType = {
 						name = "UNI_tsf_year2"
-						position = { x = 60 y = 130 }
+						position = { x = 30 y = 130 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3487,7 +3487,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "UNI_tsf_year3"
-						position = { x = 60 y = 270 }
+						position = { x = 30 y = 270 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3500,7 +3500,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "UNI_tsf_year4"
-						position = { x = 60 y = 420 }
+						position = { x = 30 y = 420 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3513,7 +3513,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "UNI_tsf_year5"
-						position = { x = 60 y = 560 }
+						position = { x = 30 y = 560 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3526,7 +3526,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "UNI_tsf_year6"
-						position = { x = 60 y = 698 }
+						position = { x = 30 y = 698 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3539,7 +3539,7 @@ guiTypes = {
 	
 					instantTextBoxType = {
 						name = "UNI_tsf_year7"
-						position = { x = 60 y = 838 }
+						position = { x = 30 y = 838 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3552,7 +3552,7 @@ guiTypes = {
 					
 					instantTextBoxType = {
 						name = "UNI_tsf_year8"
-						position = { x = 60 y = 980 }
+						position = { x = 30 y = 980 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3565,7 +3565,7 @@ guiTypes = {
 					
 					instantTextBoxType = {
 						name = "UNI_tsf_year9"
-						position = { x = 60 y = 1122 }
+						position = { x = 30 y = 1122 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3577,7 +3577,7 @@ guiTypes = {
 					}
 					instantTextBoxType = {
 						name = "UNI_tsf_year10"
-						position = { x = 60 y = 1264 }
+						position = { x = 30 y = 1264 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -3632,7 +3632,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "UNI_tsf_subtitle_Advanced"
-					position = { x = -325 y = 930 }
+					position = { x = -525 y = 930 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}

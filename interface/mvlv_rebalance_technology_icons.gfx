@@ -141,6 +141,11 @@ spriteTypes = {
     texturefile = "gfx/interface/technologies/Tempest.dds"
   }
 
+  SpriteType = {
+    name = "GFX_T94CU_medium"
+    texturefile = "gfx/interface/technologies/Type-94-1-C.dds"
+  }
+
 	SpriteType = {
     name = "GFX_T00FU_medium"
     texturefile = "gfx/interface/technologies/Type-00f.dds"

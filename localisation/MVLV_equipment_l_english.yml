@@ -396,7 +396,8 @@
  tsf_equipment_SU37U:0 "§CSufoni 37§! Terminator"
  tsf_equipment_SU37U_short:0 "§CSU-37§!"
  tsf_equipment_SU37U_desc:0 "§CGen 2§! (1997) By 1996, Sufoni was continuing its independent research and development of the Su-27M2 demonstrator trial craft. In order to avoid falling behind the west, they gave the 2nd Generation TSF the designation of Su-37. Its close quarters dogfighting abilities were further strengthened, and the number of blade vanes on each shoulder block was increased from two to four. Finally, vectoring thrusters were added to its waist block in order to increase mobility and maneuverability"
-
+ tsf_equipment_SU47U:0 "§gSufoni 47§! Berkut"
+ tsf_equipment_SU47U_short:0 "§gSU-47§!"
  ### Future ###
  tsf_equipment_F35U:0 "F-35"
  SOV_tsf_equipment_F35U:0 "SU-57"
