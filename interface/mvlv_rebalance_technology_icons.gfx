@@ -46,7 +46,7 @@ spriteTypes = {
   }
 
 	SpriteType = {
-    name = "GFX_S47U_medium"
+    name = "GFX_SU47U_medium"
     texturefile = "gfx/interface/technologies/Su-47.dds"
   }
 
@@ -104,6 +104,16 @@ spriteTypes = {
   SpriteType = {
     name = "GFX_F18EFU_medium"
     texturefile = "gfx/interface/technologies/F-18E.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_F18HMRVU_medium"
+    texturefile = "gfx/interface/technologies/F-18SM.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_F18AXU_medium"
+    texturefile = "gfx/interface/technologies/F-18S.dds"
   }
 
 	SpriteType = {

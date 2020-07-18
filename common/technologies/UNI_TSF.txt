@@ -1615,7 +1615,8 @@ technologies = {
 		show_effect_as_desc = no
 
 		ai_will_do = {
-			factor = 20000
+			#factor = 20000
+			factor = 0
 		}
 	}
 
@@ -1819,7 +1820,7 @@ technologies = {
 			asa_equipment_A12U
 		}
 
-		research_cost = 2
+		research_cost = 4
 		start_year = 1999
 
 		path = {

@@ -506,17 +506,54 @@ equipments = {
 	# See TSA Section for F-18 #
 
 	#F-15E#
+	# Page 54
+	# Strongest 2nd gen to this date, better than F16XL
 	tsf_equipment_F15EU = {
 		year = 1995
 
+		# Transitional 2.5
 		archetype = tsf_gen_2_equipment
+		priority = 17
+		visual_level = 0
+		parent = tsf_equipment_F15U
+		can_convert_from = { 
+			tsf_equipment_F15U
+		}
+		is_convertable = yes
+
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.95 # Focus on reliability
+
+		#Defensive Abilities
+		defense = 31
+		breakthrough = 42
+		hardness = 0.9
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 17
+		hard_attack = 17
+		ap_attack = 115
+		air_attack = 11
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 2
+			steel = 1
+		}
 	}
 
-  #F-15SE#	
+  # F-15SE Silent Eagle
+	# F-15 ACTV was a lower cost retrofit version of F-15E Strike Eagle
+	# Better CQC
 	tsf_equipment_F15SEU = {
 		year = 2002
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_3_equipment 
 		priority = 20
 		visual_level = 0
 		parent = tsf_equipment_F15EU
@@ -526,27 +563,25 @@ equipments = {
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 17
-		reliability = 0.8
+		reliability = 0.95
 
 		#Defensive Abilities
-		defense = 85
-		breakthrough = 90
-		hardness = 0.99
-		armor_value = 85
+		defense = 40
+		breakthrough = 45
+		hardness = 0.9
+		armor_value = 95
 
 		#Offensive Abilities
-		soft_attack = 70
-		hard_attack = 80
-		ap_attack = 150
-		air_attack = 200
-
-		#Space taken in convoy
-		lend_lease_cost = 50
+		soft_attack = 21
+		hard_attack = 18
+		ap_attack = 125
+		air_attack = 12
 		
-		build_cost_ic = 80
+		build_cost_ic = 40
 		resources = {
-			aluminium = 1
+			aluminium = 2
 			steel = 1
+			chromium = 1
 		}
 	}
 
@@ -1415,7 +1450,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 32
 		breakthrough = 50
-		hardness = 0.83
+		hardness = 0.85
 		armor_value = 96
 
 		#Offensive Abilities
@@ -1769,7 +1804,7 @@ equipments = {
 
 		defense = 30
 		breakthrough = 25
-		hardness = 0.95
+		hardness = 0.90
 		armor_value = 65
 
 		soft_attack = 25
@@ -1787,37 +1822,41 @@ equipments = {
 		}
 	}
 
-  #A-12	
+  #A-12
+	# Expensive, Stealth, Similar to F22
 	asa_equipment_A12U = {
 		year = 1999
 
+    # Gen 3
 		archetype = asa_equipment 
 		priority = 30
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 10
-		reliability = 0.8
+		reliability = 0.85
 
 		#Defensive Abilities
-		defense = 20
-		breakthrough = 130
-		hardness = 0.99
-		armor_value = 100
+		defense = 55
+		breakthrough = 55
+		hardness = 0.98
+		armor_value = 85
 
 		#Offensive Abilities
-		soft_attack = 100
-		hard_attack = 80
-		ap_attack = 180
-		air_attack = 100
+		soft_attack = 22
+		hard_attack = 18
+		ap_attack = 125 # Focus on suppressive AoE missiles
+		air_attack = 6 # Slow, ASA
 
 		#Space taken in convoy
-		lend_lease_cost = 185
+		lend_lease_cost = 5
 		
-		build_cost_ic = 90
+		build_cost_ic = 55
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
+			chromium = 2
+			tungsten = 1
 		}
 	}
 
@@ -1971,9 +2010,11 @@ equipments = {
 		}
 	}
 
-	# TODO
 	# F-18 HMRV#	
 	# Page 342
+	# Cheaper than other refurbishment variants
+	# Focus on survival over offense
+	# Focus on agility, use new materials
 	tsa_equipment_F18HMRVU = {
 		year = 2003
 
@@ -1987,67 +2028,67 @@ equipments = {
 		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
+		maximum_speed = 18
+		reliability = 0.9
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 65
-		hardness = 0.99
-		armor_value = 75
+		defense = 36
+		breakthrough = 32
+		hardness = 0.81
+		armor_value = 105
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 60
-		ap_attack = 125
-		air_attack = 170
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 65
+		soft_attack = 14
+		hard_attack = 12
+		ap_attack = 130
+		air_attack = 16
+	
+		build_cost_ic = 32
 		resources = {
-			aluminium = 1
+			aluminium = 3
 			steel = 1
+			chromium = 1
 		}
 	}
 
 	# F-18 AX#	
-	# Page 343
+	# Page 343 Benchmark 15E but cheaper, COSEAN
 	tsa_equipment_F18AXU = {
 		year = 2005
 
 		archetype = tsa_equipment 
-		parent = tsa_equipment_F18U
+		parent = tsa_equipment_F18EFU
 		priority = 16
 		visual_level = 0
 		can_convert_from = { 
-			tsa_equipment_F18U 
+			tsa_equipment_F18U
+			tsa_equipment_F18EFU
 		}
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 13
-		reliability = 0.8
+		maximum_speed = 16
+		reliability = 0.9
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 65
-		hardness = 0.99
-		armor_value = 75
+		defense = 33
+		breakthrough = 40
+		hardness = 0.9
+		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 60
-		ap_attack = 125
-		air_attack = 170
+		soft_attack = 18
+		hard_attack = 18
+		ap_attack = 115
+		air_attack = 12
 
 		#Space taken in convoy
-		lend_lease_cost = 50
+		lend_lease_cost = 5
 		
-		build_cost_ic = 65
+		build_cost_ic = 33
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 2
+			steel = 2
+			chromium = 1
 		}
 	}
 
