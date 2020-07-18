@@ -28,16 +28,16 @@ division_template = {
 	name = @gen_three_tsf_division
 	
 	regiments = {
-		tsf_gen_three_batallion= { x = 0 y = 0 }
-		tsf_gen_three_batallion= { x = 0 y = 1 }
-		tsf_gen_three_batallion= { x = 0 y = 2 }
-		tsf_gen_three_batallion= { x = 1 y = 0 }
-		tsf_gen_three_batallion= { x = 1 y = 1 }
-		tsf_gen_three_batallion= { x = 1 y = 2 }
-		tsf_gen_three_batallion= { x = 2 y = 0 }
-		tsf_gen_three_batallion= { x = 2 y = 1 }
-		tsf_gen_three_batallion= { x = 2 y = 2 }
-		tsf_gen_three_batallion= { x = 2 y = 3 }
+		tsf_gen_three_battalion= { x = 0 y = 0 }
+		tsf_gen_three_battalion= { x = 0 y = 1 }
+		tsf_gen_three_battalion= { x = 0 y = 2 }
+		tsf_gen_three_battalion= { x = 1 y = 0 }
+		tsf_gen_three_battalion= { x = 1 y = 1 }
+		tsf_gen_three_battalion= { x = 1 y = 2 }
+		tsf_gen_three_battalion= { x = 2 y = 0 }
+		tsf_gen_three_battalion= { x = 2 y = 1 }
+		tsf_gen_three_battalion= { x = 2 y = 2 }
+		tsf_gen_three_battalion= { x = 2 y = 3 }
 
 	}
 	priority = 2

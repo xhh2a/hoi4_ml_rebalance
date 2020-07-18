@@ -124,7 +124,7 @@ tsf_generic = {
 			weight = 40
 
 			regiments = {
-				tsf_gen_one_batallion = 5
+				tsf_gen_one_battalion = 5
         medium_armor = 5
 			}
 		}
@@ -132,8 +132,8 @@ tsf_generic = {
 		allowed_types = {
 			armor
 			engineer
-			tsf_gen_one_batallion
-			tsf_gen_two_batallion
+			tsf_gen_one_battalion
+			tsf_gen_two_battalion
 			tsf_gen_three_batallion
 		}
 
@@ -245,16 +245,16 @@ tsf_generic = {
 			weight = 40
 
 			regiments = {
-				tsf_gen_two_batallion = 10
+				tsf_gen_two_battalion = 10
 			}
 		}
 
 		allowed_types = {
 			armor
 			engineer
-			tsf_gen_one_batallion
-			tsf_gen_two_batallion
-			tsf_gen_three_batallion
+			tsf_gen_one_battalion
+			tsf_gen_two_battalion
+			tsf_gen_three_battalion
 		}
 
 		replace_at_match = 0.4
@@ -347,16 +347,16 @@ tsf_generic = {
 			weight = 40
 
 			regiments = {
-				tsf_gen_three_batallion = 10
+				tsf_gen_three_battalion = 10
 			}
 		}
 
 		allowed_types = {
 			armor
 			engineer
-			tsf_gen_one_batallion
-			tsf_gen_two_batallion
-			tsf_gen_three_batallion
+			tsf_gen_one_battalion
+			tsf_gen_two_battalion
+			tsf_gen_three_battalion
 		}
 
 		# replace_at_match = 0.4

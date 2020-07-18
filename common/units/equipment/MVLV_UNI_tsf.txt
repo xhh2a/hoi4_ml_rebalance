@@ -174,28 +174,29 @@ equipments = {
 		upgrades = { }
 
 		#Misc Abilities
-		maximum_speed = 18
-		reliability = 0.9
+		maximum_speed = 20
+		reliability = 0.6
 
 		#Defensive Abilities
-		defense = 40
-		breakthrough = 60
-		hardness = 0.95
-		armor_value = 100
+		defense = 100
+		breakthrough = 100
+		hardness = 0.99
+		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 25
-		hard_attack = 30
-		ap_attack = 125
-		air_attack = 15
+		soft_attack = 100
+		hard_attack = 100
+		ap_attack = 150
+		air_attack = 100
 
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 25
 
-		build_cost_ic = 45
+		build_cost_ic = 200
 		resources = {
-			aluminium = 3
-			steel = 2
+			aluminium = 4
+			chromium = 2
+			tungsten = 2
 		}
   }
 
@@ -377,7 +378,7 @@ equipments = {
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
-		parent = tsf_equipment_F4U
+		parent = tsf_equipment_F5U
 		can_convert_from = {
 			tsf_equipment_F4U
 		}
@@ -405,7 +406,7 @@ equipments = {
 
 		archetype = tsf_gen_2_equipment 
 		priority = 16
-		parent = tsf_equipment_F4U
+		parent = tsf_equipment_F4JK
 		can_convert_from = { 
 			tsf_equipment_F15U
 		}
@@ -437,6 +438,7 @@ equipments = {
 		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
+		parent = tsf_equipment_F4U
 		can_convert_from = { 
 			tsf_equipment_F4U
 		}
@@ -473,6 +475,7 @@ equipments = {
 		archetype = tsf_gen_2_equipment 
 		priority = 16
 		visual_level = 0
+		parent = tsf_equipment_F16U
 		can_convert_from = {
 			tsf_equipment_F16U
 		}
@@ -664,7 +667,7 @@ equipments = {
 		# Gen 1.5
 		archetype = tsf_gen_1_equipment 
 		priority = 16
-		parent = tsf_equipment_F4U
+		parent = tsf_equipment_F5U
 		visual_level = 0
 		can_convert_from = {
 			tsf_equipment_F5U
@@ -901,7 +904,7 @@ equipments = {
 		year = 1982
 
 		archetype = tsf_gen_1_equipment
-		parent = tsf_equipment_F4U 
+		parent = tsf_equipment_F4J
 		priority = 16
 		visual_level = 0
 		can_convert_from = {
@@ -946,8 +949,8 @@ equipments = {
 			tsf_equipment_T15J
 		}
 		is_convertable = yes
-				#Misc Abilities
-		maximum_speed = 18
+		#Misc Abilities
+		maximum_speed = 14 # Slower for training purposes
 		reliability = 0.9
 
 		#Defensive Abilities
@@ -992,7 +995,7 @@ equipments = {
 		is_convertable = yes
 
 		#Misc Abilities
-		maximum_speed = 18
+		maximum_speed = 16
 		reliability = 0.85
 
 		#Defensive Abilities
@@ -1019,6 +1022,8 @@ equipments = {
 	}
 	
 	# Page 87 Codex ##
+	# Harder to control
+	# Improvements to survivalbility and speed
 	tsf_equipment_T94CU = {
 		year = 1998
 
@@ -1032,203 +1037,191 @@ equipments = {
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 16.5
-		reliability = 0.5
+		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 80
-		breakthrough = 100
-		hardness = 0.99
-		armor_value = 75
+		defense = 42
+		breakthrough = 62
+		hardness = 0.9
+		armor_value = 85
 
 		#Offensive Abilities
-		soft_attack = 75
-		hard_attack = 75
-		ap_attack = 155
-		air_attack = 165
+		soft_attack = 21
+		hard_attack = 15
+		ap_attack = 100
+		air_attack = 10
+	
+		build_cost_ic = 45
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 95
 		resources = {
-			aluminium = 1
+			aluminium = 3
 			steel = 2
+		}
+	}
+
+  # For common usage
+	tsf_equipment_T00CU = {
+		year = 1998
+
+		archetype = tsf_gen_3_equipment
+		priority = 30
+		visual_level = 0
+		is_convertable = yes
+    #acclimatization_cold_climate_gain_factor = 0.25
+
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 85
+		breakthrough = 95
+		hardness = 0.95
+		armor_value = 95
+
+		#Offensive Abilities
+		soft_attack = 65
+		hard_attack = 55
+		ap_attack = 140
+		air_attack = 85
+
+		build_cost_ic = 125
+		resources = {
+			aluminium = 3
+			chromium = 2
+			tungsten = 1
+		}
+	}
+
+  # Faster than the C
+	tsf_equipment_T00AU = {
+		year = 2000
+
+		archetype = tsf_elite_equipment
+		parent = tsf_equipment_T00CU
+		priority = 31
+		visual_level = 0
+		can_convert_from = {
+      tsf_equipment_T00CU
+		}
+		is_convertable = yes
+		#Misc Abilities
+    #acclimatization_cold_climate_gain_factor = 0.25
+
+		#Misc Abilities
+		maximum_speed = 18.5
+		reliability = 0.60
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 95
+		hardness = 0.96
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 60
+		ap_attack = 145
+		air_attack = 87
+
+		build_cost_ic = 150
+		resources = {
+			aluminium = 4
+			chromium = 2
+			tungsten = 1
 		}
 	}
 	
 	tsf_equipment_T00FU = {
-		year = 1998
+		year = 2000
 
 		archetype = tsf_elite_equipment
+		# parent = tsf_equipment_T00AU
 		priority = 30
 		visual_level = 0
+		can_convert_from = {
+      tsf_equipment_T00AU
+		}
 		is_convertable = yes
+    #acclimatization_cold_climate_gain_factor = 0.25
+
 		#Misc Abilities
-		maximum_speed = 19
-		reliability = 0.8
-                acclimatization_cold_climate_gain_factor = 0.25
+		maximum_speed = 19.5
+		reliability = 0.55
 
 		#Defensive Abilities
 		defense = 95
-		breakthrough = 180
-		hardness = 0.99
-		armor_value = 85
+		breakthrough = 95
+		hardness = 0.97
+		armor_value = 120
 
 		#Offensive Abilities
-		soft_attack = 85
-		hard_attack = 95
-		ap_attack = 250
-		air_attack = 240
+		soft_attack = 80
+		hard_attack = 70
+		ap_attack = 155
+		air_attack = 90
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 145
+		build_cost_ic = 175
 		resources = {
-			aluminium =1
-			steel = 1
+			aluminium = 4
+			chromium = 2
+			tungsten = 1
 		}
 	}
 	tsf_equipment_T00RU = {
 		year = 2000
 
 		archetype = tsf_elite_equipment
+		# parent = tsf_equipment_T00FU
 		priority = 30
 		visual_level = 0
 		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 19
-		reliability = 0.8
-                acclimatization_cold_climate_gain_factor = 0.25
+    #acclimatization_cold_climate_gain_factor = 0.25
 
-		#Defensive Abilities
-		defense = 95
-		breakthrough = 180
-		hardness = 0.99
-		armor_value = 85
-
-		#Offensive Abilities
-		soft_attack = 85
-		hard_attack = 95
-		ap_attack = 250
-		air_attack = 240
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 145
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	}
-	tsf_equipment_T00AU = {
-		year = 2000
-
-		archetype = tsf_elite_equipment
-		priority = 30
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 19
-		reliability = 0.8
-                acclimatization_cold_climate_gain_factor = 0.25
-
-		#Defensive Abilities
-		defense = 95
-		breakthrough = 180
-		hardness = 0.99
-		armor_value = 85
-
-		#Offensive Abilities
-		soft_attack = 85
-		hard_attack = 95
-		ap_attack = 250
-		air_attack = 240
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 145
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	}
-	tsf_equipment_T00CU = {
-		year = 2000
-
-		archetype = tsf_gen_3_equipment
-		priority = 30
-		visual_level = 0
-		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 19
-		reliability = 0.8
-    acclimatization_cold_climate_gain_factor = 0.25
-
-		#Defensive Abilities
-		defense = 95
-		breakthrough = 180
-		hardness = 0.99
-		armor_value = 85
-
-		#Offensive Abilities
-		soft_attack = 85
-		hard_attack = 95
-		ap_attack = 250
-		air_attack = 240
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 145
-		resources = {
-			aluminium =1
-			steel = 1
-		}
-	}
-
-	#T942#	
-	tsf_equipment_T942U = {
-		year = 2001
-
-		archetype = tsf_equipment 
-		priority = 30
-		visual_level = 0
-		parent = tsf_equipment_T94UH
-		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 20
-		reliability = 0.8
+		reliability = 0.57
 
 		#Defensive Abilities
-		defense = 75
-		breakthrough = 150
-		hardness = 0.99
-		armor_value = 90
+		defense = 100
+		breakthrough = 100
+		hardness = 0.98
+		armor_value = 130
 
 		#Offensive Abilities
-		soft_attack = 65
-		hard_attack = 85
-		ap_attack = 230
-		air_attack = 220
+		soft_attack = 85
+		hard_attack = 80
+		ap_attack = 160
+		air_attack = 95
 
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 90
+		build_cost_ic = 200
 		resources = {
-			aluminium = 1
-			steel = 1
+			aluminium = 4
+			chromium = 2
+			tungsten = 2
 		}
 	}
+
+	#T04 #	
+	tsf_equipment_T04U = {
+		year = 2001
+
+		archetype = tsf_gen_3_equipment 
+		priority = 30
+		visual_level = 0
+		parent = tsf_equipment_T94CU
+		can_convert_from = {
+			tsf_equipment_T94CU
+			tsf_equipment_T94U
+		}
+		is_convertable = yes
+	}
 	
-	#T94F#
+	#T10#
 	tsf_equipment_T94FU = {
 		year = 2001
 
-		archetype = tsf_equipment 
+		archetype = tsf_gen_3_equipment 
 		priority = 30
 		visual_level = 0
 		parent = tsf_equipment_T942U
@@ -1236,30 +1229,6 @@ equipments = {
 			tsf_equipment_T942U 
 		}
 		is_convertable = yes
-		#Misc Abilities
-		maximum_speed = 20
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 80
-		breakthrough = 160
-		hardness = 0.99
-		armor_value = 95
-
-		#Offensive Abilities
-		soft_attack = 75
-		hard_attack = 95
-		ap_attack = 250
-		air_attack = 240
-
-		#Space taken in convoy
-		lend_lease_cost = 50
-		
-		build_cost_ic = 90
-		resources = {
-			aluminium =1
-			steel = 1
-		}
 	}
 	
 	## SOVIET LINE ##
@@ -1529,25 +1498,25 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 22
+		maximum_speed = 18
 		reliability = 0.55
 
 		#Defensive Abilities
-		defense = 50
-		breakthrough = 70
-		hardness = 0.99
-		armor_value = 130
+		defense = 90
+		breakthrough = 110
+		hardness = 0.97
+		armor_value = 135
 
 		#Offensive Abilities
-		soft_attack = 105
-		hard_attack = 105
-		ap_attack = 270
-		air_attack = 1270
+		soft_attack = 95
+		hard_attack = 80
+		ap_attack = 155
+		air_attack = 95
 
-		build_cost_ic = 200
+		build_cost_ic = 190
 		resources = {
 			aluminium = 4
-			steel = 1
+			chromium = 2
 			tungsten = 2
 		}
 	}
@@ -1559,7 +1528,7 @@ equipments = {
 		year = 2002
 
 		archetype = tsf_equipment 
-		priority = 30
+		priority = 35
 		visual_level = 0
 		is_convertable = yes
 		#Misc Abilities
@@ -1843,6 +1812,7 @@ equipments = {
 		year = 1999
 
     # Gen 3
+		parent = asa_equipment_A6U
 		archetype = asa_equipment 
 		priority = 30
 		visual_level = 0
@@ -1868,8 +1838,7 @@ equipments = {
 		
 		build_cost_ic = 55
 		resources = {
-			aluminium = 2
-			steel = 2
+			steel = 4
 			chromium = 2
 			tungsten = 1
 		}

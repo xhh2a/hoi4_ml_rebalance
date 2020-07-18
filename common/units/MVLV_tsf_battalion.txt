@@ -2,7 +2,7 @@ sub_units = {
 
 	# Split into three batallion types to make it easier to manage equipment upgrade and usage choices
 	# Also to add different terrain modifiers to represent improving technology, etc.
-  tsf_gen_one_batallion = {
+  tsf_gen_one_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
 		priority = 3500
@@ -185,7 +185,7 @@ sub_units = {
 		}
 	}
 
-	tsf_gen_three_batallion = {
+	tsf_gen_three_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
 		priority = 3500
@@ -279,7 +279,7 @@ sub_units = {
   # TODO: One for future TSF Models
 	# TODO: Need to rebalance the movement bonuses
 
-  tsf_special_forces_batallion = {
+  tsf_special_forces_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
 		priority = 3500
@@ -312,12 +312,12 @@ sub_units = {
 		manpower = 10
 		max_organisation = 250
 		max_strength = 50
-		default_morale = 40
+		default_morale = 25
 		training_time = 160
 		weight = 0.0
 		supply_consumption = 0.01
 
-		recon = 0.25
+		recon = 1
 		initiative = 0.1
 
 		can_be_parachuted = yes

@@ -142,7 +142,7 @@ spriteTypes = {
   }
 
   SpriteType = {
-    name = "GFX_T94CU_medium"
+    name = "GFX_T941C_medium"
     texturefile = "gfx/interface/technologies/Type-94-1-C.dds"
   }
 
@@ -164,6 +164,11 @@ spriteTypes = {
 	SpriteType = {
     name = "GFX_T00CU_medium"
     texturefile = "gfx/interface/technologies/Type-00.dds"
+  }
+
+  SpriteType = {
+    name = "GFX_T04U_medium"
+    texturefile = "gfx/interface/technologies/Type-04.dds"
   }
 
 	SpriteType = {
@@ -229,5 +234,53 @@ spriteTypes = {
   SpriteType = {
     name = "GFX_subtech_tsf_gear_variant_c"
     texturefile = "gfx/texticons/army_experience_20x20.dds"
+  }
+
+  SpriteType = { 
+     name = "GFX_unit_tsf_special_forces_battalion_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_elite_tsf_icon.dds"
+     noOfFrames = 2
+   }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_special_forces_battalion_icon_medium_white"						
+    textureFile = "gfx/interface/counters/divisions_small/unit_elite_tsf_icon.dds" 
+    noOfFrames = 2
+  }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_gen_one_battalion_icon_medium"
+    textureFile = "gfx/interface/counters/divisions_large/unit_tsf_gen_1.dds"
+    noOfFrames = 2
+   }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_gen_one_battalion_icon_medium_white"
+    textureFile = "gfx/interface/counters/divisions_small/unit_tsf_gen_1.dds"
+    noOfFrames = 2
+  }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_gen_two_battalion_icon_medium"
+    textureFile = "gfx/interface/counters/divisions_large/unit_tsf_gen_2.dds"
+    noOfFrames = 2
+  }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_gen_two_battalion_icon_medium_white"
+    textureFile = "gfx/interface/counters/divisions_small/unit_tsf_gen_2.dds"
+    noOfFrames = 2
+  }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_gen_three_battalion_icon_medium"
+    textureFile = "gfx/interface/counters/divisions_large/unit_tsf_gen_3.dds"
+    noOfFrames = 2
+  }
+
+  SpriteType = { 
+    name = "GFX_unit_tsf_gen_three_battalion_icon_medium_white"
+    textureFile = "gfx/interface/counters/divisions_small/unit_tsf_gen_3.dds"
+    noOfFrames = 2
   }
 }

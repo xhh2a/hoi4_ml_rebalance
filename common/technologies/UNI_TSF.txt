@@ -944,7 +944,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = T00FU
+			leads_to_tech = T00CU
 			research_cost_coeff = 1
 		}
 
@@ -1008,22 +1008,22 @@ technologies = {
 		}
 	}
 	
-	T00FU = {
+	T00CU = {
 		enable_equipments = {
-			tsf_equipment_T00FU
+			tsf_equipment_T00CU
 		}
 
 		research_cost = 4
 		start_year = 1998 # Mass Production Trial Craft
 
 		sub_technologies = {
-			T00RU
 			T00AU
-			T00CU
+			T00FU
+			T00RU
 	  }
 
 		path = {
-			leads_to_tech = T942U
+			leads_to_tech = T04U
 			research_cost_coeff = 1
 		}
 
@@ -1067,8 +1067,6 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
-		
-
 	}
 
 	T00AU = {
@@ -1096,10 +1094,10 @@ technologies = {
 		
 	}
 
-	T00CU = {
+	T00FU = {
 
 		enable_equipments = {
-			tsf_equipment_T00CU
+			tsf_equipment_T00FU
 		}
 
 		research_cost = 0.5
@@ -1117,7 +1115,7 @@ technologies = {
 	}
 
 	# XFJ-01a
-	T942U = {
+	T04U = {
 		on_research_complete = {
 			if = {
 				limit = {
@@ -1135,7 +1133,7 @@ technologies = {
 		}
 
 		enable_equipments = {
-			tsf_equipment_T942U
+			tsf_equipment_T04U
 		}
 
 		research_cost = 2
@@ -1186,7 +1184,8 @@ technologies = {
 			tsf_equipment_T94FU
 		}
 
-		research_cost = 3
+		# research_cost = 3
+		research_cost = 9999
 		start_year = 2004
 
 		folder = {
@@ -1211,7 +1210,8 @@ technologies = {
 		show_effect_as_desc = no
 		
 		ai_will_do = {
-			factor = 20000
+			#factor = 20000
+			factor = 0
 		}
 	}
 
