@@ -1,0 +1,245 @@
+﻿@support_division = "Armor Support"
+@gen_two_tsf_division = "Gen 2 TSF"
+@defensive_division = "Defensive Division"
+
+units = {
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.3
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.3
+			force_equipment_variants = { tsf_equipment_MiG27 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.3
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.3
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.3
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.3
+			force_equipment_variants = { tsf_equipment_MiG29 = { owner = "CHI" } }
+	}
+	division = {
+			location = 13244
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 1
+			force_equipment_variants = { tsf_equipment_MiG27 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @infantry_type
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @support_division
+			start_experience_factor = 0.2
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+	division = {
+			location = 7186
+			division_template = @gen_two_tsf_division
+			start_experience_factor = 0.2
+			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+        
+  add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

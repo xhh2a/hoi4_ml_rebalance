@@ -1,0 +1,908 @@
+﻿@support_division = "Armor Support"
+@gen_two_tsf_division = "Gen 2 TSF"
+@gen_three_tsf_division = "Gen 3 TSF"
+@amphibious_tsf_division = "Amphibious TSF"
+@defensive_division = "Defensive Division"
+
+##### OOB #####
+units = {
+
+	# 第一線兵団
+	division = { # "第51師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	division = { # "第52師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	division = { # "第52師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第52師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第52師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第53師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1182
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第21師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第32師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 4067
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	division = { # "第54師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第3師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第4師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第22師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第34師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第34師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第34師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 4153
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	division = { # "第55師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 4122
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第56師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 56
+		}
+		location = 4122
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第6師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4122
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第23師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 4122
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第23師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 4122
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第35師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 4122
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	division = { # "第19師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 4000
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第20師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 4000
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第9師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 4000
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第24師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 4000
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第24師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 4000
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第36師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 4000
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	division = { # "第11師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11908
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第14師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 11908
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第1師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11908
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第25師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 11908
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第25師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 11908
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第37師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 11908
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	division = { # "第8師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第12師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第5師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第26師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第38師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第38師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第18師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 1097
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	division = { # "第10師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第16師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第16師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第16師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第27師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第31師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第31師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.4
+	}
+	division = { # "第33師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 9998
+		division_template = @support_division
+		start_experience_factor = 0.4
+		force_equipment_variants = { medium_tank_equipment_2 = { owner = "JAP" } }
+	}
+	
+	
+
+#戦術機師団#
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_T94U = { owner = "JAP" } }
+	}
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F15U = { owner = "JAP" } }
+	}
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+	}
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+	}
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+	}
+
+  division = { # "第17師団"
+		location = 993
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { jeg_equipment_F4JK = { owner = "JAP" } }
+	}
+
+
+
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_T94U = { owner = "JAP" } }
+	}
+
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+	}
+
+
+  division = { # "第17師団"
+		location = 993
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { jeg_equipment_F4JK = { owner = "JAP" } }
+	}
+
+
+  division = { # "第17師団"
+		location = 993
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { jeg_equipment_T00R = { owner = "JAP" } }
+	}
+
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+
+	}
+
+
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F15U = { owner = "JAP" } }
+	}
+  division = { # "第17師団"
+		location = 4188
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F15U = { owner = "JAP" } }
+	}
+
+  division = { # "第17師団"
+		location = 7169
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+
+	}
+
+  division = { # "第17師団"
+		location = 7169
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+
+	}
+
+  division = { # "第17師団"
+		location = 7169
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+
+
+	}
+
+  division = { # "第17師団"
+		location = 7169
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+
+	}
+  division = { # "第17師団"
+		location = 7169
+		division_template = @amphibious_tsf_division
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 11932 #Naha
+		division_template = @support_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11932 #Naha
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.1
+	}
+
+  division = { #南樺太
+		location = 1820
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+	}
+
+  division = { #千島列島
+		location = 1399
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F4U = { owner = "JAP" } }
+	}
+
+	# AI 
+	division = {
+		location = 1399 #Shumshu
+		division_template = @support_division
+		start_experience_factor = 0.1
+	}
+	division = { # "第88師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 88
+		}
+		location = 1820 #Shisuka
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第88師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 88
+		}
+		location = 1820 #Shisuka
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = { # "第88師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 88
+		}
+		location = 1820 #Shisuka
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12446 #Toyohara
+		division_template = @support_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9859 #Ominato Naval Base
+		division_template = @support_division
+		start_experience_factor = 0.1
+		
+	}
+	division = {
+		location = 9859 #Ominato Naval Base
+		division_template = @support_division
+		start_experience_factor = 0.1
+		
+	}
+	division = { # "第57師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 6994 #Aomori
+		division_template = @support_division
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 11932 #Naha
+		division_template = @support_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11932 #Naha
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11932 #Naha
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11932 #Naha
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 13025 #Iwo Jima
+		division_template = @support_division
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 13026 #Marcus Island
+		division_template = @support_division
+		start_experience_factor = 0.1
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = tsf_equipment_T94
+		}
+		requested_factories = 5
+		progress = 0.2
+		efficiency = 30
+	}
+
+  add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}
