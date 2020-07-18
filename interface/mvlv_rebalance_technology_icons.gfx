@@ -127,6 +127,15 @@ spriteTypes = {
   }
 
   SpriteType = {
+    name = "GFX_F22U_medium"
+    texturefile = "gfx/interface/technologies/F-22.dds"
+  }
+  SpriteType = {
+    name = "GFX_F23U_medium"
+    texturefile = "gfx/interface/technologies/YF-23.dds"
+  }
+
+  SpriteType = {
     name = "GFX_F35U_medium"
     texturefile = "gfx/interface/technologies/f-35.dds"
   }

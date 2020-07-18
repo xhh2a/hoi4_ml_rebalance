@@ -819,6 +819,16 @@ technologies = {
 			leads_to_tech = F15SEU
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = F22U
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = F23U
+			research_cost_coeff = 1
+		}
 		
 		path = {
 			leads_to_tech = USA_3rd_tsf_high
@@ -897,19 +907,9 @@ technologies = {
 		research_cost = 2
 		start_year = 2002
 
-		path = {
-			leads_to_tech = F22U
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = F23U
-			research_cost_coeff = 1
-		}
-
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = @us_column y = 11 }
+			position = { x = @us_column y = 13 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1136,16 +1136,16 @@ technologies = {
 			tsf_equipment_T04U
 		}
 
-		research_cost = 2
-		start_year = 2001
+		research_cost = 3
+		start_year = 2003
 
-		sub_technologies = {
-			T94FU
-		}
+		# sub_technologies = {
+		# 	T94FU
+		# }
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = @japan_column y = 13 }
+			position = { x = @japan_column y = 15 }
 		}
 
 		dependencies = {
@@ -1163,57 +1163,53 @@ technologies = {
 		}
 	}
 
-	# XFJ-01b
-	T94FU = {
-		on_research_complete = {
-			if = {
-				limit = {
-					NOT = {
-						has_tech = Typhon
-					}
-				}
-				add_tech_bonus = {
-					name = future_research_bonus
-					bonus = 1
-					uses = 1
-					technology = Typhon
-				}
-			}
-		}
-		enable_equipments = {
-			tsf_equipment_T94FU
-		}
+	# XFJ-01b Phase 3 - based off F-23
+	# T94FU = {
+	# 	on_research_complete = {
+	# 		if = {
+	# 			limit = {
+	# 				NOT = {
+	# 					has_tech = Typhon
+	# 				}
+	# 			}
+	# 			add_tech_bonus = {
+	# 				name = future_research_bonus
+	# 				bonus = 1
+	# 				uses = 1
+	# 				technology = Typhon
+	# 			}
+	# 		}
+	# 	}
+	# 	enable_equipments = {
+	# 		tsf_equipment_T94FU
+	# 	}
 
-		# research_cost = 3
-		research_cost = 9999
-		start_year = 2004
+	# 	# research_cost = 3
+	# 	research_cost = 9999
+	# 	start_year = 2004
 
-		folder = {
-			name = UNI_tsf_folder
-		}
+	# 	folder = {
+	# 		name = UNI_tsf_folder
+	# 	}
 
-		dependencies = {
-			T942U = 1
-		}
+	# 	allow_branch = {
+	# 		OR = {
+	# 			tag = JAP
+	# 			tag = UNI
+	# 		}
+	# 	}
 
-		allow_branch = {
-			OR = {
-				tag = JAP
-				tag = UNI
-			}
-		}
+	# 	categories = {
+	# 		MVLV_tsf_tech
+	# 	}
 
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		show_effect_as_desc = no
+	# 	show_effect_as_desc = no
 		
-		ai_will_do = {
-			#factor = 20000
-			factor = 0
-		}
-	}
+	# 	ai_will_do = {
+	# 		#factor = 20000
+	# 		factor = 0
+	# 	}
+	# }
 
 	# MiG-21
 	F4R = {
@@ -1539,7 +1535,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = @us_column y = 13 }
+			position = { x = @us_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
@@ -1569,7 +1565,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			position = { x =@us_variant_column y = 13 }
+			position = { x = @us_variant_column y = 11 }
 		}		
 		categories = {
 			MVLV_tsf_tech
