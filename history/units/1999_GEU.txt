@@ -1,0 +1,680 @@
+﻿@support_division = "Armor Support"
+@gen_two_tsf_division = "Gen 2 TSF"
+@gen_three_tsf_division = "Gen 3 TSF"
+@amphibious_tsf_division = "Amphibious TSF"
+@tsa_division = "TSA Division"
+@defensive_division = "Defensive Division"
+
+#大東亜前線
+#4392
+#12122
+#12220
+#4388
+#1308
+#10158
+#____________________________________________________________
+units = {
+	division = {
+		location = 10158
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 10158
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 10158
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 1308
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 1308
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 1308
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 1308
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 13244
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_2 = { owner = "GEU" } }
+	}
+	division = {
+		location = 4392
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4392
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4392
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4392
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12122
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12122
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12122
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12122
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12220
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1281
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4388
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 12299
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4388
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4388
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4388
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10158
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	
+#____________________________________________________________
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 1308
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+
+#スリランカ
+#10201
+#____________________________________________________________
+	division = {
+		location = 10201
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 10201
+		division_template = @support_division
+		start_experience_factor = 0.2
+	}
+#____________________________________________________________
+  # AI
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		location = 4312
+		division_template = @support_division
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+	
+	division = {
+		location = 7381
+		division_template = @gen_three_tsf_division
+		start_experience_factor = 0
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_1 = { owner = "GEU" } }
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = tsf_equipment_0
+		}
+		requested_factories = 5
+		progress = 0.2
+		efficiency = 30
+	}
+        
+  add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}
