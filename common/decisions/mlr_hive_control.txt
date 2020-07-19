@@ -10,7 +10,7 @@ muv_luv_rebalance_core = {
     # Phase 2 - 2 Years
     # Phase 1 - 20 hours
     # Phase 0 - Destroyed
-    days_remove = 2 # increment progress every 30 days
+    days_remove = 30 # increment progress every 30 days
     days_re_enable = 0
 
     available = {
