@@ -1,10 +1,28 @@
 @support_division = "Armor Support"
 @amphibious_tsf_division = "Amphibious TSF"
 @defensive_division = "Defensive Division"
+@police_template = "Garrison"
+
+division_template = {
+	name = @police_template
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
 
 # Second Wave
 division_template = {
 	name = @support_division
+
+	custom_icon = 8
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
@@ -36,6 +54,8 @@ division_template = {
 
 division_template = {
 	name = @defensive_division
+
+  custom_icon = 6
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }

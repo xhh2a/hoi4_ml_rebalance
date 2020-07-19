@@ -8,7 +8,12 @@
 units = {
   division = {
 		location = 1823
-		division_template = @support_division
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 1823
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
@@ -22,23 +27,18 @@ units = {
 		start_experience_factor = 0.2
   }
   division = {
-		location = 1823
-		division_template = @support_division
+		location = 4744
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 4744
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 4744
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 4744
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
@@ -78,27 +78,27 @@ units = {
   }
   division = {
 		location = 1823
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1823
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1823
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1823
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1823
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
@@ -183,22 +183,22 @@ units = {
   }
   division = {
 		location = 13063
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 13063
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 13063
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 13063
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
@@ -303,22 +303,22 @@ units = {
   }				
   division = {
 		location = 1742
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1742
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1742
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 1742
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {

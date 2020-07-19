@@ -146,7 +146,62 @@ units = {
   }
   division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
+		start_experience_factor = 0.2
+  }
+  division = {
+		location = 6103
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
@@ -156,67 +211,12 @@ units = {
   }
   division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
-		start_experience_factor = 0.2
-  }
-  division = {
-		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
 	division = {
@@ -314,22 +314,22 @@ units = {
   }
   division = {
 		location = 9484
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 9484
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 9484
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
   division = {
 		location = 9484
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
   }
 	division = {
@@ -467,27 +467,27 @@ units = {
 	}
 	division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
 		location = 6103
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
@@ -590,12 +590,12 @@ units = {
 	}
 	division = {
 		location = 9484
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
 		location = 9484
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	division = {
@@ -714,49 +714,49 @@ units = {
 	
 	division = {
 		location = 7193
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 9940
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 11773
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 3838
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 9793
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 12674
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 4159
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	
 	division = {
 		location = 4159
-		division_template = @support_division
+		division_template = @defensive_division
 		start_experience_factor = 0.2
 	}
 	

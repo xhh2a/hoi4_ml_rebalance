@@ -1,7 +1,7 @@
 @tsa_division = "TSA Division"
 
 division_template = {
-  name = @gen_one_tsf_division
+  name = @tsa_division
 
   regiments = {
     MVLV_tsa_battalion= { x = 0 y = 0 }

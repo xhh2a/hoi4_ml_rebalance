@@ -14,8 +14,8 @@ on_actions = {
 					limit = {
 						original_tag = BET
 					}
-					BET = {country_event = BETA.1}
-					BET = {country_event = mvlv_generic.2} # State name changes & Resources
+					BET = { country_event = BETA.1 }
+					BET = { country_event = mvlv_generic.2 } # State name changes & Resources
 				}
 				country_event = mlr_setup.1 # Setup country events
 				country_event = mvlv_generic.98 # Betawar situation
