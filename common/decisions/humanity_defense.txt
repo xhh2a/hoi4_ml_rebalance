@@ -29,13 +29,23 @@ muv_luv_rebalance_core = {
             is_beta_faction = yes
             has_idea = mvlv_aggressive_beta
           }
-          NOT = {
-            has_idea = mvlv_defence_human
-          }
         }
-        add_timed_idea = {
-          idea = mvlv_defence_human
-          days = 60
+        if = {
+          limit = {
+            NOT = {
+              has_idea = mvlv_defence_human
+            }
+          }
+          add_timed_idea = {
+            idea = mvlv_defence_human
+            days = 60
+          }
+          else = {
+            modify_timed_idea = {
+              idea = mvlv_defence_human
+              days = 15
+            }
+          }
         }
       }
       if = {
