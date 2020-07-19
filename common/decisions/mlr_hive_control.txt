@@ -1,3 +1,5 @@
+@culling_operation_idea = hive_thinning_state
+
 muv_luv_rebalance_core = {
   mlr_hive_control_growth = {
     # Phase 9 - 256 Years
@@ -61,5 +63,83 @@ muv_luv_rebalance_core = {
       mlr_hive_control_setup_flags = yes
       activate_decision = mlr_hive_control_growth
     }
+  }
+
+  mlr_hive_control_culling_operation = {
+    days_re_enable = 90 # Codex Page 152
+    days_remove = 90
+
+    available = {
+			FROM = {
+				is_beta_faction = yes
+				has_war_with = ROOT
+				is_neighbor_of = ROOT
+				NOT = { has_idea = @culling_operation_idea }
+			}
+			has_manpower > 250000
+		}
+
+		visible = {
+      is_mankind_faction = yes
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				is_beta_faction = yes
+				has_war_with = ROOT
+				is_neighbor_of = ROOT
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = var:hive_thinning_state_cost?50
+
+		# modifier = {
+    #   # TODO: Cost supplies
+		# }
+
+		complete_effect = {
+			FROM = {
+				add_timed_idea = {
+					idea = @culling_operation_idea
+					days = 45
+				}
+			}
+      subtract_from_variable = { FROM.mlr_hive_growth_rate = 15 }
+			# add_manpower = -75000
+			# add_stability = -0.08
+			# add_war_support = -0.05
+		}
+		
+		remove_effect = {
+      add_to_variable = { FROM.mlr_hive_growth_rate = 15 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				date > 1999.1.20
+				has_war_support > 0.50
+				has_stability > 0.25
+			}
+
+			modifier = {
+				add = 10
+				date > 2000.1.1
+			}
+
+			modifier = {
+				add = 10
+				date > 2001.1.1
+			}
+
+			modifier = {
+				add = 20
+				num_divisions > 100
+			}
+		}
   }
 }

@@ -2,10 +2,35 @@ mlr_hive_control_controls_hive = {
   capital_scope = { # [country, capital]
     hive > 0
     OR = {
-      is_fully_controlled_by = PREV
+      is_controlled_by = PREV # In theory the hive capital should have most VP
       any_allied_country = { # [country, capital, ally]
         PREV = { # [country, capital, ally, capital]
+          is_controlled_by = PREV
+        }
+      }
+    }
+  }
+}
+
+# TODO: When contested no growth but no decrease
+mlr_hive_control_hive_contested = {
+  capital_scope = { # [country, capital]
+    hive > 0
+    OR = {
+      AND = {
+        NOT = {
           is_fully_controlled_by = PREV
+        }
+        is_controlled_by = PREV
+      }
+      any_allied_country = { # [country, capital, ally]
+        PREV = { # [country, capital, ally, capital]
+          AND = {
+            NOT = {
+              is_fully_controlled_by = PREV
+            }
+            is_controlled_by = PREV
+          }
         }
       }
     }

@@ -29,19 +29,13 @@ mlr_hive_control_increase_hive_size = {
       if {
         limit = {
           check_variable = { _current_hive_size > 0 } # Current is 1 or more
-          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 } # Would be 2 years of growth
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 } # Would be 2 years of growth for 1-> 2
         }
       }
       if {
         limit = {
-          check_variable = { _current_hive_size > 1 } # Current is 2 or more
-          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
-        }
-      }
-      if {
-        limit = {
-          check_variable = { _current_hive_size > 2 }
-          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+          check_variable = { _current_hive_size > 2 } # Skipping 1, since 2-> 3 also 2 years
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 } # 3->4 4 years
         }
       }
       if {

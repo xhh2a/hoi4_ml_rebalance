@@ -40,26 +40,26 @@ tsf_generic = {
 	match_to_count = 0.5
 
 	tsf_1st_generation_template = {
-		upgrade_prio = {
-			factor = 10
+		# upgrade_prio = {
+		# 	factor = 10
 
-			modifier = {
-				has_tsf_first_gen_tech = no
-				factor = 0
-			}
-			modifier = {
-				factor = 1.5
-				date > 1978.1.1
-			}
-			modifier = {
-				factor = 1.5
-				date > 1982.1.1
-			}
-			modifier = {
-				factor = 0.05
-				date > 1985.1.1
-			}
-		}
+		# 	modifier = {
+		# 		has_tsf_first_gen_tech = no
+		# 		factor = 0
+		# 	}
+		# 	modifier = {
+		# 		factor = 1.5
+		# 		date > 1978.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 1.5
+		# 		date > 1982.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 0.05
+		# 		date > 1985.1.1
+		# 	}
+		# }
 
 		production_prio = {
 			factor = 10
@@ -67,14 +67,14 @@ tsf_generic = {
 				has_tsf_first_gen_tech = no
 				factor = 0
 			}
-			modifier = {
-				has_sufficient_tsf_first_gen = yes
-				factor = 0.5
-			}
-			modifier = {
-				low_army_count = yes
-				factor = 5
-			}
+			# modifier = {
+			# 	has_sufficient_tsf_first_gen = yes
+			# 	factor = 0.5
+			# }
+			# modifier = {
+			# 	low_army_count = yes
+			# 	factor = 5
+			# }
 			modifier = {
 				has_tsf_second_gen_tech = yes
 				factor = 0.75
@@ -143,67 +143,67 @@ tsf_generic = {
 	}
 
 	tsf_2nd_generation_template = {
-		upgrade_prio = {
-			factor = 10
+		# upgrade_prio = {
+		# 	factor = 10
 
-			modifier = {
-				has_tsf_second_gen_tech = no
-				factor = 0
-			}
-			modifier = {
-				factor = 0.5
-				date < 1994.1.1
-			}
-			modifier = {
-				factor = 2
-				date > 1996.1.1
-			}
-			modifier = {
-				factor = 0.5
-				date > 2001.1.1
-			}
-			modifier = {
-				factor = 0.1
-				date > 2004.1.1
-			}
-		}
+		# 	modifier = {
+		# 		has_tsf_second_gen_tech = no
+		# 		factor = 0
+		# 	}
+		# 	modifier = {
+		# 		factor = 0.5
+		# 		date < 1994.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 2
+		# 		date > 1996.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 0.5
+		# 		date > 2001.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 0.1
+		# 		date > 2004.1.1
+		# 	}
+		# }
 
 		production_prio = {
-			factor = 10
+			factor = 11
 			modifier = {
 				has_tsf_second_gen_tech = no
 				factor = 0
 			}
-			modifier = {
-				has_sufficient_tsf_first_gen = no
-				factor = 0.5
-			}
-			modifier = {
-				has_sufficient_tsf_second_gen = yes
-				factor = 0.5
-			}
-			modifier = {
-				low_army_count = yes
-				factor = 2.5
-			}
-			modifier = {
-				AND = {
-					has_tsf_third_gen_tech = yes
-					has_sufficient_tsf_second_gen = no
-					date < 2004.1.1
-				}
-				factor = 5
-			}
-			modifier = {
-				AND = {
-					has_tsf_third_gen_tech = yes
-					OR = {
-						has_sufficient_tsf_second_gen = yes
-						date > 2004.1.1
-					}
-				}
-				factor = 0.1
-			}
+			# modifier = {
+			# 	has_sufficient_tsf_first_gen = no
+			# 	factor = 0.5
+			# }
+			# modifier = {
+			# 	has_sufficient_tsf_second_gen = yes
+			# 	factor = 0.5
+			# }
+			# modifier = {
+			# 	low_army_count = yes
+			# 	factor = 2.5
+			# }
+			# modifier = {
+			# 	AND = {
+			# 		has_tsf_third_gen_tech = yes
+			# 		has_sufficient_tsf_second_gen = no
+			# 		date < 2004.1.1
+			# 	}
+			# 	factor = 5
+			# }
+			# modifier = {
+			# 	AND = {
+			# 		has_tsf_third_gen_tech = yes
+			# 		OR = {
+			# 			has_sufficient_tsf_second_gen = yes
+			# 			date > 2004.1.1
+			# 		}
+			# 	}
+			# 	factor = 0.1
+			# }
 		}
 		
 		target_width = 20.0
@@ -263,49 +263,49 @@ tsf_generic = {
 	}
 
 	tsf_3rd_generation_template = {
-		upgrade_prio = {
-			factor = 10
+		# upgrade_prio = {
+		# 	factor = 10
 
-			modifier = {
-				factor = 0
-				has_tsf_third_gen_tech = no
-			}
-			modifier = {
-				factor = 0.75
-				date < 1997.1.1
-			}
-			modifier = {
-				factor = 2
-				date > 2001.1.1
-			}
-			modifier = {
-				factor = 2
-				date > 2004.1.1
-			}
-			modifier = {
-				low_army_count = yes
-				factor = 0.25
-			}
-		}
+		# 	modifier = {
+		# 		factor = 0
+		# 		has_tsf_third_gen_tech = no
+		# 	}
+		# 	modifier = {
+		# 		factor = 0.75
+		# 		date < 1997.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 2
+		# 		date > 2001.1.1
+		# 	}
+		# 	modifier = {
+		# 		factor = 2
+		# 		date > 2004.1.1
+		# 	}
+		# 	modifier = {
+		# 		low_army_count = yes
+		# 		factor = 0.25
+		# 	}
+		# }
 
 		production_prio = {
-			factor = 10
+			factor = 12
 			modifier = {
-				has_tsf_second_gen_tech = no
+				has_tsf_third_gen_tech = no
 				factor = 0
 			}
-			modifier = {
-				has_sufficient_tsf_first_gen = no
-				factor = 0.9
-			}
-			modifier = {
-				has_sufficient_tsf_second_gen = no
-				factor = 0.75
-			}
-			modifier = {
-				low_army_count = yes
-				factor = 0.5
-			}
+			# modifier = {
+			# 	has_sufficient_tsf_first_gen = no
+			# 	factor = 0.9
+			# }
+			# modifier = {
+			# 	has_sufficient_tsf_second_gen = no
+			# 	factor = 0.75
+			# }
+			# modifier = {
+			# 	low_army_count = yes
+			# 	factor = 0.5
+			# }
 		}
 		
 		target_width = 20.0
