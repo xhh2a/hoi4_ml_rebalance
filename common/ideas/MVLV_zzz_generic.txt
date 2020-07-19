@@ -101,6 +101,7 @@ ideas = {
 				
 				# AI
 				ai_focus_aggressive_factor = -0.1
+				ai_focus_defense_factor = 0.1
 				ai_call_ally_desire_factor = -30
 				ai_join_ally_desire_factor = -30
 				ai_badass_factor = 0.10
@@ -172,7 +173,6 @@ ideas = {
 				ai_focus_defense_factor = 13.00
 				# Cancel out tactics
 				army_speed_factor = -0.05
-				land_reinforce_rate = -0.10
 				
 				#supply
 				no_supply_grace = 340
