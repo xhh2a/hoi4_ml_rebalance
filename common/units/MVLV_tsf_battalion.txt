@@ -5,8 +5,8 @@ sub_units = {
   tsf_gen_one_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
-		priority = 3500
-		ai_priority = 4000
+		priority = 510
+		ai_priority = 510
 		active = yes
 		
 		type = {
@@ -96,8 +96,8 @@ sub_units = {
 	tsf_gen_two_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
-		priority = 3500
-		ai_priority = 4000
+		priority = 520
+		ai_priority = 520
 		active = yes
 		
 		type = {
@@ -188,8 +188,8 @@ sub_units = {
 	tsf_gen_three_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
-		priority = 3500
-		ai_priority = 4000
+		priority = 530
+		ai_priority = 530
 		active = yes
 
 		type = {
@@ -282,8 +282,8 @@ sub_units = {
   tsf_special_forces_battalion = {
 		sprite = "tsf"
 		map_icon_category = armored
-		priority = 3500
-		ai_priority = 4000
+		priority = 1000
+		ai_priority = 1000
 		active = yes
 		special_forces = yes
 

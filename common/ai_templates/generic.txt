@@ -5,7 +5,7 @@ armor_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 2.17
+		factor = 2
 
 		modifier = {
 			factor = 7
@@ -13,11 +13,11 @@ armor_generic = {
 		}
 	}
 	
-	match_to_count = 0.75
+	match_to_count = 0.5
 
 	medium_armor_default = {	
 		target_width = 10.0
-		width_weight = 1.5
+		width_weight = 1.0
 		column_swap_factor = 0.5
 
 		stat_weights = {
@@ -59,7 +59,7 @@ armor_generic = {
 		}
 
 		target_template = {
-			weight = 0.9
+			weight = 40
 			match_value = 3000.0
 			
 			support = {
@@ -81,30 +81,25 @@ armor_generic = {
 			light_tank_recon
 			maintenance_company
 			logistics_company
-			anti_tank
 			signal_company
+			MVLV_asa_battalion
 		}
 	}
 }
 
-garrison_generic = {
+support_generic = {
 
 	roles = {
-		garrison
+		garrison # TODO: Update this
 	}
 	
 	upgrade_prio = {
-		factor = 80
-
-		modifier = {
-			factor = 0
-			ai_has_role_template = garrison
-		}
+		factor = 0
 	}
 	
-	match_to_count = 0.60
+	match_to_count = 0.70
 
-	garrison_generic = {
+	support_generic = {
 	
 		reinforce_prio = 0
 		custom_icon = 6

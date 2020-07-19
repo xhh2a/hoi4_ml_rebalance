@@ -3,8 +3,8 @@ sub_units = {
 	MVLV_tsa_battalion = {
 		sprite = "tsa"
 		map_icon_category = armored
-		priority = 2500
-		ai_priority = 3000
+		priority = 500
+		ai_priority = 500
 		active = yes
 		
 		type = {

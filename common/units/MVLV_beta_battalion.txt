@@ -36,52 +36,59 @@ sub_units = {
 		supply_consumption = 0.0
 		
 		river = {
-			attack = 0.4
-			movement = -0.99
+			attack = 0.0 # Base: -30/60%
+			movement = -0.5 # Base: -25/50%
 		}
-		
+
+		amphibious = {
+			attack = 0.2 # Base: -70%
+		}
+                
+    fort = {
+			attack = 0.25 # Base: -15/level
+			defence = 0.25 # Base: +15/level
+			movement = -0.5 # Base: 0
+		}
+
+		desert = {
+			attack = -0.05 # Base: 0%
+			movement = 0.05 # Base: -5%
+		}
+
 		forest = {
-			attack = 0.4
-			movement = -0.99
+			attack = 0.1 # Base: -20%
+			movement = -0.5 # Base: -50%
 		}
 
 		hills = {
-                        attack = 0.4
-                        movement = -0.99
-		}
-
-		mountain = {
-                        attack = 0.5
-                        movement = -0.99
+			attack = 0.05 # Base: -30%
+			movement = -0.5 # Base: -50%
 		}
 
 		jungle = {
-			attack = 0.4
-			movement = -0.99
+			attack = 0.0 # Base: -30%
+			movement = -0.5 # Base: -50%
 		}
 
 		marsh = {
-			attack = 0.4
-			movement = -0.99
+			attack = -0.2 # Base: -40%
+			movement = -0.99 # Base: -100%
 		}
-		amphibious = {
-			attack = 0.7
+
+		mountain = {
+			attack = 0.1 # Base: -60%
+			movement = -0.50 # ABase: -100%
 		}
-                
-                fort = {
-			attack = 0.7
-			defence = 0.9
-			movement = -0.99
-		}
-		urban = {
-			attack = -0.5
-			movement = -0.9
-			defence = 0.5
-		}
-		
+
 		plains = {
 			attack = 0.5
-			movement = -0.9
+			movement = 0.25
+			defence = -0.25
+		}
+
+		urban = {
+			attack = 0.5 # Base: -30%
+			movement = 0 # Base: -20%
 			defence = 0.5
 		}
 
@@ -144,37 +151,62 @@ sub_units = {
 		weight = 0.1
 		
 		supply_consumption = 0.0
-		
+
 		river = {
-			attack = 0.3
-		}
-				forest = {
-			attack = 0.2
-		}
-
-		hills = {
-                        attack = 0.3
-		}
-
-		mountain = {
-                        attack = 0.5
-		}
-
-		jungle = {
-			attack = 0.2
-		}
-
-		marsh = {
-			attack = 0.2
+			attack = 0.0 # Base: -30/60%
+			movement = -0.5 # Base: -25/50%
 		}
 
 		amphibious = {
-			attack = 0.4
+			attack = 0.2 # Base: -70%
 		}
                 
-                fort = {
-			attack = 0.3
-			defence = 0.8
+    fort = {
+			attack = 0.25 # Base: -15/level
+			defence = 0.25 # Base: +15/level
+			movement = -0.5 # Base: 0
+		}
+
+		desert = {
+			attack = -0.05 # Base: 0%
+			movement = 0.05 # Base: -5%
+		}
+
+		forest = {
+			attack = 0.1 # Base: -20%
+			movement = -0.5 # Base: -50%
+		}
+
+		hills = {
+			attack = 0.05 # Base: -30%
+			movement = -0.5 # Base: -50%
+		}
+
+		jungle = {
+			attack = 0.0 # Base: -30%
+			movement = -0.5 # Base: -50%
+		}
+
+		marsh = {
+			attack = -0.2 # Base: -40%
+			movement = -0.99 # Base: -100%
+		}
+
+		mountain = {
+			attack = 0.1 # Base: -60%
+			movement = -0.50 # ABase: -100%
+		}
+
+		plains = {
+			attack = 0.5
+			movement = 0.25
+			defence = -0.25
+		}
+
+		urban = {
+			attack = 0.5 # Base: -30%
+			movement = 0 # Base: -20%
+			defence = 0.5
 		}
 
 		hive_gateclass = {
@@ -240,35 +272,60 @@ sub_units = {
 		supply_consumption = 0.0
 		
 		river = {
-			attack = 0.2
+			attack = 0.15 # Base: -30/60%
+			movement = -0.5 # Base: -25/50%
 		}
 
 		amphibious = {
-			attack = 0.1
+			attack = 0.3 # Base: -70%
 		}
-				forest = {
-			attack = 0.2
+                
+    fort = {
+			attack = 0.35 # Base: -15/level
+			defence = 0.0 # Base: +15/level
+			movement = -0.25 # Base: 0
+		}
+
+		desert = {
+			attack = -0.05 # Base: 0%
+			movement = 0 # Base: -5%
+		}
+
+		forest = {
+			attack = -0.1 # Base: -20%
+			movement = -0.5 # Base: -50%
 		}
 
 		hills = {
-                        attack = 0.2
-		}
-
-		mountain = {
-                        attack = 0.2
+			attack = 0.05 # Base: -30%
+			movement = -0.5 # Base: -50%
 		}
 
 		jungle = {
-			attack = 0.2
+			attack = -0.2 # Base: -30%
+			movement = -0.5 # Base: -50%
 		}
 
 		marsh = {
-			attack = 0.2
+			attack = -0.35 # Base: -40%
+			movement = -0.99 # Base: -100%
 		}
-                
-                fort = {
-			attack = 0.05
-			defence = 0.3
+
+		mountain = {
+			attack = 0.05 # Base: -60%
+			movement = -0.50 # ABase: -100%
+		}
+
+		plains = {
+			attack = 0.5
+			movement = 0.25
+			defence = -0.25
+		}
+
+		urban = {
+			attack = 0.45 # Base: -30%
+			movement = 0 # Base: -20%
+			defence = 0.5
 		}
 
 		hive_gateclass = {
@@ -334,16 +391,60 @@ sub_units = {
 		supply_consumption = 0.0
 		
 		river = {
-			attack = 0.1
+			attack = 0.1 # Base: -30/60%
+			movement = -0.45 # Base: -25/50%
 		}
 
 		amphibious = {
-			attack = 0.3
+			attack = 0.3 # Base: -70%
 		}
                 
-                fort = {
-			attack = 0.1
-			defence = 0.7
+    fort = {
+			attack = 0.15 # Base: -15/level
+			defence = 0 # Base: +15/level
+			movement = -0.6 # Base: 0
+		}
+
+		desert = {
+			attack = 0 # Base: 0%
+			movement = -0.2 # Base: -5%
+		}
+
+		forest = {
+			attack = 0.0 # Base: -20%
+			movement = -0.5 # Base: -50%
+		}
+
+		hills = {
+			attack = 0.0 # Base: -30%
+			movement = -0.5 # Base: -50%
+		}
+
+		jungle = {
+			attack = 0.0 # Base: -30%
+			movement = -0.5 # Base: -50%
+		}
+
+		marsh = {
+			attack = -0.1 # Base: -40%
+			movement = -0.75 # Base: -100%
+		}
+
+		mountain = {
+			attack = 0.05 # Base: -60%
+			movement = -0.50 # ABase: -100%
+		}
+
+		plains = {
+			attack = 0.6
+			movement = 0.25
+			defence = -0.15
+		}
+
+		urban = {
+			attack = 0.15 # Base: -30%
+			movement = -0.1 # Base: -20%
+			defence = 0.25
 		}
 
 		hive_gateclass = {
@@ -365,7 +466,6 @@ sub_units = {
 			movement = 0.55
 			defence = 0.1
 		}
-
 
 		need = {
 			beta_grappler = 50
@@ -408,36 +508,61 @@ sub_units = {
 		
 		supply_consumption = 0.0
 		
-		river = {
-			attack = 0.1
+    river = {
+			attack = 0.5 # Base: -30/60%
+			movement = 0 # Base: -25/50%
+		}
+
+		amphibious = {
+			attack = 0.5 # Base: -70%
+		}
+                
+    fort = {
+			attack = 0.5 # Base: -15/level
+			defence = 0 # Base: +15/level
+			movement = -0.3 # Base: 0
+		}
+
+		desert = {
+			attack = -0.25 # Base: 0%
+			movement = -0.45 # Base: -5%
 		}
 
 		forest = {
-			attack = 0.1
+			attack = -0.25 # Base: -20%
+			movement = -0.5 # Base: -50%
 		}
 
 		hills = {
-                        attack = 0.1
-		}
-
-		mountain = {
-                        attack = 0.3
+			attack = -0.15 # Base: -30%
+			movement = -0.25 # Base: -50%
 		}
 
 		jungle = {
-			attack = 0.1
+			attack = -0.25 # Base: -30%
+			movement = -0.75 # Base: -50%
 		}
 
 		marsh = {
-			attack = 0.1
+			attack = -0.45 # Base: -40%
+			movement = -0.99 # Base: -100%
 		}
-		amphibious = {
-			attack = 0.3
+
+		mountain = {
+			attack = -0.25 # Base: -60%
+			movement = -0.99 # ABase: -100%
 		}
-                
-                fort = {
-			attack = 0.1
-			defence = 0.7
+
+		plains = {
+			attack = 0.8
+			movement = 0.5
+			defence = 0.15
+		}
+
+		urban = {
+			attack = 0 # Base: -30%
+			movement = -0.3 # Base: -20%
+			defence = 0.25
 		}
 
 		hive_gateclass = {
@@ -459,7 +584,6 @@ sub_units = {
 			movement = 0.55
 			defence = 0.1
 		}
-
 
 		need = {
 			beta_destroyer = 20
@@ -596,34 +720,60 @@ sub_units = {
 		supply_consumption = 0.0
 		
 		river = {
-			attack = 0.2
+			attack = 0.6 # Base: -30/60%
+			movement = 0.25 # Base: -25/50%
 		}
+
+		amphibious = {
+			attack = 0.7 # Base: -70%
+		}
+                
+    fort = {
+			attack = 0.3 # Base: -15/level
+			defence = 0 # Base: +15/level
+			movement = -0.25 # Base: 0
+		}
+
+		desert = {
+			attack = 0 # Base: 0%
+			movement = -0.2 # Base: -5%
+		}
+
 		forest = {
-			attack = 0.1
+			attack = 0.15 # Base: -20%
+			movement = 0.25 # Base: -50%
 		}
 
 		hills = {
-                        attack = 0.2
-		}
-
-		mountain = {
-                        attack = 0.4
+			attack = 0.15 # Base: -30%
+			movement = 0.25 # Base: -50%
 		}
 
 		jungle = {
-			attack = 0.3
+			attack = -0.3 # Base: -30%
+			movement = 0.25 # Base: -50%
 		}
 
 		marsh = {
-			attack = 0.3
+			attack = -0.1 # Base: -40%
+			movement = -0.75 # Base: -100%
 		}
-		amphibious = {
-			attack = 0.2
+
+		mountain = {
+			attack = -0.15 # Base: -60%
+			movement = -0.99 # ABase: -100%
 		}
-                
-                fort = {
-			attack = 0.2
-			defence = 0.3
+
+		plains = {
+			attack = 0.5
+			movement = 0.25
+			defence = -0.25
+		}
+
+		urban = {
+			attack = -0.3 # Base: -30%
+			movement = -0.3 # Base: -20%
+			defence = -0.5
 		}
 
 		hive_gateclass = {

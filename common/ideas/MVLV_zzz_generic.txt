@@ -94,8 +94,8 @@ ideas = {
 				land_reinforce_rate = 0.55
 				# production
 				production_factory_max_efficiency_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.10
-				
+				production_factory_efficiency_gain_factor = 0.20
+
 				# defensivness
 				army_core_defence_factor = 0.1
 				
@@ -128,11 +128,11 @@ ideas = {
 				supply_consumption_factor = -0.30
 				
 				# army
-				army_core_attack_factor = 1.5
-				army_core_defence_factor = 0.9
-				army_defence_factor = 0.3
-				heat_attrition_factor = -0.75
-				winter_attrition_factor = -0.75
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_defence_factor = 0.15
+				heat_attrition_factor = -0.5
+				winter_attrition_factor = -0.5
 				acclimatization_cold_climate_gain_factor = 0.10
 				acclimatization_hot_climate_gain_factor = 0.10
 				
@@ -148,7 +148,7 @@ ideas = {
 				
 				# experience
 				experience_loss_factor = -1.0
-				experience_gain_army_factor = -1.0
+				experience_gain_army_factor = -2.0
 				
 				#production
 				production_factory_start_efficiency_factor = 0.50
@@ -216,7 +216,9 @@ ideas = {
 				industrial_capacity_factory = 0.45
 				ai_focus_aggressive_factor = 14.00
 				ai_focus_defense_factor = -3.00
-				army_attack_factor = 0.75
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_attack_factor = 0.15
 				army_speed_factor = 0.15
 				army_defence_factor = 0.15
 				land_reinforce_rate = 0.20
@@ -382,10 +384,10 @@ ideas = {
 
 			modifier = {
 				#ai
-				ai_focus_aggressive_factor = -0.1
-				ai_focus_defense_factor = 0.1
-				army_attack_factor = -0.25
-				max_dig_in = 0.25
+				ai_focus_aggressive_factor = -0.5
+				ai_focus_defense_factor = 0.5
+				army_attack_factor = -0.1
+				army_defence_factor = 0.1 # Impossible to get AI to stop attacking
 				dig_in_speed_factor = 0.25
 			}
 		}

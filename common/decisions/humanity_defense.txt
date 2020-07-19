@@ -1,0 +1,58 @@
+muv_luv_rebalance_core = {
+  mlr_humanity_defense = {
+    days_remove = 15
+    days_re_enable = 0
+
+    available = {
+      is_mankind_faction = yes
+      is_ai = yes
+    }
+
+    visible = {
+      or = {
+        is_ai = yes
+        is_debug = yes
+      }
+      is_mankind_faction = yes
+    }
+
+    fire_only_once = no
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    remove_effect = {
+      if = {
+        limit = {
+          any_neighbor_country = {
+            is_beta_faction = yes
+            has_idea = mvlv_aggressive_beta
+          }
+          NOT = {
+            has_idea = mvlv_defence_human
+          }
+        }
+        add_timed_idea = {
+          idea = mvlv_defence_human
+          days = 60
+        }
+      }
+      if = {
+        limit = {
+          NOT = {
+            any_neighbor_country = {
+              is_beta_faction = yes
+              has_idea = mvlv_aggressive_beta
+            }
+          }
+          has_idea = mvlv_defence_human
+        }
+        remove_ideas = {
+          mvlv_defence_human
+        }
+      }
+      activate_decision = mlr_humanity_defense
+    }
+  }
+}
