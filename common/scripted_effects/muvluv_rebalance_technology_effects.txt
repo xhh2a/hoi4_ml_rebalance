@@ -4,59 +4,67 @@
 @tsa_division = "TSA Division"
 
 unlock_tsf_gen_1 = {
-  limit = {
-    NOT = {
-      OR = {
-        has_template_containing_unit = tsf_gen_one_battalion
-        has_variable = THIS.unlocked_tsf_gen_1
-        has_template = @gen_one_tsf_division
+  if = {
+    limit = {
+      NOT = {
+        OR = {
+          has_template_containing_unit = tsf_gen_one_battalion
+          has_variable = THIS.unlocked_tsf_gen_1
+          has_template = @gen_one_tsf_division
+        }
       }
+      load_oob = "unlock_tsf_gen_1"
+      set_variable = { THIS.unlocked_tsf_gen_1 }
     }
-    load_oob = "unlock_tsf_gen_1"
-    set_variable = { THIS.unlocked_tsf_gen_1 }
   }
 
 }
 
 unlock_tsf_gen_2 = {
-  limit = {
-    NOT = {
-      OR = {
-        has_template_containing_unit = tsf_gen_two_battalion
-        has_variable = THIS.unlocked_tsf_gen_2
-        has_template = @gen_two_tsf_division
+  if = {
+    limit = {
+      NOT = {
+        OR = {
+          has_template_containing_unit = tsf_gen_two_battalion
+          has_variable = THIS.unlocked_tsf_gen_2
+          has_template = @gen_two_tsf_division
+        }
       }
+      load_oob = "unlock_tsf_gen_2"
+      set_variable = { THIS.unlocked_tsf_gen_2 }
     }
-    load_oob = "unlock_tsf_gen_2"
-    set_variable = { THIS.unlocked_tsf_gen_2 }
   }
 }
 
 unlock_tsf_gen_3 = {
-  limit = {
-    NOT = {
-      OR = {
-        has_template_containing_unit = tsf_gen_three_battalion
-        has_variable = THIS.unlocked_tsf_gen_3
-        has_template = @gen_three_tsf_division
+  if = {
+    limit = {
+      NOT = {
+        OR = {
+          has_template_containing_unit = tsf_gen_three_battalion
+          has_variable = THIS.unlocked_tsf_gen_3
+          has_template = @gen_three_tsf_division
+        }
       }
+      load_oob = "unlock_tsf_gen_3"
+      set_variable = { THIS.unlocked_tsf_gen_3 }
     }
-    load_oob = "unlock_tsf_gen_3"
-    set_variable = { THIS.unlocked_tsf_gen_3 }
   }
 }
 
 unlock_tsa = {
-  limit = {
-    NOT = {
-      OR = {
-        has_template_containing_unit = MVLV_tsa_battalion
-        has_variable = THIS.unlocked_tsa
-        has_template = @tsa_division
+  if = {
+    limit = {
+      NOT = {
+        OR = {
+          has_template_containing_unit = MVLV_tsa_battalion
+          has_variable = THIS.unlocked_tsa
+          has_template = @tsa_division
+        }
       }
+      load_oob = "unlock_tsa"
+      set_variable = { THIS.unlocked_tsa }
     }
-    load_oob = "unlock_tsa"
-    set_variable = { THIS.unlocked_tsa }
   }
 }
 

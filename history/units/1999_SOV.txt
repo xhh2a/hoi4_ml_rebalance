@@ -401,55 +401,55 @@ units = {
 		location = 1742
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG27U = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_M27U = { owner = "SOV" } }
 	}
 	division = {
 		location = 1742
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG27U = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_M27U = { owner = "SOV" } }
 	}
 	division = {
 		location = 1823
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_Su27U = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU27U = { owner = "SOV" } }
 	}
 	division = {
 		location = 1823
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG29 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_M29U = { owner = "SOV" } }
 	}
 	division = {
 		location = 1823
-		division_template = @gen_three_tsf_division
-		start_experience_factor = 1
-		force_equipment_variants = { tsf_equipment_Su27U = { owner = "SOV" } }
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.2
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
 	}
 	division = {
 		location = 13244
-		division_template = @gen_three_tsf_division
-		start_experience_factor = 1
-		force_equipment_variants = { tsf_equipment_Su37U = { owner = "SOV" } }
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.2
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
 	}
 	division = {
 		location = 1823
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG29 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
 	}
 	division = {
 		location = 13227
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG29 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_M29U = { owner = "SOV" } }
 	}
 	division = {
 		location = 13227
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG27U = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_M27U = { owner = "SOV" } }
 	}
 	division = {
 		location = 13227
@@ -459,15 +459,15 @@ units = {
 	}
 	division = {
 		location = 13227
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG27U = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
 	}
 	division = {
 		location = 13227
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG27U = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
 	}
   division = {
 		location = 4744
@@ -501,9 +501,9 @@ units = {
         }
 	division = {
 		location = 4744
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
 	}
 
   # AI
@@ -529,21 +529,21 @@ units = {
   }
   division = {
 		location = 13238
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 13238
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 13238
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 13238
@@ -553,38 +553,33 @@ units = {
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
-  }
-  division = {
-		location = 1742
-		division_template = @support_division
-		start_experience_factor = 0.2
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 1742
@@ -603,21 +598,26 @@ units = {
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @support_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
   division = {
 		location = 1742
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.2
-		force_equipment_variants = { tsf_equipment_MiG21 = { owner = "SOV" } }
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
+  }
+  division = {
+		location = 1742
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.2
+		force_equipment_variants = { tsf_equipment_SU37U = { owner = "SOV" } }
   }
 
 }

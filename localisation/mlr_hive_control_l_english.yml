@@ -1,0 +1,5 @@
+﻿l_english:
+ mlr_hive_growth_prediction:0 "Growing Hive"
+ mlr_hive_growth_prediction_desc:0 "Unless humanity gains a foothold in the hive, this hive is predicted to grow to the next stage when this idea expires. The hive has grown [?mlr_hive_growth|O0]/[?mlr_hive_control_calculated_growth_threshold|C0] needed to advance to the next stage. This will change by [?mlr_hive_growth_rate|-0] every §W30§! days."
+ mlr_hive_shrink_prediction:0 "Collapsing Hive"
+ mlr_hive_shrink_prediction_desc:0 "The BETA Hive will slowly cease to function as long as the BETA do not control the core."

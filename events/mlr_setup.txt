@@ -5,6 +5,7 @@ country_event = {
 	title = mlr_setup.1.t
 	desc = mlr_setup.1.d
 	picture = GFX_mvlv_start_event
+	timeout_days = 0
 
 	fire_only_once = no
 	is_triggered_only = yes

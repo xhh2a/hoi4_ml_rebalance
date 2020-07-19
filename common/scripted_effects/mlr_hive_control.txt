@@ -1,0 +1,291 @@
+@hive_frequency_check = 30
+
+@phase_1_idea = hive_phase_1
+@phase_2_idea = hive_phase_2
+@phase_3_idea = hive_phase_3
+@phase_4_idea = hive_phase_4
+@phase_5_idea = hive_phase_5
+@phase_6_idea = hive_phase_6
+@phase_7_idea = hive_phase_7
+@phase_8_idea = hive_phase_8
+@phase_9_idea = hive_phase_9
+
+# TODO: Convert these to using arrays
+
+mlr_hive_control_increase_hive_size = {
+  set_temp_variable = { FROM._current_hive_growth = FROM.mlr_hive_growth?0 }
+  set_temp_variable = { FROM._current_hive_size = FROM.mlr_current_hive_size?0 }
+  set_temp_variable = { FROM._new_hive_size = FROM.mlr_current_hive_size }
+  set_temp_variable = { FROM._current_hive_growth_threshold = 356 }
+  if {
+    limit = {
+      check_variable = { _current_hive_size = 0 }
+    }
+    add_to_temp_variable = { _new_hive_size = 1 }
+    log = "Adding 1 by Default since Hive Size is 0 to [This.GetName]. [?_new_hive_size]"
+    else = {
+      # TODO: Convert this to an array for loop
+      # Calculate desired threshold
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 0 } # Current is 1 or more
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 } # Would be 2 years of growth
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 1 } # Current is 2 or more
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 2 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 3 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 4 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 5 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 6 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 7 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      }
+      if {
+        limit = {
+          check_variable = { _current_hive_size > 8 }
+          multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
+        }
+      } 
+      add_to_temp_variable = { FROM._current_hive_growth = FROM.mlr_hive_growth_rate?30 }
+      # log = "Growth [?_current_hive_growth] and Threshold [?_current_hive_growth_threshold]"
+      set_variable = { FROM.mlr_hive_control_calculated_growth_threshold = _current_hive_growth_threshold }
+      if = {
+        limit = { check_variable = { _current_hive_growth > _current_hive_growth_threshold } }
+        add_to_temp_variable = { FROM._new_hive_size = 1 }
+        # log = "Added to [?_new_hive_size] for [This.GetName]"
+      }
+    }
+  }
+  if = {
+    limit = { NOT = { tag = BET } }
+    clamp_temp_variable = { var = FROM._new_hive_size min = 0 max = BET.mlr_current_hive_size }
+    else = {
+      clamp_temp_variable = { var = FROM._new_hive_size min = 0 max = 9 }
+    }
+  }
+  # log = "CurHiveSize = [?mlr_current_hive_size], NewHiveSize = [?_new_hive_size] in [This.GetName]"
+  if = {
+    limit = { check_variable = { var = _new_hive_size value = FROM.mlr_current_hive_size compare = not_equals } }
+    log = "Changing Hive Size for [This.GetName] from [?mlr_current_hive_size] to [?_new_hive_size]"
+    set_variable = { FROM.mlr_current_hive_size = _new_hive_size }
+    log = "New Hive Size for [This.GetName]: [?mlr_current_hive_size]"
+    set_variable = { FROM.mlr_hive_growth = 0 }
+    FROM = {
+      mlr_hive_control_set_hive_size = yes
+    }
+    else = {
+      log = "Setting Growth for [This.GetName] to [?_current_hive_growth] from [?mlr_hive_growth]"
+      set_variable = { FROM.mlr_hive_growth = _current_hive_growth }
+      # Show predicted growth date
+      # growth_left = threshold - growth
+      # growth_per_day = growth_rate / 30
+      # days_left = growth_left / growth_per_day
+      # days_left = growth_left * 30 / growth_rate
+      set_temp_variable = { FROM._needed_days_hive_growth = _current_hive_growth_threshold }
+      subtract_from_temp_variable = { FROM._needed_days_hive_growth = _current_hive_growth }
+      multiply_temp_variable = { FROM._needed_days_hive_growth = @hive_frequency_check }
+      divide_temp_variable = { FROM._needed_days_hive_growth = FROM.mlr_hive_growth_rate?30 }
+      # log = "Expected Days Remaining 1 = [?_needed_days_hive_growth]"
+      round_temp_variable = FROM._needed_days_hive_growth
+      log = "Expected Days Remaining 2 = [?_needed_days_hive_growth]"
+      clamp_temp_variable = { var = FROM._needed_days_hive_growth min = @hive_frequency_check }
+      if = { limit = { has_idea = mlr_hive_shrink_prediction } remove_ideas = mlr_hive_shrink_prediction }
+      remove_ideas = mlr_hive_growth_prediction
+      add_timed_idea = { idea = mlr_hive_growth_prediction days = _needed_days_hive_growth }
+    }
+  }
+}
+
+mlr_hive_control_set_hive_size = {
+  # TODO: Replace with array for loop
+  # Remove old idea
+  log = "Setting Hive Size to [?mlr_current_hive_size] for [This.GetName]"
+  if = {
+    limit = {
+      has_idea = @phase_1_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 1 } } 
+    }
+    remove_ideas = @phase_1_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_2_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 2 } } 
+    }
+    remove_ideas = @phase_2_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_3_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 3 } } 
+    }
+    remove_ideas = @phase_3_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_4_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 4 } } 
+    }
+    remove_ideas = @phase_4_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_5_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 5 } } 
+    }
+    remove_ideas = @phase_5_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_6_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 6 } } 
+    }
+    remove_ideas = @phase_6_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_7_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 7 } } 
+    }
+    remove_ideas = @phase_7_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_8_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 8 } } 
+    }
+    remove_ideas = @phase_8_idea
+  }
+  if = {
+    limit = {
+      has_idea = @phase_9_idea
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 9 } } 
+    }
+    remove_ideas = @phase_9_idea
+  }
+
+  # Add New Idea
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 1 } }
+    add_ideas = @phase_1_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 2 } }
+    add_ideas = @phase_2_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 3 } }
+    add_ideas = @phase_3_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 4 } }
+    add_ideas = @phase_4_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 5 } }
+    add_ideas = @phase_5_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 6 } }
+    add_ideas = @phase_6_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 7 } }
+    add_ideas = @phase_7_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 8 } }
+    add_ideas = @phase_8_idea
+  }
+  if = {
+    limit = { check_variable = { FROM.mlr_current_hive_size = 9 } }
+    add_ideas = @phase_9_idea
+  }
+}
+
+mlr_hive_control_decrease_hive_size = {
+  set_temp_variable = { FROM._current_hive_size = FROM.mlr_current_hive_size?0 }
+  subtract_from_temp_variable = { FROM._current_hive_size = 1 }
+  clamp_temp_variable = { var = FROM._current_hive_size min = 0 }
+  set_variable = { FROM.mlr_current_hive_size = _current_hive_size }
+  add_timed_idea = { idea = mlr_hive_shrink_prediction days = 29 }
+  FROM = {
+    mlr_hive_control_set_hive_size = yes
+  }
+}
+
+mlr_hive_control_setup_flags = {
+  set_variable = { FROM.mlr_current_hive_size = 0 }
+  if = {
+    limit = { has_idea = @phase_1_idea }
+    set_variable = { FROM.mlr_current_hive_size = 1 }
+  }
+  if = {
+    limit = { has_idea = @phase_2_idea }
+    set_variable = { FROM.mlr_current_hive_size = 2 }
+  }
+  if = {
+    limit = { has_idea = @phase_3_idea }
+    set_variable = { FROM.mlr_current_hive_size = 3 }
+  }
+  if = {
+    limit = { has_idea = @phase_4_idea }
+    set_variable = { FROM.mlr_current_hive_size = 4 }
+  }
+  if = {
+    limit = { has_idea = @phase_5_idea }
+    set_variable = { FROM.mlr_current_hive_size = 5 }
+  }
+  if = {
+    limit = { has_idea = @phase_6_idea }
+    set_variable = { FROM.mlr_current_hive_size = 6 }
+  }
+  if = {
+    limit = { has_idea = @phase_7_idea }
+    set_variable = { FROM.mlr_current_hive_size = 7 }
+  }
+  if = {
+    limit = { has_idea = @phase_8_idea }
+    set_variable = { FROM.mlr_current_hive_size = 8 }
+  }
+  if = {
+    limit = { has_idea = @phase_9_idea }
+    set_variable = { FROM.mlr_current_hive_size = 9 }
+  }
+  set_variable = { FROM.mlr_hive_growth_rate = 30 }
+  activate_decision = mlr_hive_control_growth
+}

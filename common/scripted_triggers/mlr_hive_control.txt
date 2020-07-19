@@ -1,0 +1,13 @@
+mlr_hive_control_controls_hive = {
+  capital_scope = { # [country, capital]
+    hive > 0
+    OR = {
+      is_fully_controlled_by = PREV
+      any_allied_country = { # [country, capital, ally]
+        PREV = { # [country, capital, ally, capital]
+          is_fully_controlled_by = PREV
+        }
+      }
+    }
+  }
+}

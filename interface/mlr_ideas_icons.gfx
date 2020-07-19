@@ -1,0 +1,10 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_mlr_hive_growth_prediction"
+		texturefile = "gfx/interface/ideas/HivePhaseUp.dds"
+	}
+  SpriteType = {
+		name = "GFX_idea_mlr_hive_shrink_prediction"
+		texturefile = "gfx/interface/ideas/brokenhive.dds"
+	}
+}

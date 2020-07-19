@@ -1,5 +1,4 @@
 on_actions = {
-	
 	on_startup = {
 		effect = {
 			every_country = {
@@ -8,67 +7,18 @@ on_actions = {
 						is_beta_faction = yes
 					}
 					country_event = var.1
+					activate_decision = mlr_hive_setup_flags
 				}
-				
+
 				IF = {
 					limit = {
 						original_tag = BET
 					}
-					BET = { country_event = BETA.1 }
+					BET = { country_event = BETA.1 } # Sets up world devasatation
 					BET = { country_event = mvlv_generic.2 } # State name changes & Resources
 				}
 				country_event = mlr_setup.1 # Setup country events
 				country_event = mvlv_generic.98 # Betawar situation
-			}
-		}
-	}
-
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						is_beta_faction = yes
-						surrender_progress > 0.3
-						not = { has_idea = mvlv_brokenhive }
-					}
-				}
-				FROM = {
-					country_event = BETA.98
-				}
-			} else_if = {
-				limit = {
-					is_beta_faction = yes
-					surrender_progress < 0.1
-					has_idea = mvlv_brokenhive
-				}
-				country_event = BETA.98
-			}
-		}
-	}
-	
-	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					is_beta_faction = yes
-					surrender_progress > 0.3
-					not = { has_idea = mvlv_brokenhive }
-				}
-				country_event = BETA.98
-			}
-		}
-	}
-
-	on_uncapitulation = {
-		effect = {
-			if = {
-				limit = {
-					is_beta_faction = yes
-					surrender_progress < 0.2
-					has_idea = mvlv_brokenhive
-				}
-				country_event = BETA.98
 			}
 		}
 	}

@@ -7,7 +7,7 @@ units = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.3
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
@@ -24,13 +24,13 @@ units = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.3
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.3
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
@@ -46,42 +46,42 @@ units = {
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
 			location = 7186
-			division_template = @infantry_type
+			division_template = @support_division
 			start_experience_factor = 0.2
 	}
 	division = {
@@ -163,43 +163,43 @@ units = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 	division = {
 			location = 7186
 			division_template = @gen_two_tsf_division
 			start_experience_factor = 0.2
-			force_equipment_variants = { tsf_equipment_MiG23 = { owner = "CHI" } }
+			force_equipment_variants = { tsf_equipment_M23U = { owner = "CHI" } }
 	}
 }
 

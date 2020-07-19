@@ -1,0 +1,12 @@
+ideas = {
+	country = {
+		mlr_hive_growth_prediction = {
+			allowed = { always = no }
+      modifier = {}
+		}
+    mlr_hive_shrink_prediction = {
+      allowed = { always = no }
+      modifier = {}
+    }
+  }
+}
