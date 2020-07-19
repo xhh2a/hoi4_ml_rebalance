@@ -796,9 +796,8 @@ sub_units = {
 			defence = 0.1
 		}
 
-
 		need = {
-			beta_fort = 3
+			beta_fort = 1
 		}
 	}
 

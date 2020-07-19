@@ -36,40 +36,67 @@ sub_units = {
 		#Tanks are awesome
 		# soft_attack = 0.5
 
+		river = {
+			attack = 0 # Base: -30/60%
+			defence = 0.5
+			movement = 0 # Base: -25/50%
+		}
+
+		amphibious = {
+			attack = 0.7 # Base: -70%
+			defence = 0.5
+			movement = -0.5
+		}
+                
+    fort = {
+			attack = 0.15 # Base: -15/level
+			defence = 0.15 # Base: +15/level
+			movement = -0.25 # Base: 0
+		}
+
+		desert = {
+			attack = -0.15 # Base: 0%
+			movement = -0.2 # Base: -5%
+			defence = 0.15
+		}
+
 		forest = {
-		    attack = -0.3
-			defence = 0.3
-			movement = -0.4
+			attack = 0.0 # Base: -20%
+			movement = 0.0 # Base: -50%
 		}
-		hills = 	{
-		    attack = -0.1
-			defence = 0.3
+
+		hills = {
+			attack = 0.15 # Base: -30%
+			movement = 0.45 # Base: -50%
+			defence = 0.15
 		}
-		mountain = 	{
-		    attack = -0.2
-			defence = 0.3
-		}
+
 		jungle = {
-		    attack = -0.4
-			defence = 0.3
-			movement = -0.4
+			attack = -0.3 # Base: -30%
+			movement = -0.25 # Base: -50%
 		}
+
 		marsh = {
-		    attack = -0.1 
-			defence = 0.3
-			movement = -0.1
+			attack = -0.1 # Base: -40%
+			movement = -0.75 # Base: -100%
+			defence = 0.1
 		}
+
+		mountain = {
+			attack = 0.1 # Base: -60%
+			movement = -0.5 # ABase: -100%
+			defence = 0.25
+		}
+
+		plains = {
+			attack = 0.5
+			movement = 0.25
+			defence = -0.25
+		}
+
 		urban = {
-			attack = -0.4
-			defence = 0.3
-		}
-		river = { 
-			attack = -0.2 
-			defence = 0.7
-			movement = -0.2
-		}
-		amphibious = { 
-			attack = -0.7
+			attack = 0.55 # Base: -30%
+			movement = 0.7 # Base: -20%
 			defence = 0.5
 		}
 
