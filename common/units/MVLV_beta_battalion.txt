@@ -25,7 +25,7 @@ sub_units = {
 		#Size Definitions
 		max_strength = 12
 		max_organisation = 250
-		default_morale = 40
+		default_morale = 20
 		manpower = 600
 
 		#Misc Abilities
@@ -142,7 +142,7 @@ sub_units = {
 		#Size Definitions
 		max_strength = 10
 		max_organisation = 250
-		default_morale = 40
+		default_morale = 20
 		manpower = 600
 
 		#Misc Abilities
@@ -260,8 +260,8 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 10
-		max_organisation = 250
-		default_morale = 40
+		max_organisation = 300
+		default_morale = 15
 		manpower = 600
 
 		#Misc Abilities
@@ -379,8 +379,8 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 250
-		default_morale = 40
+		max_organisation = 300
+		default_morale = 10
 		manpower = 1200
 
 		#Misc Abilities
@@ -498,7 +498,7 @@ sub_units = {
 		#Size Definitions
 		max_strength = 16
 		max_organisation = 250
-		default_morale = 40
+		default_morale = 10
 		manpower = 1200
 
 		#Misc Abilities
@@ -709,7 +709,7 @@ sub_units = {
 		#Size Definitions
 		max_strength = 17
 		max_organisation = 500
-		default_morale = 40
+		default_morale = 10
 		manpower = 3000
 
 		#Misc Abilities

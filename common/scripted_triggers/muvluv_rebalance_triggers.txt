@@ -1,5 +1,6 @@
 is_beta_faction = {
   OR = {
+    is_in_faction_with = BET
     tag = BET
     tag = M01
     tag = H02

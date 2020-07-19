@@ -1,0 +1,499 @@
+﻿add_namespace = mlr_setup
+
+country_event = {
+	id = mlr_setup.1
+	title = mlr_setup.1.t
+	desc = mlr_setup.1.d
+	picture = GFX_mvlv_start_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mlr_setup.1.a
+		ai_chance = { factor = 0 }
+		add_manpower = 100000
+		add_ideas = mvlv_difficulty_easy
+	  UNI = { add_ideas = mvlv_bocchi }
+		BET = { add_ideas = mvlv_bocchi }
+
+		#政治力ボーナス
+		add_political_power = 50
+
+		#陸軍経験値ボーナス
+		army_experience = 20
+
+		hidden_effect = {
+			set_global_flag = easy_world
+		}
+	}
+
+	option = {
+		name = mlr_setup.1.b
+		ai_chance = { factor = 0 }
+		add_ideas = mvlv_difficulty_normal
+	}
+
+	option = {
+		name = mlr_setup.1.c
+		ai_chance = { factor = 0 }
+		add_ideas = mvlv_difficulty_hard
+	}
+
+	option = {
+		name = mlr_setup.1.e
+		ai_chance = { factor = 0 }
+		add_ideas = mvlv_difficulty_unlimited
+	}
+
+	option = {
+		name = mlr_setup.1.f
+		ai_chance = { factor = 200 }
+		trigger = {
+			is_beta_faction = yes
+			is_ai = yes
+		}
+		
+		add_ideas = mvlv_difficulty_beta
+		load_oob = "garrison_BET_1999"
+
+		hidden_effect = {
+			set_global_flag = player_choosed_difficulty
+			set_major = yes
+		}
+	}
+
+	option = {
+		name = mlr_setup.1.g
+		ai_chance = { factor = 200 }
+		trigger = {
+      is_mankind_faction = yes
+			is_ai = yes
+		}
+		
+		add_ideas = mvlv_difficulty_ai
+
+    if = {
+      limit = {
+        tag = EEA
+      }
+      EEA = {
+			  add_equipment_to_stockpile = { type = tsf_equipment_M23U amount = 300 producer = EEA }
+		  }
+      #グリーンランドの要塞化
+      805 = {
+        
+        add_building_construction = {
+          type = coastal_bunker
+          level = 5
+          instant_build = yes
+          province = 10636
+        }	
+      }
+    }
+
+    if = {
+      limit = {
+        tag = UNI
+      }
+
+      UNI = {
+        add_equipment_to_stockpile = { type = tsf_equipment_F4U amount = 200 producer = UNI }
+        add_equipment_to_stockpile = { type = tsf_equipment_SU37U amount = 50 producer = UNI }
+        add_equipment_to_stockpile = { type = tsf_equipment_F15EU amount = 100 producer = UNI }
+      }
+
+      791 = {
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 13244
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        tag = SOV
+      }
+      SOV = {
+        add_equipment_to_stockpile = { type = tsf_equipment_F4R amount = 300 producer = SOV }
+      }
+      
+      637 = {
+        add_building_construction = {
+            type = naval_base
+            level = 4
+            instant_build = yes
+            province = 1863
+        }
+      }
+
+      644 = {
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 4744
+        }
+      }
+      
+      790 = {
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 13241
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        tag = GEU
+      }
+
+      GEU = {
+        add_equipment_to_stockpile = { type = tsf_equipment_F15U amount = 150 producer = GEU }
+      }
+
+      724 = {
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 1308
+        }
+        
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 4388
+        }
+        
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 4392
+        }
+
+        add_building_construction = {
+            type = bunker
+            level = 1
+            instant_build = yes
+            province = 10158
+        }
+
+        add_building_construction = {
+            type = bunker
+            level = 1
+            instant_build = yes
+            province = 1281
+        }
+
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 12122
+        }
+        
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 12220
+        }
+
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 12230
+        }
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 12201
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        tag = AFR
+      }
+
+      AFR = {
+        add_equipment_to_stockpile = { type = tsf_equipment_F16CU amount = 200 producer = AFR }
+      }
+
+      457 = {
+        add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 9957
+        }
+
+        add_building_construction = {
+            type = coastal_bunker
+            level = 1
+            instant_build = yes
+            province = 9957
+        }
+      }
+
+      447 = {
+        add_building_construction = {
+          type = bunker
+          level = 4
+          instant_build = yes
+          province = 1071
+        }
+      }
+
+      456 = {
+        add_building_construction = {
+          type = bunker
+          level = 2
+          instant_build = yes
+          province = 1206
+        }
+
+        add_building_construction = {
+          type = bunker
+          level = 2
+          instant_build = yes
+          province = 11999
+        }
+
+        add_building_construction = {
+          type = bunker
+          level = 2
+          instant_build = yes
+          province = 7156
+        }
+
+        add_building_construction = {
+          type = bunker
+          level = 2
+          instant_build = yes
+          province = 5069
+        }
+      }
+    }
+
+		if = {
+			limit = {
+				tag = JAP
+			}
+
+			JAP = {
+				add_equipment_to_stockpile = { type = tsf_equipment_F4J amount = 300 producer = JAP }
+			}
+
+			282 = {
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 1097
+				}
+				
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4000
+				}
+				
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 9998
+				}
+				
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 11908
+				}
+			}
+
+			533 = {
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4067
+				}
+				
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4122
+				}
+				
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4153
+				}
+			}
+
+			526 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 7115
+				}
+				
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 7115
+				}
+				
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11932
+				}
+				
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = 11932
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				tag = EUR
+			}
+			EUR = {
+				add_equipment_to_stockpile = { type = tsf_equipment_F5AU amount = 400 producer = EUR }
+			}
+			
+			#シチリアの要塞化
+			115 = {
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = 4159
+				}
+
+				add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 4159
+				}
+			}
+			
+			#イングランド南西部の要塞化
+			123 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 540 #プリマス
+				}
+
+				add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 540 #プリマス
+				}
+			}
+			
+			#サセックスの要塞化
+			127 = {
+				add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 9458 #ポーツマス
+				}
+				
+				add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = 3501 #ドーバー
+				}
+
+				add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 9458 #ポーツマス
+				}
+				
+				add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 3501 #ドーバー
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				tag = CHI
+			}
+			#TSF装備追加
+			CHI = {
+				add_equipment_to_stockpile = { type = tsf_equipment_F16CU amount = 100 producer = CHI }
+			}
+			
+			#台湾の要塞化
+			524 = {
+				add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 7214
+				}
+
+				add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 9955
+				}
+
+				add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 7214
+				}
+
+				add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+						province = 9955
+				}
+			}
+		}
+	}
+}
