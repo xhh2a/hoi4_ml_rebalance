@@ -3,9 +3,11 @@ mlr_hive_control_controls_hive = {
     hive > 0
     OR = {
       is_controlled_by = PREV # In theory the hive capital should have most VP
-      any_allied_country = { # [country, capital, ally]
-        PREV = { # [country, capital, ally, capital]
-          is_controlled_by = PREV
+      PREV = { # [country, capital, country]
+        any_allied_country = { # [country, capital, country, ally]
+          PREV.PREV = { # [country, capital, country, ally, capital]
+            is_controlled_by = PREV
+          }
         }
       }
     }
@@ -23,13 +25,15 @@ mlr_hive_control_hive_contested = {
         }
         is_controlled_by = PREV
       }
-      any_allied_country = { # [country, capital, ally]
-        PREV = { # [country, capital, ally, capital]
-          AND = {
-            NOT = {
-              is_fully_controlled_by = PREV
+      PREV = {
+        any_allied_country = { # [country, capital, country, ally]
+          PREV.PREV = { # [country, capital, country, ally, capital]
+            AND = {
+              NOT = {
+                is_fully_controlled_by = PREV
+              }
+              is_controlled_by = PREV
             }
-            is_controlled_by = PREV
           }
         }
       }

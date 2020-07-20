@@ -1,0 +1,27 @@
+@defensive_idea = mvlv_defence_human
+
+mlr_ia_no_attacks_when_defending = {
+  enable = {
+    is_mankind_faction = yes
+    has_idea = @defensive_idea
+  }
+
+  abort = {
+    NOT = { has_idea = @defensive_idea }
+  }
+
+  # TODO: Consider making this true by default not just when defensive idea is enabled
+  ai_strategy = {
+    type = front_control
+
+    country_trigger = { is_beta_faction = yes }
+
+    ratio = 0.0 # the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
+
+    priority = 20 # default 0, higher prio strats will override lower
+    ordertype = front
+    execution_type = careful
+    execute_order = no
+    manual_attack = no
+  }
+}

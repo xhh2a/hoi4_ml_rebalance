@@ -1,0 +1,41 @@
+mlr_ia_pp_priorities = {
+	enable = {
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 100
+	}
+
+  ai_strategy = {
+    type = pp_spend_priority
+    id = idea
+    value = 70
+  }
+
+  ai_strategy = {
+		type = pp_spend_priority
+		id = decision
+		value = 30
+	}
+
+  ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -100
+	}
+
+  ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -100
+	}
+}

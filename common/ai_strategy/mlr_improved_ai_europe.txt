@@ -1,0 +1,160 @@
+mlr_ia_europe_garrison_english_channel = {
+  enable = {
+    tag = EUR
+    127 = {
+      is_fully_controlled_by = EUR
+    }
+  }
+
+  abort = {
+    OR = {
+      has_war = no
+      AND = {
+        H12 = { #Lyon Hive
+          has_capitulated = yes
+        }
+        H11 = {
+          has_capitulated = yes
+        }
+      }
+      127 = {
+        NOT = { is_fully_controlled_by = EUR }
+      }
+    }
+  }
+
+  # Main
+  ai_strategy = {
+    type = put_unit_buffers
+    
+    # ratio of total armeys in country to be buffered
+    ratio = 0.5
+  
+    # provinces = {
+    # }
+
+    states = {
+      127 # Sussex
+    }
+    
+    # by default if you have orders in target areas, the buffer will request less units. 
+    # you can override this to disable the feature
+    subtract_invasions_from_need = no
+    subtract_fronts_from_need = no
+  }
+}
+
+mlr_ia_europe_retake_southern_england = {
+  enable = {
+    tag = EUR
+    EUR = {
+      127 = {
+        NOT = {
+          is_fully_controlled_by = EUR
+        }
+      }
+      126 = {
+        NOT = {
+          is_fully_controlled_by = EUR
+        }
+      }
+      123 = {
+        NOT = {
+          is_fully_controlled_by = EUR
+        }
+      }
+    }
+  }
+
+  abort_when_not_enabled = yes
+
+  ai_strategy = {
+    type = front_control
+
+    strategic_region = 1 # England
+
+    ratio = 1.5 # the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
+
+    priority = 30 # default 0, higher prio strats will override lower
+    ordertype = front # Allows Invasions
+    execution_type = balanced
+    # execute_order = yes
+    manual_attack = no
+  }
+
+  ai_strategy = {
+	  # use one of them
+	  type = front_unit_request
+	  strategic_region = 1
+	  value = 40
+  }
+
+  ai_strategy = {
+      type = force_build_armies
+      value = 30
+  }
+}
+
+mlr_ai_europe_garrison_sicily = {
+  # Sicily
+  ai_strategy = {
+    type = put_unit_buffers
+    
+    # ratio of total armeys in country to be buffered
+    ratio = 0.1
+  
+    # provinces = {
+    #   4159 # Messina
+    # }
+
+    states = {
+      115 # Sicily
+    }
+    
+    # by default if you have orders in target areas, the buffer will request less units. 
+    # you can override this to disable the feature
+    subtract_invasions_from_need = no
+    subtract_fronts_from_need = no
+  }
+}
+
+mlr_ia_europe_defend_channels = {
+  enable = {
+    tag = EUR
+  }
+
+  abort = {
+    OR = {
+      EUR = {
+        OR = {
+          has_war = no
+          any_allied_country = {
+            AND = {
+              15 = { is_controlled_by = PREV } # Normandy
+              29 = { is_controlled_by = PREV } # Calais
+              785 = { is_controlled_by = PREV } # Picardy
+            }
+          }
+        }
+      }
+      H12 = { #Lyon Hive
+        has_capitulated = yes
+      }
+    }
+  }
+
+  # TODO: Consider making this true by default not just when defensive idea is enabled
+  ai_strategy = {
+    type = front_control
+
+    country_trigger = { is_beta_faction = yes }
+
+    ratio = 0.0 # the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
+
+    priority = 25 # default 0, higher prio strats will override lower
+    ordertype = front # Allows Invasions
+    execution_type = careful
+    execute_order = no
+    manual_attack = no
+  }
+}

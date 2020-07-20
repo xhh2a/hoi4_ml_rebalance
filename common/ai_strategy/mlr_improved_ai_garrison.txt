@@ -1,0 +1,11 @@
+# BETA is not going to amphibious invade
+mlr_ia_no_garrisons = {
+  enable = {
+    is_mankind_faction = yes
+  }
+
+  ai_strategy = {
+    type = garrison
+    value = -100
+  }
+}

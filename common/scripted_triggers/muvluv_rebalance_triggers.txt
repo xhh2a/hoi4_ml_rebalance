@@ -42,8 +42,8 @@ low_army_count = {
   divide_temp_variable = { _total_army_count = _current_ic }
   check_variable = {
     var = _total_army_count
-    compare = less_than
     value = THIS.low_army_ratio_threshold?1.0 # Desired Ratio
+    compare = less_than
   }
 
 }
@@ -52,8 +52,8 @@ has_sufficient_tsf_first_gen = {
   OR = {
     check_variable = {
       var = THIS.num_armies_with_type@tsf_gen_one_batallion
-      compare = greather_than
       value = THIS.too_many_first_gen_threshold?15 # Build higher quality units if too many
+      compare = greather_than
     }
   }
 }
@@ -62,8 +62,8 @@ has_sufficient_tsf_second_gen = {
   OR = {
     check_variable = {
       var = THIS.num_armies_with_type@tsf_gen_two_batallion
-      compare = greather_than
       value = THIS.too_many_second_gen_threshold?25 # Build higher quality units if too many
+      compare = greather_than
     }
   }
 }
@@ -72,8 +72,8 @@ has_sufficient_tsf_third_gen = {
   OR = {
     check_variable = {
       var = THIS.num_armies_with_type@tsf_gen_three_batallion
-      compare = greather_than
       value = THIS.too_many_third_gen_threshold?20 # Build lower quality units if too many
+      compare = greather_than
     }
   }
 }

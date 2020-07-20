@@ -37,7 +37,7 @@ tsf_generic = {
 		tsf
 	}
 	
-	match_to_count = 0.5
+	match_to_count = 0.9
 
 	tsf_1st_generation_template = {
 		# upgrade_prio = {
@@ -61,29 +61,29 @@ tsf_generic = {
 		# 	}
 		# }
 
-		production_prio = {
-			factor = 10
-			modifier = {
-				has_tsf_first_gen_tech = no
-				factor = 0
-			}
-			# modifier = {
-			# 	has_sufficient_tsf_first_gen = yes
-			# 	factor = 0.5
-			# }
-			# modifier = {
-			# 	low_army_count = yes
-			# 	factor = 5
-			# }
-			modifier = {
-				has_tsf_second_gen_tech = yes
-				factor = 0.75
-			}
-			modifier = {
-				has_tsf_third_gen_tech = yes
-				factor = 0.5
-			}
-		}
+		# production_prio = {
+		# 	factor = 10
+		# 	modifier = {
+		# 		has_tsf_first_gen_tech = no
+		# 		factor = 0
+		# 	}
+		# 	# modifier = {
+		# 	# 	has_sufficient_tsf_first_gen = yes
+		# 	# 	factor = 0.5
+		# 	# }
+		# 	# modifier = {
+		# 	# 	low_army_count = yes
+		# 	# 	factor = 5
+		# 	# }
+		# 	modifier = {
+		# 		has_tsf_second_gen_tech = yes
+		# 		factor = 0.75
+		# 	}
+		# 	modifier = {
+		# 		has_tsf_third_gen_tech = yes
+		# 		factor = 0.5
+		# 	}
+		# }
 		
 		target_width = 20.0
 		width_weight = 1.0
@@ -168,43 +168,43 @@ tsf_generic = {
 		# 	}
 		# }
 
-		production_prio = {
-			factor = 11
-			modifier = {
-				has_tsf_second_gen_tech = no
-				factor = 0
-			}
-			# modifier = {
-			# 	has_sufficient_tsf_first_gen = no
-			# 	factor = 0.5
-			# }
-			# modifier = {
-			# 	has_sufficient_tsf_second_gen = yes
-			# 	factor = 0.5
-			# }
-			# modifier = {
-			# 	low_army_count = yes
-			# 	factor = 2.5
-			# }
-			# modifier = {
-			# 	AND = {
-			# 		has_tsf_third_gen_tech = yes
-			# 		has_sufficient_tsf_second_gen = no
-			# 		date < 2004.1.1
-			# 	}
-			# 	factor = 5
-			# }
-			# modifier = {
-			# 	AND = {
-			# 		has_tsf_third_gen_tech = yes
-			# 		OR = {
-			# 			has_sufficient_tsf_second_gen = yes
-			# 			date > 2004.1.1
-			# 		}
-			# 	}
-			# 	factor = 0.1
-			# }
-		}
+		# production_prio = {
+		# 	factor = 11
+		# 	modifier = {
+		# 		has_tsf_second_gen_tech = no
+		# 		factor = 0
+		# 	}
+		# 	# modifier = {
+		# 	# 	has_sufficient_tsf_first_gen = no
+		# 	# 	factor = 0.5
+		# 	# }
+		# 	# modifier = {
+		# 	# 	has_sufficient_tsf_second_gen = yes
+		# 	# 	factor = 0.5
+		# 	# }
+		# 	# modifier = {
+		# 	# 	low_army_count = yes
+		# 	# 	factor = 2.5
+		# 	# }
+		# 	# modifier = {
+		# 	# 	AND = {
+		# 	# 		has_tsf_third_gen_tech = yes
+		# 	# 		has_sufficient_tsf_second_gen = no
+		# 	# 		date < 2004.1.1
+		# 	# 	}
+		# 	# 	factor = 5
+		# 	# }
+		# 	# modifier = {
+		# 	# 	AND = {
+		# 	# 		has_tsf_third_gen_tech = yes
+		# 	# 		OR = {
+		# 	# 			has_sufficient_tsf_second_gen = yes
+		# 	# 			date > 2004.1.1
+		# 	# 		}
+		# 	# 	}
+		# 	# 	factor = 0.1
+		# 	# }
+		# }
 		
 		target_width = 20.0
 		width_weight = 1.0
@@ -288,25 +288,25 @@ tsf_generic = {
 		# 	}
 		# }
 
-		production_prio = {
-			factor = 12
-			modifier = {
-				has_tsf_third_gen_tech = no
-				factor = 0
-			}
-			# modifier = {
-			# 	has_sufficient_tsf_first_gen = no
-			# 	factor = 0.9
-			# }
-			# modifier = {
-			# 	has_sufficient_tsf_second_gen = no
-			# 	factor = 0.75
-			# }
-			# modifier = {
-			# 	low_army_count = yes
-			# 	factor = 0.5
-			# }
-		}
+		# production_prio = {
+		# 	factor = 12
+		# 	modifier = {
+		# 		has_tsf_third_gen_tech = no
+		# 		factor = 0
+		# 	}
+		# 	# modifier = {
+		# 	# 	has_sufficient_tsf_first_gen = no
+		# 	# 	factor = 0.9
+		# 	# }
+		# 	# modifier = {
+		# 	# 	has_sufficient_tsf_second_gen = no
+		# 	# 	factor = 0.75
+		# 	# }
+		# 	# modifier = {
+		# 	# 	low_army_count = yes
+		# 	# 	factor = 0.5
+		# 	# }
+		# }
 		
 		target_width = 20.0
 		width_weight = 1.0

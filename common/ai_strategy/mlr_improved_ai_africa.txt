@@ -1,0 +1,99 @@
+mlr_ia_africa_garrison_strait = {
+  enable = {
+    tag = AFR
+  }
+
+  abort = {
+    has_war = no
+    H09 = {
+      has_capitulated = yes
+    }
+  }
+
+  # Main
+  ai_strategy = {
+    type = put_unit_buffers
+    
+    # ratio of total armeys in country to be buffered
+    ratio = 0.3
+  
+    # provinces = {
+    #   4073 # Suez
+    #   12049 # Suez
+    #   9957 # Eastern Desert
+    # }
+
+    states = {
+      446 # Cairo
+      457 # Eastern Desert
+    }
+    
+    # by default if you have orders in target areas, the buffer will request less units. 
+    # you can override this to disable the feature
+    subtract_invasions_from_need = no
+    subtract_fronts_from_need = no
+  }
+
+  # Sicily
+  ai_strategy = {
+    type = put_unit_buffers
+    
+    # ratio of total armeys in country to be buffered
+    ratio = 0.1
+  
+    # provinces = {
+    #   4159 # Messina
+    #   10091 # Tunisia
+    # }
+
+    states = {
+      115 # Sicily
+      458 # Tunisia
+    }
+    
+    # by default if you have orders in target areas, the buffer will request less units. 
+    # you can override this to disable the feature
+    subtract_invasions_from_need = no
+    subtract_fronts_from_need = no
+  }
+}
+
+mlr_ia_africa_leverage_suez = {
+  enable = {
+    tag = AFR
+  }
+
+  abort = {
+    OR = {
+      AFR = {
+        OR = {
+          has_war = no
+          any_allied_country = {
+            OR = {
+              453 = { is_controlled_by = PREV } # Sinai
+              454 = { is_controlled_by = PREV } # Palestine
+            }
+          }
+        }
+      }
+      H09 = {
+        has_capitulated = yes
+      }
+    }
+  }
+
+  # TODO: Consider making this true by default not just when defensive idea is enabled
+  ai_strategy = {
+    type = front_control
+
+    country_trigger = { is_beta_faction = yes }
+
+    ratio = 0.0 # the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
+
+    priority = 25 # default 0, higher prio strats will override lower
+    ordertype = front
+    execution_type = careful
+    execute_order = no
+    manual_attack = no
+  }
+}

@@ -1,16 +1,15 @@
 armor_generic = {
 
+	blocked_for = {
+		BET H02 H03 H04 H05 H06 H07 H08 H09 H10 H11 H12 H13 H14 H15 H16 H17 H18 H19 H20 H21 H25 H26
+	}
+
 	roles = {
 		armor
 	}
 	
 	upgrade_prio = {
-		factor = 2
-
-		modifier = {
-			factor = 7
-			has_tech = basic_medium_tank
-		}
+		factor = 0
 	}
 	
 	match_to_count = 0.5
@@ -60,7 +59,6 @@ armor_generic = {
 
 		target_template = {
 			weight = 40
-			match_value = 3000.0
 			
 			support = {
 				engineer = 1
@@ -88,7 +86,9 @@ armor_generic = {
 }
 
 support_generic = {
-
+  blocked_for = {
+		BET H02 H03 H04 H05 H06 H07 H08 H09 H10 H11 H12 H13 H14 H15 H16 H17 H18 H19 H20 H21 H25 H26
+	}
 	roles = {
 		garrison # TODO: Update this
 	}
@@ -148,7 +148,6 @@ support_generic = {
 		
 		target_template = {
 			weight = 0.9
-			match_value = 3000.0
 			
 			support = {
 				engineer = 1
@@ -182,12 +181,7 @@ suppression_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 1
-
-		modifier = {
-			factor = 20
-			has_war = yes
-		}
+		factor = 0
 	}
 	
 	match_to_count = 0.60
@@ -196,10 +190,6 @@ suppression_generic = {
 	
 		reinforce_prio = 0
 		custom_icon = 42 # M
-	
-		upgrade_prio = {
-			factor = 2
-		}
 		
 		target_width = 10.0
 		width_weight = 1.0
@@ -245,7 +235,6 @@ suppression_generic = {
 		
 		target_template = {
 			weight = 0.9
-			match_value = 3000.0
 			
 			support = { 
 				military_police = 1

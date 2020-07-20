@@ -1,0 +1,133 @@
+# TODO: Remove Naval from tech tree and equipment
+mlr_ia_ignore_naval = {
+	enable = {
+    always = yes
+  }	
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -300
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -300
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -300
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 5
+	}
+}
+
+# TODO: Rebalance air combat
+mlr_ia_ignore_air = {
+  # Air unit factors
+	# Unit Ratios use Internal Unit Types
+	# https://hoi4.paradoxwikis.com/Unit_modding
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -300
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = interceptor
+		value = -300
+	}
+
+	# ai_strategy = {
+	# 	type = unit_ratio
+	# 	id = missile
+	# 	value = -300
+	# }
+
+	ai_strategy = {
+		type = unit_ratio
+		id = suicide
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -300
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -300
+	}
+
+  ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -300
+	}
+
+  ai_strategy = {
+		type = equipment_production_factor
+		id = interceptor
+		value = -300
+	}
+
+  # ai_strategy = {
+	# 	type = equipment_production_factor
+	# 	id = missile
+	# 	value = -300
+	# }
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = suicide
+		value = -300
+	}
+
+  ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -300
+	}
+
+  ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -300
+	}
+
+  ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -300
+	}
+
+  ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -300
+	}
+}

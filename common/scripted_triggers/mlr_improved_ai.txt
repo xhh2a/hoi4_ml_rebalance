@@ -1,0 +1,7 @@
+mlr_ia_no_beta_threat = {
+  all_neighbor_country = {
+    NOT = {
+      has_war_with = PREV
+    }
+  }
+}
