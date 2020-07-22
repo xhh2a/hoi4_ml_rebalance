@@ -379,6 +379,37 @@ adjacency_rule
 	# }
 
 	is_disabled = {
-		is_mankind_faction = yes
+		NOT = {
+			OR = {
+				is_in_faction_with = BET
+				tag = BET
+				tag = M01
+				tag = H02
+				tag = H03
+				tag = H04
+				tag = H05
+				tag = H06
+				tag = H07
+				tag = H08
+				tag = H09
+				tag = H10
+				tag = H11
+				tag = H12
+				tag = H13
+				tag = H14
+				tag = H15
+				tag = H16
+				tag = H17
+				tag = H18
+				tag = H19
+				tag = H20
+				tag = H21
+				tag = H22
+				tag = H23
+				tag = H24
+				tag = H25
+				tag = H26
+			}
+		}
 	}
 }

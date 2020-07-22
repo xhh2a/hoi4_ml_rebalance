@@ -1,3 +1,11 @@
 muv_luv_rebalance_core = {
   icon = generic_prospect_for_resources
 }
+
+mlr_decision_category_beta = {
+  icon = generic_prospect_for_resources
+}
+
+mlr_decision_category_operations = {
+  icon = generic_prospect_for_resources
+}

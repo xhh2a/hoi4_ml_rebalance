@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_idea_mlr_hive_shrink_prediction"
 		texturefile = "gfx/interface/ideas/brokenhive.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_mlr_beta_population_horde_population"
+		texturefile = "gfx/interface/national_spirits/generic_migration.dds"
+	}	
 }

@@ -8,5 +8,11 @@ ideas = {
       allowed = { always = no }
       modifier = {}
     }
+    mlr_hive_culling_operation = {
+			allowed = { always = no }
+			modifier = {
+				weekly_manpower = -50000
+			}
+		}
   }
 }

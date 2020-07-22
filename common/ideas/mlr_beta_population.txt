@@ -1,0 +1,8 @@
+ideas = {
+	country = {
+		mlr_beta_population_horde_population = {
+			allowed = { always = no }
+      modifier = {}
+		}
+  }
+}

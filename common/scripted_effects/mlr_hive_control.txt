@@ -73,7 +73,7 @@ mlr_hive_control_increase_hive_size = {
           check_variable = { _current_hive_size > 8 }
           multiply_temp_variable = { FROM._current_hive_growth_threshold = 2 }
         }
-      } 
+      }
       add_to_temp_variable = { FROM._current_hive_growth = FROM.mlr_hive_growth_rate?30 }
       # log = "Growth [?_current_hive_growth] and Threshold [?_current_hive_growth_threshold]"
       set_variable = { FROM.mlr_hive_control_calculated_growth_threshold = _current_hive_growth_threshold }
@@ -86,7 +86,9 @@ mlr_hive_control_increase_hive_size = {
   }
   if = {
     limit = { NOT = { tag = BET } }
-    clamp_temp_variable = { var = FROM._new_hive_size min = 0 max = BET.mlr_current_hive_size }
+    set_temp_variable = { FROM._max_hive_size = BET.mlr_current_hive_size } # Cannot exceed main hive size
+    clamp_temp_variable = { var = FROM._max_hive_size min = _current_hive_size } # Hive can't shrink if main hive is smaller
+    clamp_temp_variable = { var = FROM._new_hive_size min = 0 max = _max_hive_size }
     else = {
       clamp_temp_variable = { var = FROM._new_hive_size min = 0 max = 9 }
     }
@@ -99,6 +101,7 @@ mlr_hive_control_increase_hive_size = {
     log = "New Hive Size for [This.GetName]: [?mlr_current_hive_size]"
     set_variable = { FROM.mlr_hive_growth = 0 }
     FROM = {
+      remove_ideas = mlr_hive_growth_prediction
       mlr_hive_control_set_hive_size = yes
     }
     else = {
@@ -131,63 +134,63 @@ mlr_hive_control_set_hive_size = {
   if = {
     limit = {
       has_idea = @phase_1_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 1 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 1 } }
     }
     remove_ideas = @phase_1_idea
   }
   if = {
     limit = {
       has_idea = @phase_2_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 2 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 2 } }
     }
     remove_ideas = @phase_2_idea
   }
   if = {
     limit = {
       has_idea = @phase_3_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 3 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 3 } }
     }
     remove_ideas = @phase_3_idea
   }
   if = {
     limit = {
       has_idea = @phase_4_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 4 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 4 } }
     }
     remove_ideas = @phase_4_idea
   }
   if = {
     limit = {
       has_idea = @phase_5_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 5 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 5 } }
     }
     remove_ideas = @phase_5_idea
   }
   if = {
     limit = {
       has_idea = @phase_6_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 6 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 6 } }
     }
     remove_ideas = @phase_6_idea
   }
   if = {
     limit = {
       has_idea = @phase_7_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 7 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 7 } }
     }
     remove_ideas = @phase_7_idea
   }
   if = {
     limit = {
       has_idea = @phase_8_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 8 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 8 } }
     }
     remove_ideas = @phase_8_idea
   }
   if = {
     limit = {
       has_idea = @phase_9_idea
-      NOT = { check_variable = { FROM.mlr_current_hive_size = 9 } } 
+      NOT = { check_variable = { FROM.mlr_current_hive_size = 9 } }
     }
     remove_ideas = @phase_9_idea
   }

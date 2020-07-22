@@ -13,26 +13,8 @@ ability = {
 		}
 		
 		ai_will_do = {
+			# Simplified logic to reduce performance hit. Basically only BETA will do this.
 			factor = -1
-			modifier = {
-				FROM = {
-					has_war_support > 0.1
-					command_power > 1.5
-				}
-				check_variable = { num_units_offensive_combats > 6 }
-				
-				set_temp_variable = { temp = avg_offensive_combat_status }
-				check_variable = { temp > 0.45 }
-				check_variable = { ai_random > temp }
-				
-				add = 2
-			}
-			modifier = {
-				FROM = {
-					is_mankind_faction = yes
-				}
-				factor = 0
-			}
 			modifier = {
 				FROM = {
 					has_idea = mvlv_aggressive_beta
@@ -71,15 +53,11 @@ ability = {
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {
-				NOT = {
-					has_completed_focus = JAP_warrior_spirit
-					has_completed_focus = SPA_cultivate_fanaticism
-				}
 				is_beta_faction = no
 			}
 		}
 
-		cost = 0.32
+		cost = 0.64
 		duration = 168
 		
 		one_time_effect = {
@@ -87,7 +65,7 @@ ability = {
 				combat_defense = 0.2
 				combat_entrenchment = 0.25
 				org_damage_multiplier = -0.5
-				str_damage_multiplier = 0.1
+				str_damage_multiplier = 0.05
 				war_support_reduction_on_damage = 0.25
 				#cannot_retreat_while_defending = 1.0
 				
@@ -111,16 +89,17 @@ ability = {
 				
 				add = 2
 			}
-			modifier = {
-				# Disable the AI suiciding its units due to the way the mod works
-				FROM = {
-					AND = {
-						low_army_count = yes
-						is_mankind_faction = yes
-					}
-				}
-				factor = 0
-			}
+			# Disabled for performance reasons
+			# modifier = {
+			# 	# Disable the AI suiciding its units due to the way the mod works
+			# 	FROM = {
+			# 		AND = {
+			# 			low_army_count = yes
+			# 			is_mankind_faction = yes
+			# 		}
+			# 	}
+			# 	factor = 0
+			# }
 		}
 	}
 	

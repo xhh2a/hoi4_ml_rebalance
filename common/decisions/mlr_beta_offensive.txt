@@ -1,0 +1,29 @@
+# TODO: For major offensive
+
+mlr_decision_category_beta = {
+  mlr_beta_population_growth = {
+    days_remove = 45
+    days_re_enable = 0
+
+    available = {
+      is_debug = yes
+    }
+
+    visible = {
+      #is_beta_faction = yes
+      is_debug = yes
+    }
+
+    fire_only_once = no
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      FROM = {
+        mlr_beta_offensive_on_end = yes
+      }
+    }
+  }
+}

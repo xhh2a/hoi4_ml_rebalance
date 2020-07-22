@@ -2,8 +2,8 @@
 
 country_event = {
 	id = mlr_setup.1
-	title = mlr_setup.1.t
-	desc = mlr_setup.1.d
+	title = mlr_setup.1.title
+	desc = mlr_setup.1.desc
 	picture = GFX_mvlv_start_event
 	timeout_days = 0
 
@@ -13,6 +13,9 @@ country_event = {
 	option = {
 		name = mlr_setup.1.a
 		ai_chance = { factor = 0 }
+    trigger = {
+      is_beta_faction = no
+    }
 		add_manpower = 100000
 		add_ideas = mvlv_difficulty_easy
 	  UNI = { add_ideas = mvlv_bocchi }
@@ -32,31 +35,46 @@ country_event = {
 	option = {
 		name = mlr_setup.1.b
 		ai_chance = { factor = 0 }
+    trigger = {
+      is_beta_faction = no
+    }
 		add_ideas = mvlv_difficulty_normal
 	}
 
 	option = {
 		name = mlr_setup.1.c
 		ai_chance = { factor = 0 }
+    trigger = {
+      is_beta_faction = no
+    }
 		add_ideas = mvlv_difficulty_hard
 	}
 
 	option = {
-		name = mlr_setup.1.e
+		name = mlr_setup.1.d
 		ai_chance = { factor = 0 }
+    trigger = {
+      is_beta_faction = no
+    }
 		add_ideas = mvlv_difficulty_unlimited
 	}
 
 	option = {
-		name = mlr_setup.1.f
+		name = mlr_setup.1.e
 		ai_chance = { factor = 200 }
 		trigger = {
 			is_beta_faction = yes
-			is_ai = yes
 		}
-		
-		add_ideas = mvlv_difficulty_beta
-		load_oob = "garrison_BET_1999"
+
+    if = {
+      limit = {
+        is_ai = yes
+      }
+      add_ideas = mvlv_difficulty_beta
+		  load_oob = "garrison_BET_1999"
+    }
+
+    add_ideas = mlr_beta_population_horde_population
 
 		hidden_effect = {
 			set_global_flag = player_choosed_difficulty
@@ -65,13 +83,13 @@ country_event = {
 	}
 
 	option = {
-		name = mlr_setup.1.g
+		name = mlr_setup.1.f
 		ai_chance = { factor = 200 }
 		trigger = {
       is_mankind_faction = yes
 			is_ai = yes
 		}
-		
+
 		add_ideas = mvlv_difficulty_ai
 
     if = {
@@ -83,13 +101,13 @@ country_event = {
 		  }
       #グリーンランドの要塞化
       805 = {
-        
+
         add_building_construction = {
           type = coastal_bunker
           level = 5
           instant_build = yes
           province = 10636
-        }	
+        }
       }
     }
 
@@ -121,7 +139,7 @@ country_event = {
       SOV = {
         add_equipment_to_stockpile = { type = tsf_equipment_F4R amount = 300 producer = SOV }
       }
-      
+
       637 = {
         add_building_construction = {
             type = naval_base
@@ -139,7 +157,7 @@ country_event = {
             province = 4744
         }
       }
-      
+
       790 = {
         add_building_construction = {
             type = bunker
@@ -166,14 +184,14 @@ country_event = {
             instant_build = yes
             province = 1308
         }
-        
+
         add_building_construction = {
             type = bunker
             level = 2
             instant_build = yes
             province = 4388
         }
-        
+
         add_building_construction = {
             type = bunker
             level = 2
@@ -201,7 +219,7 @@ country_event = {
             instant_build = yes
             province = 12122
         }
-        
+
         add_building_construction = {
             type = bunker
             level = 2
@@ -305,21 +323,21 @@ country_event = {
 						instant_build = yes
 						province = 1097
 				}
-				
+
 				add_building_construction = {
 						type = bunker
 						level = 3
 						instant_build = yes
 						province = 4000
 				}
-				
+
 				add_building_construction = {
 						type = bunker
 						level = 3
 						instant_build = yes
 						province = 9998
 				}
-				
+
 				add_building_construction = {
 						type = bunker
 						level = 3
@@ -335,14 +353,14 @@ country_event = {
 						instant_build = yes
 						province = 4067
 				}
-				
+
 				add_building_construction = {
 						type = bunker
 						level = 3
 						instant_build = yes
 						province = 4122
 				}
-				
+
 				add_building_construction = {
 						type = bunker
 						level = 3
@@ -358,21 +376,21 @@ country_event = {
 					instant_build = yes
 					province = 7115
 				}
-				
+
 				add_building_construction = {
 					type = coastal_bunker
 					level = 3
 					instant_build = yes
 					province = 7115
 				}
-				
+
 				add_building_construction = {
 					type = bunker
 					level = 3
 					instant_build = yes
 					province = 11932
 				}
-				
+
 				add_building_construction = {
 					type = coastal_bunker
 					level = 3
@@ -389,7 +407,7 @@ country_event = {
 			EUR = {
 				add_equipment_to_stockpile = { type = tsf_equipment_F5AU amount = 400 producer = EUR }
 			}
-			
+
 			#シチリアの要塞化
 			115 = {
 				add_building_construction = {
@@ -406,7 +424,7 @@ country_event = {
 						province = 4159
 				}
 			}
-			
+
 			#イングランド南西部の要塞化
 			123 = {
 				add_building_construction = {
@@ -423,7 +441,7 @@ country_event = {
 						province = 540 #プリマス
 				}
 			}
-			
+
 			#サセックスの要塞化
 			127 = {
 				add_building_construction = {
@@ -432,7 +450,7 @@ country_event = {
 						instant_build = yes
 						province = 9458 #ポーツマス
 				}
-				
+
 				add_building_construction = {
 						type = bunker
 						level = 4
@@ -446,7 +464,7 @@ country_event = {
 						instant_build = yes
 						province = 9458 #ポーツマス
 				}
-				
+
 				add_building_construction = {
 						type = coastal_bunker
 						level = 3
@@ -464,7 +482,7 @@ country_event = {
 			CHI = {
 				add_equipment_to_stockpile = { type = tsf_equipment_F16CU amount = 100 producer = CHI }
 			}
-			
+
 			#台湾の要塞化
 			524 = {
 				add_building_construction = {

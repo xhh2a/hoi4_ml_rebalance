@@ -1,0 +1,24 @@
+@minimum_horde_size = 50
+
+mlr_beta_population_calculate_casualties = {
+  # Get current casualties
+  set_temp_variable = { FROM._current_casualties = FROM.casualties_k }
+  set_temp_variable = { FROM._previous_casualties = FROM.mlr_beta_population_total_taken_losses?0 }
+  subtract_from_temp_variable = { FROM._current_casualties = _previous_casualties }
+  set_variable = { FROM.mlr_beta_population_losses_last_month = _current_casualties }
+}
+
+mlr_beta_population_calculate_horde_growth = {
+  set_temp_variable = { FROM._current_horde_size = FROM.mlr_beta_population_horde_size }
+  add_to_temp_variable = { FROM._current_horde_size = FROM.mlr_beta_population_horde_growth_rate?100 }
+  set_temp_variable = { FROM._casualties_last_month = FROM.mlr_beta_population_losses_last_month }
+  subtract_from_temp_variable = { FROM._current_horde_size = _casualties_last_month }
+  set_variable = { FROM.mlr_beta_population_horde_size = _current_horde_size }
+}
+
+mlr_beta_population_calculate_hive_reserve_growth = {
+  if = {
+    trigger = { check_variable = { FROM.mlr_beta_population_horde_size < @minimum_horde_size } }
+    # Add BETA from reserve to horde
+  }
+}

@@ -1,6 +1,6 @@
-@culling_operation_idea = hive_thinning_state
+@culling_operation_idea = mlr_hive_culling_operation
 
-muv_luv_rebalance_core = {
+mlr_decision_category_beta = {
   mlr_hive_control_growth = {
     # Phase 9 - 256 Years
     # Phase 8 - 128 Years
@@ -50,7 +50,7 @@ muv_luv_rebalance_core = {
     available = {
       is_debug = yes
     }
-    
+
     visible = {
       is_debug = yes
     }
@@ -64,7 +64,9 @@ muv_luv_rebalance_core = {
       activate_decision = mlr_hive_control_growth
     }
   }
+}
 
+mlr_decision_category_operations = {
   mlr_hive_control_culling_operation = {
     days_re_enable = 90 # Codex Page 152
     days_remove = 90
@@ -111,7 +113,7 @@ muv_luv_rebalance_core = {
 			# add_stability = -0.08
 			# add_war_support = -0.05
 		}
-		
+
 		remove_effect = {
       add_to_variable = { FROM.mlr_hive_growth_rate = 15 }
 		}

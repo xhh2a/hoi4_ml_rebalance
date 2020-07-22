@@ -1,0 +1,220 @@
+focus_tree = {
+	id = bet_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			TAG = BET
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 20 y = 1000 }
+	reset_on_civilwar = no
+
+	# focus = {
+	# 	id = BET_human_game
+	# 	icon = GFX_focus_jap_zaibatsu
+	# 	x = 3
+	# 	y = 5
+	# 	mutually_exclusive = { focus = BET_single_game }
+	# 	available = {
+	# 		date > 2001.10.22
+  #                       NOT = {
+  #                              has_idea = BET_00_unit
+  #                              has_idea = MVLV_bocchi
+  #                       }
+  #              }
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	cost = 50
+
+	# 	completion_reward = {
+	# 		BET = { country_event = BETA.6 }
+	# 		H02 = { country_event = BETA.6 }
+	# 		H03 = { country_event = BETA.6 }
+	# 		H04 = { country_event = BETA.6 }
+	# 		H05 = { country_event = BETA.6 }
+	# 		H06 = { country_event = BETA.6 }
+	# 		H07 = { country_event = BETA.6 }
+	# 		H08 = { country_event = BETA.6 }
+	# 		H09 = { country_event = BETA.6 }
+	# 		H10 = { country_event = BETA.6 }
+	# 		H11 = { country_event = BETA.6 }
+	# 		H12 = { country_event = BETA.6 }
+	# 		H13 = { country_event = BETA.6 }
+	# 		H14 = { country_event = BETA.6 }
+	# 		H15 = { country_event = BETA.6 }
+	# 		H16 = { country_event = BETA.6 }
+	# 		H17 = { country_event = BETA.6 }
+	# 		H18 = { country_event = BETA.6 }
+	# 		H19 = { country_event = BETA.6 }
+	# 		H20 = { country_event = BETA.6 }
+	# 		H21 = { country_event = BETA.6 }
+	# 		H25 = { country_event = BETA.6 }
+	# 		H26 = { country_event = BETA.6 }
+  #              }
+
+	# 	ai_will_do = { factor = 5 }
+	# }
+	focus = {
+		id = BET_single_game
+		icon = GFX_focus_jap_zaibatsu
+		x = 8
+		y = 5
+		mutually_exclusive = { focus = BET_human_game }
+		available = {
+                               has_idea = MVLV_bocchi
+               }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		cost = 0.5
+
+		completion_reward = {
+			UNI = { country_event = mvlv_uni.10 }
+			CHI = { country_event = mvlv_uni.10 }
+			USA = { country_event = mvlv_uni.10 }
+			JAP = { country_event = mvlv_uni.10 }
+			SOV = { country_event = mvlv_uni.10 }
+			EUR = { country_event = mvlv_uni.10 }
+			AFR = { country_event = mvlv_uni.10 }
+			GEU = { country_event = mvlv_uni.10 }
+			OSE = { country_event = mvlv_uni.10 }
+			CAN = { country_event = mvlv_uni.10 }
+			CEA = { country_event = mvlv_uni.10 }
+			SOA = { country_event = mvlv_uni.10 }
+			EEA = { country_event = mvlv_uni.10 }
+               }
+
+		ai_will_do = { factor = 5 }
+	}
+	focus = {
+		id = BET_ending_game
+		icon = GFX_focus_jap_zaibatsu
+		x = 9
+		y = 0
+		mutually_exclusive = { focus = BET_broken_original_hive }
+		available = {
+                        NOT = {
+                               has_idea = MVLV_bocchi
+                        }
+                        has_idea = BET_00_unit
+
+			287 = {
+				is_owned_by = BET
+				is_controlled_by = BET
+			}
+               }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		cost = 15
+
+		completion_reward = {
+			UNI = { country_event = mvlv_uni.6 }
+			CHI = { country_event = mvlv_uni.6 }
+			USA = { country_event = mvlv_uni.6 }
+			JAP = { country_event = mvlv_uni.6 }
+			SOV = { country_event = mvlv_uni.6 }
+			EUR = { country_event = mvlv_uni.6 }
+			AFR = { country_event = mvlv_uni.6 }
+			GEU = { country_event = mvlv_uni.6 }
+			OSE = { country_event = mvlv_uni.6 }
+			CAN = { country_event = mvlv_uni.6 }
+			CEA = { country_event = mvlv_uni.6 }
+			SOA = { country_event = mvlv_uni.6 }
+			EEA = { country_event = mvlv_uni.6 }
+			BET = { country_event = BETA.6 }
+			H02 = { country_event = BETA.6 }
+			H03 = { country_event = BETA.6 }
+			H04 = { country_event = BETA.6 }
+			H05 = { country_event = BETA.6 }
+			H06 = { country_event = BETA.6 }
+			H07 = { country_event = BETA.6 }
+			H08 = { country_event = BETA.6 }
+			H09 = { country_event = BETA.6 }
+			H10 = { country_event = BETA.6 }
+			H11 = { country_event = BETA.6 }
+			H12 = { country_event = BETA.6 }
+			H13 = { country_event = BETA.6 }
+			H14 = { country_event = BETA.6 }
+			H15 = { country_event = BETA.6 }
+			H16 = { country_event = BETA.6 }
+			H17 = { country_event = BETA.6 }
+			H18 = { country_event = BETA.6 }
+			H19 = { country_event = BETA.6 }
+			H20 = { country_event = BETA.6 }
+			H21 = { country_event = BETA.6 }
+			H25 = { country_event = BETA.6 }
+			H26 = { country_event = BETA.6 }
+               }
+
+		ai_will_do = { factor = 5 }
+	}
+	focus = {
+		id = BET_broken_original_hive
+		icon = GFX_focus_jap_zaibatsu
+		x = 15
+		y = 0
+		mutually_exclusive = { focus = BET_ending_game }
+
+		available = {
+                        NOT = {
+                               has_idea = MVLV_bocchi
+                        }
+			287 = {
+				is_controlled_by = UNI
+			}
+			surrender_progress > 0.5
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		cost = 1
+
+		completion_reward = {
+			UNI = { country_event = mvlv_uni.7 }
+			CHI = { country_event = mvlv_uni.7 }
+			USA = { country_event = mvlv_uni.7 }
+			JAP = { country_event = mvlv_uni.7 }
+			SOV = { country_event = mvlv_uni.7 }
+			EUR = { country_event = mvlv_uni.7 }
+			AFR = { country_event = mvlv_uni.7 }
+			GEU = { country_event = mvlv_uni.7 }
+			OSE = { country_event = mvlv_uni.7 }
+			CAN = { country_event = mvlv_uni.7 }
+			CEA = { country_event = mvlv_uni.7 }
+			SOA = { country_event = mvlv_uni.7 }
+			EEA = { country_event = mvlv_uni.7 }
+			BET = { country_event = BETA.7 }
+			H02 = { country_event = BETA.7 }
+			H03 = { country_event = BETA.7 }
+			H04 = { country_event = BETA.7 }
+			H05 = { country_event = BETA.7 }
+			H06 = { country_event = BETA.7 }
+			H07 = { country_event = BETA.7 }
+			H08 = { country_event = BETA.7 }
+			H09 = { country_event = BETA.7 }
+			H10 = { country_event = BETA.7 }
+			H11 = { country_event = BETA.7 }
+			H12 = { country_event = BETA.7 }
+			H13 = { country_event = BETA.7 }
+			H14 = { country_event = BETA.7 }
+			H15 = { country_event = BETA.7 }
+			H16 = { country_event = BETA.7 }
+			H17 = { country_event = BETA.7 }
+			H18 = { country_event = BETA.7 }
+			H19 = { country_event = BETA.7 }
+			H20 = { country_event = BETA.7 }
+			H21 = { country_event = BETA.7 }
+			H25 = { country_event = BETA.7 }
+			H26 = { country_event = BETA.7 }
+               }
+
+		ai_will_do = { factor = 6 }
+	}
+
+}

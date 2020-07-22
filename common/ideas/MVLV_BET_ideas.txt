@@ -1,20 +1,11 @@
 ideas = {
 	country = {
-		hive_thinning_state = {
-			allowed = { always = no }
-			cost = 50
-			removal_cost = 10
-			modifier = {
-				weekly_manpower = -50000
-			}
-		}
-		
 		hive_recently_phaseUp = {
 			allowed = { always = no }
 			modifier = {
 			}
 		}
-		
+
 		beta_speed_up_production = {
 			allowed = { always = no }
 			cost = 50
@@ -38,7 +29,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_2 = {
 			allowed = { always = no }
 			modifier = {
@@ -52,7 +43,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_3 = {
 			allowed = { always = no }
 			modifier = {
@@ -66,7 +57,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_4 = {
 			allowed = { always = no }
 			modifier = {
@@ -80,7 +71,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_5 = {
 			allowed = { always = no }
 			modifier = {
@@ -94,7 +85,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_6 = {
 			allowed = { always = no }
 			modifier = {
@@ -110,7 +101,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_7 = {
 			allowed = { always = no }
 			modifier = {
@@ -126,7 +117,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_8 = {
 			allowed = { always = no }
 			modifier = {
@@ -143,7 +134,7 @@ ideas = {
 			  max_dig_in = -20
 			}
 		}
-		
+
 		hive_phase_9 = {
 			allowed = { always = no }
 			modifier = {

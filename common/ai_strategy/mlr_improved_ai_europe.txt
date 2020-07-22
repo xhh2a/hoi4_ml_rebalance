@@ -4,6 +4,9 @@ mlr_ia_europe_garrison_english_channel = {
     127 = {
       is_fully_controlled_by = EUR
     }
+    808 = {
+      is_fully_controlled_by = EUR
+    }
   }
 
   abort = {
@@ -18,6 +21,9 @@ mlr_ia_europe_garrison_english_channel = {
         }
       }
       127 = {
+        NOT = { is_fully_controlled_by = EUR }
+      }
+      808 = {
         NOT = { is_fully_controlled_by = EUR }
       }
     }
@@ -35,6 +41,7 @@ mlr_ia_europe_garrison_english_channel = {
 
     states = {
       127 # Sussex
+      808 # Hampshire
     }
     
     # by default if you have orders in target areas, the buffer will request less units. 
@@ -96,6 +103,10 @@ mlr_ia_europe_retake_southern_england = {
 }
 
 mlr_ai_europe_garrison_sicily = {
+  enable = {
+    tag = EUR
+  }
+
   # Sicily
   ai_strategy = {
     type = put_unit_buffers
