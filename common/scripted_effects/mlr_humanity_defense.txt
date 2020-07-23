@@ -1,0 +1,41 @@
+mlr_humanity_defense_monthly_check = {
+  if = {
+    limit = {
+      any_neighbor_country = {
+        is_beta_faction = yes
+        has_idea = mvlv_aggressive_beta
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_idea = mvlv_defence_human
+        }
+      }
+      add_timed_idea = {
+        idea = mvlv_defence_human
+        days = 60
+      }
+      else = {
+        modify_timed_idea = {
+          idea = mvlv_defence_human
+          days = 15
+        }
+      }
+    }
+  }
+  if = {
+    limit = {
+      NOT = {
+        any_neighbor_country = {
+          is_beta_faction = yes
+          has_idea = mvlv_aggressive_beta
+        }
+      }
+      has_idea = mvlv_defence_human
+    }
+    remove_ideas = {
+      mvlv_defence_human
+    }
+  }
+}

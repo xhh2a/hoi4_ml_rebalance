@@ -1,0 +1,58 @@
+#00ユニットが開発されたらBETAにバフ
+country_event = {
+	id = BETA.8
+	desc = BETA.8.d
+	title = BETA.8.t
+	picture = BETA_event_1.dds
+
+	is_triggered_only = yes
+
+	option ={
+		name = BETA.8.a
+			add_ideas = BET_00_unit
+			add_ideas = BET_human_kill
+	}
+}
+
+country_event = {
+	id = BETA.9
+	desc = BETA.9.d
+	title = BETA.9.t
+	picture = BETA_event_1.dds
+
+	is_triggered_only = yes
+
+	option ={
+		name = BETA.9.a
+			add_ideas = BET_human_kill
+	}
+}
+
+country_event = {
+	id = BETA.10
+	desc = BETA.10.d
+	title = BETA.10.t
+	picture = BETA_event_1.dds
+
+	is_triggered_only = yes
+
+	option ={
+		name = BETA.10.a
+			add_timed_idea =  {
+				idea = H21_sado
+				days = 50
+			}
+				load_oob = H21_test
+			JAP = { country_event = mvlv_jap.4 }
+	}
+	option ={
+		name = BETA.10.b
+			add_timed_idea =  {
+				idea = H21_sado
+				days = 50
+			}
+				load_oob = H21_test2
+			JAP = { country_event = mvlv_jap.5 }
+	}
+}
+

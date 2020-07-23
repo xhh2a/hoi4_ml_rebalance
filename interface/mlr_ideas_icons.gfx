@@ -10,5 +10,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_mlr_beta_population_horde_population"
 		texturefile = "gfx/interface/national_spirits/generic_migration.dds"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_idea_mlr_hive_control_culling_operation_idea"
+		texturefile = "gfx/interface/ideas/HiveThinning.dds"
+	}
 }

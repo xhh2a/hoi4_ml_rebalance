@@ -10,7 +10,24 @@
 @phase_8_idea = hive_phase_8
 @phase_9_idea = hive_phase_9
 
-# TODO: Convert these to using arrays
+# Phase 9 - 256 Years
+# Phase 8 - 128 Years
+# Phase 7 - 64 Years
+# Phase 6 - 32 Years
+# Phase 5 - 16 Years* Cannot be greater than largest hive
+# Phase 4 - 8 Years
+# Phase 3 - 4 Years
+# Phase 2 - 2 Years
+# Phase 1 - 20 hours
+# Phase 0 - Destroyed
+
+mlr_hive_control_monthly_check = {
+  if = {
+    limit = { mlr_hive_control_controls_hive = yes }
+    mlr_hive_control_increase_hive_size = yes
+    else = { mlr_hive_control_decrease_hive_size = yes }
+  }
+}
 
 mlr_hive_control_increase_hive_size = {
   set_temp_variable = { FROM._current_hive_growth = FROM.mlr_hive_growth?0 }
@@ -284,5 +301,4 @@ mlr_hive_control_setup_flags = {
     set_variable = { FROM.mlr_current_hive_size = 9 }
   }
   set_variable = { FROM.mlr_hive_growth_rate = 30 }
-  activate_decision = mlr_hive_control_growth
 }

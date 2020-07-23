@@ -78,6 +78,8 @@ country_event = {
 
 		hidden_effect = {
 			set_global_flag = player_choosed_difficulty
+      # Delayed startup events since does not work on startup >.>
+      country_event = { id = mlr_setup.silent_beta_flags days = 1 }
 			set_major = yes
 		}
 	}
@@ -515,4 +517,15 @@ country_event = {
 			}
 		}
 	}
+}
+
+country_event = {
+  id = mlr_setup.silent_beta_flags
+  is_triggered_only = yes
+  hidden = yes
+  fire_only_once = no
+  option = {
+    mlr_hive_control_setup_flags = yes
+    mlr_beta_population_setup = yes
+  }
 }

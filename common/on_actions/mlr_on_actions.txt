@@ -1,0 +1,12 @@
+on_actions = {
+  on_monthly = {
+    effect = {
+      if = {
+        limit = { is_beta_faction = yes }
+        mlr_hive_control_monthly_check = yes
+        mlr_beta_population_monthly_check = yes
+        mlr_humanity_defense_monthly_check = yes
+      }
+    }
+  }
+}

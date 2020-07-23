@@ -1,22 +1,35 @@
 @hive_size_offense_threshold = 200
-@beta_offensive_idea = BET_human_kill
-@beta_offensive_days = 45
+@beta_offensive_idea = mvlv_aggressive_beta
+@beta_offensive_days = 65
+@random_offensive_rate = 0.2
 
 mlr_beta_offensive_calculate_offensive = {
   # TODO: Need to control for no enemies nearby and not waste offensive
   if = {
     limit = { NOT = { has_idea = @beta_offensive_idea } } # Don't launch a new offensive if one is already happening
     set_temp_variable = { FROM._current_horde_size = FROM.mlr_beta_population_horde_size }
+    set_temp_variable = { FROM._surprise_offensive = random }
+    if = { # Randomly increase horde size by 100.
+      limit = {
+        check_variable = { _surprise_offensive < @random_offensive_rate }
+      }
+      add_to_variable = { FROM.mlr_beta_population_horde_size = 100 }
+      add_to_variable = { FROM._current_horde_size = 100 }
+    }
     if = {
-      limit = { check_variable = { _current_horde_size > @hive_size_offense_threshold } }
+      limit = {
+        check_variable = { _current_horde_size > @hive_size_offense_threshold }
+      }
       add_timed_idea = { idea = @beta_offensive_idea days = @beta_offensive_days }
-      subtract_from_variable = { FROM.mlr_beta_population_horde_growth_rate = 100 } # Horde does not grow while offensive occurs
-      activate_decision = mlr_beta_offensive_end # Queue reset of BETA offensive
+      subtract_from_variable = { FROM.mlr_beta_population_horde_growth_rate = 50 }
+      FROM = {
+        country_event = { id = mlr_beta_offensive.on_end days = @beta_offensive_days }
+      }
       set_variable = { FROM.mlr_beta_population_horde_size = 0 }
     }
   }
 }
 
 mlr_beta_offensive_on_end = {
-  add_to_variable = { FROM.mlr_beta_population_horde_growth_rate = 100 }
+  add_to_variable = { FROM.mlr_beta_population_horde_growth_rate = 50 }
 }

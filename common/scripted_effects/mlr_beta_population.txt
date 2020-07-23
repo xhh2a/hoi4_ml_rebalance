@@ -1,4 +1,19 @@
-@minimum_horde_size = 50
+@replenish_horde_threshold = 25
+@beta_offensive_idea = mvlv_aggressive_beta
+@desired_horde_strength = 50
+@maximum_horde_size = 200
+@horde_growth_rate = 100
+
+mlr_beta_population_monthly_check = {
+  mlr_beta_population_calculate_casualties = yes
+  mlr_beta_population_calculate_horde_growth = yes
+  mlr_beta_population_calculate_hive_reserve_growth = yes
+  mlr_beta_offensive_calculate_offensive = yes
+}
+
+mlr_beta_population_setup = {
+   set_variable = { FROM.mlr_beta_population_horde_growth_rate = @horde_growth_rate }
+}
 
 mlr_beta_population_calculate_casualties = {
   # Get current casualties
@@ -6,19 +21,36 @@ mlr_beta_population_calculate_casualties = {
   set_temp_variable = { FROM._previous_casualties = FROM.mlr_beta_population_total_taken_losses?0 }
   subtract_from_temp_variable = { FROM._current_casualties = _previous_casualties }
   set_variable = { FROM.mlr_beta_population_losses_last_month = _current_casualties }
+  set_variable = { FROM.mlr_beta_population_total_taken_losses = FROM.casualties_k }
 }
 
 mlr_beta_population_calculate_horde_growth = {
   set_temp_variable = { FROM._current_horde_size = FROM.mlr_beta_population_horde_size }
-  add_to_temp_variable = { FROM._current_horde_size = FROM.mlr_beta_population_horde_growth_rate?100 }
+  add_to_temp_variable = { FROM._current_horde_size = FROM.mlr_beta_population_horde_growth_rate?0 }
   set_temp_variable = { FROM._casualties_last_month = FROM.mlr_beta_population_losses_last_month }
   subtract_from_temp_variable = { FROM._current_horde_size = _casualties_last_month }
+  clamp_variable = { var = FROM._current_horde_size max = @maximum_horde_size }
   set_variable = { FROM.mlr_beta_population_horde_size = _current_horde_size }
 }
 
 mlr_beta_population_calculate_hive_reserve_growth = {
   if = {
-    trigger = { check_variable = { FROM.mlr_beta_population_horde_size < @minimum_horde_size } }
-    # Add BETA from reserve to horde
+    limit = {
+      check_variable = { FROM.mlr_beta_population_horde_size < @replenish_horde_threshold }
+      NOT = { has_idea = @beta_offensive_idea }
+    }
+    # Add BETA from reserve to horde - using Manpower for now
+    set_temp_variable = { FROM._desired_strength = @desired_horde_strength }
+    set_temp_variable = { FROM._current_strength = mlr_beta_population_horde_size }
+    subtract_from_temp_variable = { FROM._desired_strength = _current_strength }
+
+    set_temp_variable = { FROM._available_reserves = manpower_k }
+    clamp_variable = { var = FROM._desired_strength max = _available_reserves }
+    clamp_variable = { var = FROM._desired_strength min = 0 }
+    add_to_variable = { FROM.mlr_beta_population_horde_size = _desired_strength }
+    set_variable = { FROM.mlr_beta_population_reserve_last_month = _desired_strength }
+    else = {
+      set_variable = { FROM.mlr_beta_population_reserve_last_month = 0 }
+    }
   }
 }

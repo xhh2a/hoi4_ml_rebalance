@@ -1,70 +1,4 @@
-@culling_operation_idea = mlr_hive_culling_operation
-
-mlr_decision_category_beta = {
-  mlr_hive_control_growth = {
-    # Phase 9 - 256 Years
-    # Phase 8 - 128 Years
-    # Phase 7 - 64 Years
-    # Phase 6 - 32 Years
-    # Phase 5 - 16 Years* Cannot be greater than largest hive
-    # Phase 4 - 8 Years
-    # Phase 3 - 4 Years
-    # Phase 2 - 2 Years
-    # Phase 1 - 20 hours
-    # Phase 0 - Destroyed
-    days_remove = 30 # increment progress every 30 days
-    days_re_enable = 0
-
-    available = {
-      is_beta_faction = yes
-    }
-
-    visible = {
-      or = {
-        is_debug = yes
-      }
-      is_beta_faction = yes
-    }
-
-    fire_only_once = no
-
-    ai_will_do = {
-      factor = 0
-    }
-
-    remove_effect = {
-      if = {
-        limit = { mlr_hive_control_controls_hive = yes }
-        mlr_hive_control_increase_hive_size = yes
-        else = { mlr_hive_control_decrease_hive_size = yes }
-      }
-      activate_decision = mlr_hive_control_growth
-    }
-  }
-
-  mlr_hive_setup_flags = {
-    days_re_enable = 0
-
-    fire_only_once = no
-
-    available = {
-      is_debug = yes
-    }
-
-    visible = {
-      is_debug = yes
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-
-    complete_effect = {
-      mlr_hive_control_setup_flags = yes
-      activate_decision = mlr_hive_control_growth
-    }
-  }
-}
+@culling_operation_idea = mlr_hive_control_culling_operation_idea
 
 mlr_decision_category_operations = {
   mlr_hive_control_culling_operation = {
@@ -109,6 +43,7 @@ mlr_decision_category_operations = {
 				}
 			}
       subtract_from_variable = { FROM.mlr_hive_growth_rate = 15 }
+      subtract_from_variable = { FROM.mlr_beta_population_horde_growth_rate = 50 }
 			# add_manpower = -75000
 			# add_stability = -0.08
 			# add_war_support = -0.05
@@ -116,6 +51,7 @@ mlr_decision_category_operations = {
 
 		remove_effect = {
       add_to_variable = { FROM.mlr_hive_growth_rate = 15 }
+      add_to_variable = { FROM.mlr_beta_population_horde_growth_rate = 50 }
 		}
 
 		ai_will_do = {

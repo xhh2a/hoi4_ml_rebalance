@@ -7,7 +7,6 @@ on_actions = {
 						is_beta_faction = yes
 					}
 					country_event = var.1
-					activate_decision = mlr_hive_setup_flags
 				}
 
 				IF = {

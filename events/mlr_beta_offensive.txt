@@ -1,0 +1,11 @@
+add_namespace = mlr_beta_offensive
+
+country_event = {
+  id = mlr_beta_offensive.on_end
+  is_triggered_only = yes
+  hidden = yes
+  fire_only_once = no
+  option = {
+    mlr_beta_offensive_on_end = yes
+  }
+}

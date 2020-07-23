@@ -1,0 +1,19 @@
+﻿add_namespace = BETA
+
+#____________________________________________________________
+#用途
+#BETA向けイベント
+#
+#id:BETA.1 effect:BETAの占領地をbetalandにする -> MVLV_beta_setup
+#id:BETA.2 effect:BETA攻勢イベント -> MVLV_beta_offense
+#id:BETA.3 effect:定期的に校正間隔を広げるフラグをクリアする -> MVLV_beta_offense
+#id:BETA.4 effect:ハイヴ陥落時、近隣ハイヴにBETA師団配置 -> MVLV_beta_reinforcements
+#id:BETA.5 effect:桜花作戦時、BET国の首都に師団を配置 移動速度にバフ -> MVLV_beta_operation_sakura
+#id:BETA.6 effect:桜花作戦時間切れ時、BETAにバフ  -> MVLV_beta_operation_sakura
+#id:BETA.7 effect:桜花作戦成功でBETAデバフ -> MVLV_beta_hive_control
+#id:BETA.8 effect:00ユニットが開発されたらBETAにバフ -> MVLV_beta_events
+#id:BETA.98 effect:ハイヴ奪取時ハイヴ占領アイデア付与 -> MVLV_beta_hive_control
+#id:BETA.99 effect:ハイヴ占領アイデアを時限剥奪 -> MVLV_beta_hive_control
+#
+#____________________________________________________________
+

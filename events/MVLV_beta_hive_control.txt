@@ -1,0 +1,69 @@
+add_namespace = BETA
+
+#桜花作戦成功でBETAデバフ
+country_event = {
+	id = BETA.7
+	desc = BETA.7.d
+	title = BETA.7.t
+	picture = BETA_event_1.dds
+
+	is_triggered_only = yes
+
+	option ={
+		name = BETA.7.a
+			add_ideas = BET_broken_original_hive
+	}
+}
+
+#ハイヴ奪取時ハイヴ占領アイデア付与、取り返されたら時限剥奪
+country_event = {
+	id = BETA.98
+	desc = BETA.98.d
+	title = BETA.98.t
+
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = {
+				not = { has_idea = mvlv_brokenhive }
+			}
+			add_ideas = { mvlv_brokenhive }
+			if = {
+				limit = {
+					not = { tag = BET }
+				}
+				news_event = { id = mvlv_news.1 hours = 1 }
+			}
+		} else_if = {
+			limit = {
+				has_idea = mvlv_brokenhive
+			}
+			country_event = { id = BETA.99 days = 10 }
+		}
+	}
+}
+
+#ハイヴ占領アイデアを時限剥奪
+country_event = {
+	id = BETA.99
+	desc = BETA.99.d
+	title = BETA.99.t
+
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = {
+				has_idea = mvlv_brokenhive
+			}
+			remove_ideas = { mvlv_brokenhive }
+			if = {
+				limit = {
+					not = { tag = BET }
+				}
+				news_event = { id = mvlv_news.2 hours = 1 }
+			}
+		}
+	}
+}

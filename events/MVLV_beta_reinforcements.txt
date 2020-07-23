@@ -1,0 +1,149 @@
+add_namespace = BETA
+
+#ハイヴ陥落時、近隣ハイヴにBETA師団配置
+country_event = {
+	id = BETA.4
+	desc = BETA.4.d
+	title = BETA.4.t
+	picture = BETA_event_1
+	fire_only_once = no
+
+	trigger = {
+		is_in_faction_with = BET
+		has_war = yes
+		capital_scope = {
+			NOT = { is_fully_controlled_by = ROOT }
+		}
+
+		NOT = { has_country_flag = surrender_country }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		set_country_flag = surrender_country
+		log = "[Root.GetName]:surrender"
+		every_neighbor_country = {
+			if = {
+				limit = {
+					is_in_faction_with = BET
+					has_war = yes
+					surrender_progress < 0.2
+				}
+
+				log = "[This.GetName]:neighbor"
+
+				if = {
+					# add_to_variable BETA migration
+				}
+
+
+				#BETAユニットを中核州に配置
+				every_owned_state = {
+					if = {
+						limit = {
+							is_claimed_by = ROOT
+						}
+						#Tank
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Tank class division\" division_template = \"Tank class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+
+						#Soldier
+						create_unit = {
+							division = "name = \"Soldier class division\" division_template = \"Soldier class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Soldier class division\" division_template = \"Soldier class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Soldier class division\" division_template = \"Soldier class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Soldier class division\" division_template = \"Soldier class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+
+						#Warrior
+						create_unit = {
+							division = "name = \"Warrior class division\" division_template = \"Warrior class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Warrior class division\" division_template = \"Warrior class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Warrior class division\" division_template = \"Warrior class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+
+						#Grappler
+						create_unit = {
+							division = "name = \"Grappler class division\" division_template = \"Grappler class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Grappler class division\" division_template = \"Grappler class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Grappler class division\" division_template = \"Grappler class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+
+						#Destroyer
+						create_unit = {
+							division = "name = \"Destroyer class division\" division_template = \"Destroyer class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Destroyer class division\" division_template = \"Destroyer class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Destroyer class division\" division_template = \"Destroyer class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+
+						#Fort
+						create_unit = {
+							division = "name = \"Fort class division\" division_template = \"Fort class division\" start_experience_factor = 0.1"
+							owner = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}
