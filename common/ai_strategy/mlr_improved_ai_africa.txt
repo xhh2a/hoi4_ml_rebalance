@@ -1,22 +1,20 @@
 mlr_ia_africa_garrison_strait = {
   enable = {
     tag = AFR
-  }
-
-  abort = {
-    has_war = no
     H09 = {
-      has_capitulated = yes
+      has_capitulated = no
     }
   }
+
+  abort_when_not_enabled = yes
 
   # Main
   ai_strategy = {
     type = put_unit_buffers
-    
+
     # ratio of total armeys in country to be buffered
     ratio = 0.3
-  
+
     # provinces = {
     #   4073 # Suez
     #   12049 # Suez
@@ -27,8 +25,8 @@ mlr_ia_africa_garrison_strait = {
       446 # Cairo
       457 # Eastern Desert
     }
-    
-    # by default if you have orders in target areas, the buffer will request less units. 
+
+    # by default if you have orders in target areas, the buffer will request less units.
     # you can override this to disable the feature
     subtract_invasions_from_need = no
     subtract_fronts_from_need = no
@@ -37,10 +35,10 @@ mlr_ia_africa_garrison_strait = {
   # Sicily
   ai_strategy = {
     type = put_unit_buffers
-    
+
     # ratio of total armeys in country to be buffered
     ratio = 0.1
-  
+
     # provinces = {
     #   4159 # Messina
     #   10091 # Tunisia
@@ -50,8 +48,8 @@ mlr_ia_africa_garrison_strait = {
       115 # Sicily
       458 # Tunisia
     }
-    
-    # by default if you have orders in target areas, the buffer will request less units. 
+
+    # by default if you have orders in target areas, the buffer will request less units.
     # you can override this to disable the feature
     subtract_invasions_from_need = no
     subtract_fronts_from_need = no
@@ -61,26 +59,22 @@ mlr_ia_africa_garrison_strait = {
 mlr_ia_africa_leverage_suez = {
   enable = {
     tag = AFR
-  }
-
-  abort = {
-    OR = {
-      AFR = {
+    AFR = {
+      NOT = {
+        # any_allied_country = {
         OR = {
-          has_war = no
-          any_allied_country = {
-            OR = {
-              453 = { is_controlled_by = PREV } # Sinai
-              454 = { is_controlled_by = PREV } # Palestine
-            }
-          }
+          453 = { is_controlled_by = PREV } # Sinai
+          454 = { is_controlled_by = PREV } # Palestine
         }
-      }
-      H09 = {
-        has_capitulated = yes
+        #}
       }
     }
+    H09 = {
+      has_capitulated = no
+    }
   }
+
+  abort_when_not_enabled = yes
 
   # TODO: Consider making this true by default not just when defensive idea is enabled
   ai_strategy = {

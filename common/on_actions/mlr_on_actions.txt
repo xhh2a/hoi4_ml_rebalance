@@ -5,7 +5,9 @@ on_actions = {
         limit = { is_beta_faction = yes }
         mlr_hive_control_monthly_check = yes
         mlr_beta_population_monthly_check = yes
-        mlr_humanity_defense_monthly_check = yes
+        else = {
+          mlr_humanity_defense_monthly_check = yes
+        }
       }
     }
   }

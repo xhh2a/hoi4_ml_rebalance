@@ -7,35 +7,40 @@ mlr_ia_europe_garrison_english_channel = {
     808 = {
       is_fully_controlled_by = EUR
     }
-  }
-
-  abort = {
-    OR = {
-      has_war = no
-      AND = {
-        H12 = { #Lyon Hive
-          has_capitulated = yes
-        }
-        H11 = {
-          has_capitulated = yes
-        }
-      }
-      127 = {
-        NOT = { is_fully_controlled_by = EUR }
-      }
-      808 = {
-        NOT = { is_fully_controlled_by = EUR }
-      }
+    H12 = { #Lyon Hive
+      has_capitulated = no
     }
   }
+
+  abort_when_not_enabled = yes
+
+  # abort = {
+  #   OR = {
+  #     has_war = no
+  #     AND = {
+  #       H12 = { #Lyon Hive
+  #         has_capitulated = yes
+  #       }
+  #       H11 = {
+  #         has_capitulated = yes
+  #       }
+  #     }
+  #     127 = {
+  #       NOT = { is_fully_controlled_by = EUR }
+  #     }
+  #     808 = {
+  #       NOT = { is_fully_controlled_by = EUR }
+  #     }
+  #   }
+  # }
 
   # Main
   ai_strategy = {
     type = put_unit_buffers
-    
+
     # ratio of total armeys in country to be buffered
     ratio = 0.5
-  
+
     # provinces = {
     # }
 
@@ -43,8 +48,8 @@ mlr_ia_europe_garrison_english_channel = {
       127 # Sussex
       808 # Hampshire
     }
-    
-    # by default if you have orders in target areas, the buffer will request less units. 
+
+    # by default if you have orders in target areas, the buffer will request less units.
     # you can override this to disable the feature
     subtract_invasions_from_need = no
     subtract_fronts_from_need = no
@@ -55,19 +60,16 @@ mlr_ia_europe_retake_southern_england = {
   enable = {
     tag = EUR
     EUR = {
-      127 = {
-        NOT = {
-          is_fully_controlled_by = EUR
+      OR = {
+        127 = {
+          NOT = {
+            is_fully_controlled_by = EUR
+          }
         }
-      }
-      126 = {
-        NOT = {
-          is_fully_controlled_by = EUR
-        }
-      }
-      123 = {
-        NOT = {
-          is_fully_controlled_by = EUR
+        808 = {
+          NOT = {
+            is_fully_controlled_by = EUR
+          }
         }
       }
     }
@@ -97,23 +99,28 @@ mlr_ia_europe_retake_southern_england = {
   }
 
   ai_strategy = {
-      type = force_build_armies
-      value = 30
+    type = force_build_armies
+    value = 30
   }
 }
 
 mlr_ai_europe_garrison_sicily = {
   enable = {
     tag = EUR
+    H11 = {
+      has_capitulated = no
+    }
   }
+
+  abort_when_not_enabled = yes
 
   # Sicily
   ai_strategy = {
     type = put_unit_buffers
-    
+
     # ratio of total armeys in country to be buffered
     ratio = 0.1
-  
+
     # provinces = {
     #   4159 # Messina
     # }
@@ -121,8 +128,8 @@ mlr_ai_europe_garrison_sicily = {
     states = {
       115 # Sicily
     }
-    
-    # by default if you have orders in target areas, the buffer will request less units. 
+
+    # by default if you have orders in target areas, the buffer will request less units.
     # you can override this to disable the feature
     subtract_invasions_from_need = no
     subtract_fronts_from_need = no
@@ -132,27 +139,21 @@ mlr_ai_europe_garrison_sicily = {
 mlr_ia_europe_defend_channels = {
   enable = {
     tag = EUR
-  }
-
-  abort = {
-    OR = {
-      EUR = {
-        OR = {
-          has_war = no
-          any_allied_country = {
-            AND = {
-              15 = { is_controlled_by = PREV } # Normandy
-              29 = { is_controlled_by = PREV } # Calais
-              785 = { is_controlled_by = PREV } # Picardy
-            }
-          }
-        }
-      }
-      H12 = { #Lyon Hive
-        has_capitulated = yes
+    H12 = { #Lyon Hive
+      has_capitulated = no
+    }
+    NOT = {
+      AND = {
+        # any_allied_country = {
+        15 = { is_controlled_by = PREV } # Normandy
+        29 = { is_controlled_by = PREV } # Calais
+        785 = { is_controlled_by = PREV } # Picardy
+        # }
       }
     }
   }
+
+  abort_when_not_enabled = yes
 
   # TODO: Consider making this true by default not just when defensive idea is enabled
   ai_strategy = {

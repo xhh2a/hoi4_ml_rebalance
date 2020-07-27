@@ -12,7 +12,7 @@ technologies = {
  @european_variant_column = 9
  @mig_column = 11
 ###TSF###
-	
+
 	UNI_basic_concept_research= {
 
 #コスト、開始年#
@@ -39,12 +39,12 @@ technologies = {
 			leads_to_tech = A6U
 			research_cost_coeff = 1
 		}
-		
+
 #フォルダ、カテゴリ#
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = 0 y = -1 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -52,8 +52,8 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
-	}	
-	
+	}
+
 	F4U = {
 
 		enable_equipments = {
@@ -101,7 +101,7 @@ technologies = {
 			leads_to_tech = F4JK
 			research_cost_coeff = 1
 		}
-	
+
 		path = {
 			leads_to_tech = F16J
 			research_cost_coeff = 1
@@ -162,7 +162,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = 3 y = 1}
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -183,13 +183,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = 3 y = 1 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -319,13 +319,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @main_column y = 5 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -343,7 +343,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -353,7 +353,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -369,7 +369,7 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -379,7 +379,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -415,7 +415,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @european_column y = 3 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -438,13 +438,13 @@ technologies = {
 
   	folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -460,13 +460,13 @@ technologies = {
 
   	folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -497,13 +497,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @european_column y = 5 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -537,7 +537,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @european_column y = 9 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -545,7 +545,7 @@ technologies = {
 		ai_will_do = {
 			factor = 20000
 		}
-		
+
 	}
 
 	RAFU = {
@@ -560,17 +560,17 @@ technologies = {
 			leads_to_tech = EF2000U
 			research_cost_coeff = 1
 		}
-		
+
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @european_column y = 11 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -616,7 +616,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @european_variant_column y = 11 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -665,13 +665,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @us_column y = 5 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -695,13 +695,13 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
 
 	}
-	
+
 	F18U = {
 		enable_equipments = {
 			tsa_equipment_F18U
@@ -732,7 +732,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -749,14 +749,14 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-			
+
 		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -787,7 +787,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -813,13 +813,13 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
 
 	}
-	
+
 	F15EU = {
 		enable_equipments = {
 			tsf_equipment_F15EU
@@ -846,7 +846,7 @@ technologies = {
 			leads_to_tech = F23U
 			research_cost_coeff = 1
 		}
-		
+
 		path = {
 			leads_to_tech = USA_3rd_tsf_high
 			research_cost_coeff = 1
@@ -859,46 +859,19 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @us_column y = 9 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
-		
+
 
 	}
-	
-	UNI_Jumping_unit_improvement = {
-
-		research_cost = 1
-		start_year = 1990
-		
-		MVLV_tsf_battalion = {
-			maximum_speed = 0.05
-		}
-		
-		MVLV_tsa_battalion = {
-			maximum_speed = 0.05
-		}
-		
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 8 y = 9 }
-		}		
-		categories = {
-			MVLV_tsf_tech
-		}
-
-		ai_will_do = {
-			factor = 20000
-		}
-
-	}	
 
 	# F15ACT was a Prototype for F15-SE
 	F15SEU = {
@@ -936,18 +909,18 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @us_column y = 13 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
 
-	}	
+	}
 
 	T94U = {
 		enable_equipments = {
@@ -983,13 +956,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @japan_column y = 9 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1005,13 +978,13 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1028,18 +1001,18 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
 	}
-	
+
 	T00CU = {
 		enable_equipments = {
 			tsf_equipment_T00CU
@@ -1066,13 +1039,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = 0 y = 11 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1089,7 +1062,7 @@ technologies = {
 
 		research_cost = 0.5
 		start_year = 2000
-		
+
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = -3 y = 12 }
@@ -1099,7 +1072,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1123,11 +1096,11 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
-		
+
 	}
 
 	T00FU = {
@@ -1144,7 +1117,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1193,7 +1166,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1240,7 +1213,7 @@ technologies = {
 	# 	}
 
 	# 	show_effect_as_desc = no
-		
+
 	# 	ai_will_do = {
 	# 		#factor = 20000
 	# 		factor = 0
@@ -1296,7 +1269,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @mig_column y = 1 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1305,7 +1278,7 @@ technologies = {
 			factor = 20000
 		}
 	}
-	
+
 	M23U = {
 		enable_equipments = {
 			tsf_equipment_M23U
@@ -1326,18 +1299,18 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @mig_column y = 3 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
 	}
-	
+
 	M27U = {
 		enable_equipments = {
 			tsf_equipment_M27U
@@ -1357,13 +1330,13 @@ technologies = {
 
 		folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1393,13 +1366,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @sufoni_column y = 7 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1425,13 +1398,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @mig_column y = 7 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1463,7 +1436,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1485,13 +1458,13 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @sufoni_column y = 9 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1552,7 +1525,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1588,7 +1561,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @us_column y = 11 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1627,19 +1600,19 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @us_variant_column y = 11 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
 	}
 
-	
+
 
 #____________________________________________________________
 
@@ -1657,7 +1630,7 @@ technologies = {
 			name = UNI_tsf_folder
 			position = { x = 7 y = 13 }
 		}
-		
+
 		path = {
 			leads_to_tech = Tempest
 			research_cost_coeff = 1
@@ -1710,7 +1683,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 			# OR = {
@@ -1749,7 +1722,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 			# NOT = {
@@ -1785,7 +1758,7 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			factor = 20000
 		}
@@ -1811,17 +1784,17 @@ technologies = {
 		}
 
 		show_effect_as_desc = no
-		
+
 		ai_will_do = {
 			#factor = 20000
 			factor = 0
 		}
-	}	
+	}
 
 #____________________________________________________________
-	
+
 ###ASA###
-	
+
 	A6U = {
 		enable_equipments = {
 			asa_equipment_A6U
@@ -1845,7 +1818,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @ax_amphibious_column y = 1 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1868,7 +1841,7 @@ technologies = {
 		}
 		folder = {
 			name = UNI_tsf_folder
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1877,7 +1850,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	
+
 	A12U = {
 		enable_equipments = {
 			asa_equipment_A12U
@@ -1894,7 +1867,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @ax_amphibious_column y = 11 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}
@@ -1902,10 +1875,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
-	
-###TSA###	
-	
+	}
+
+###TSA###
+
 	# Extremly heavy armor variant
 	# Very short speed
 	# Improved suirvivability
@@ -1935,7 +1908,7 @@ technologies = {
 		folder = {
 			name = UNI_tsf_folder
 			position = { x = @ax_amphibious_column y = 3 }
-		}		
+		}
 		categories = {
 			MVLV_tsf_tech
 		}

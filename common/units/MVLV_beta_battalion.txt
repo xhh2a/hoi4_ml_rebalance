@@ -1,27 +1,27 @@
 sub_units = {
 	MVLV_beta_soldier = {
-		sprite = infantry
+		sprite = "venator"
 		map_icon_category = infantry
-		
+
 		priority = 100
 		ai_priority = 100
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 1
-		
+
 		#Size Definitions
 		max_strength = 12
 		max_organisation = 250
@@ -32,9 +32,9 @@ sub_units = {
 		training_time = 1
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
-		
+
 		river = {
 			attack = 0.0 # Base: -30/60%
 			movement = -0.5 # Base: -25/50%
@@ -43,7 +43,7 @@ sub_units = {
 		amphibious = {
 			attack = 0.2 # Base: -70%
 		}
-                
+
     fort = {
 			attack = 0.25 # Base: -15/level
 			defence = 0.25 # Base: +15/level
@@ -119,26 +119,26 @@ sub_units = {
 	MVLV_beta_warrior = {
 		sprite = infantry
 		map_icon_category = infantry
-		
+
 		priority = 610
 		ai_priority = 210
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 1
-		
+
 		#Size Definitions
 		max_strength = 10
 		max_organisation = 250
@@ -149,7 +149,7 @@ sub_units = {
 		training_time = 1
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
 
 		river = {
@@ -160,7 +160,7 @@ sub_units = {
 		amphibious = {
 			attack = 0.2 # Base: -70%
 		}
-                
+
     fort = {
 			attack = 0.25 # Base: -15/level
 			defence = 0.25 # Base: +15/level
@@ -236,28 +236,28 @@ sub_units = {
 	}
 
 	MVLV_beta_tank = {
-		sprite = infantry
+		sprite = "equuspedis"
 		map_icon_category = infantry
-		
+
 		priority = 610
 		ai_priority = 210
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 1
-		
+
 		#Size Definitions
 		max_strength = 10
 		max_organisation = 300
@@ -268,9 +268,9 @@ sub_units = {
 		training_time = 1
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
-		
+
 		river = {
 			attack = 0.15 # Base: -30/60%
 			movement = -0.5 # Base: -25/50%
@@ -279,7 +279,7 @@ sub_units = {
 		amphibious = {
 			attack = 0.3 # Base: -70%
 		}
-                
+
     fort = {
 			attack = 0.35 # Base: -15/level
 			defence = 0.0 # Base: +15/level
@@ -353,30 +353,30 @@ sub_units = {
 			beta_tank = 20
 		}
 	}
-	
+
 	MVLV_beta_grappler = {
 		sprite = infantry
 		map_icon_category = infantry
-		
+
 		priority = 610
 		ai_priority = 210
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 2
-		
+
 		#Size Definitions
 		max_strength = 25
 		max_organisation = 300
@@ -387,9 +387,9 @@ sub_units = {
 		training_time = 1
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
-		
+
 		river = {
 			attack = 0.1 # Base: -30/60%
 			movement = -0.45 # Base: -25/50%
@@ -398,7 +398,7 @@ sub_units = {
 		amphibious = {
 			attack = 0.3 # Base: -70%
 		}
-                
+
     fort = {
 			attack = 0.15 # Base: -15/level
 			defence = 0 # Base: +15/level
@@ -471,30 +471,30 @@ sub_units = {
 			beta_grappler = 50
 		}
 	}
-	
+
 	MVLV_beta_destroyer = {
 		sprite = infantry
 		map_icon_category = infantry
-		
+
 		priority = 610
 		ai_priority = 210
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 2
-		
+
 		#Size Definitions
 		max_strength = 16
 		max_organisation = 250
@@ -505,9 +505,9 @@ sub_units = {
 		training_time = 1
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
-		
+
     river = {
 			attack = 0.5 # Base: -30/60%
 			movement = 0 # Base: -25/50%
@@ -516,7 +516,7 @@ sub_units = {
 		amphibious = {
 			attack = 0.5 # Base: -70%
 		}
-                
+
     fort = {
 			attack = 0.5 # Base: -15/level
 			defence = 0 # Base: +15/level
@@ -589,30 +589,30 @@ sub_units = {
 			beta_destroyer = 20
 		}
 	}
-	
+
 	MVLV_beta_srf = {
 		sprite = infantry
 		map_icon_category = infantry
-		
+
 		priority = 710
 		ai_priority = 2000
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 40
-		
+
 		#Size Definitions
 		max_strength = 1523
 		max_organisation = 500
@@ -623,7 +623,7 @@ sub_units = {
 		training_time = 2050
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
 
 		forest = {
@@ -682,30 +682,30 @@ sub_units = {
 			beta_srf = 5
 		}
 	}
-	
+
 	MVLV_beta_fort = {
 		sprite = infantry
 		map_icon_category = infantry
-		
+
 		priority = 610
 		ai_priority = 210
 		active = no
-		
+
 		type = {
 			infantry
 		}
-		
+
 		group = infantry
-		
+
 		categories = {
 			category_front_line
 			category_light_infantry
 			category_all_infantry
 			category_army
-		}		
-		
+		}
+
 		combat_width = 2
-		
+
 		#Size Definitions
 		max_strength = 17
 		max_organisation = 500
@@ -716,9 +716,9 @@ sub_units = {
 		training_time = 1
 		suppression = 30
 		weight = 0.1
-		
+
 		supply_consumption = 0.0
-		
+
 		river = {
 			attack = 0.6 # Base: -30/60%
 			movement = 0.25 # Base: -25/50%
@@ -727,7 +727,7 @@ sub_units = {
 		amphibious = {
 			attack = 0.7 # Base: -70%
 		}
-                
+
     fort = {
 			attack = 0.3 # Base: -15/level
 			defence = 0 # Base: +15/level

@@ -11,3 +11,6 @@ dependencies={
 supported_version="1.9.*"
 path="D:/"
 remote_file_id="2170086439"
+
+replace_path="common/units/names_divisions"
+replace_path="common/operations"
