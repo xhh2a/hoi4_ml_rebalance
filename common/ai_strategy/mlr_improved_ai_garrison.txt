@@ -6,6 +6,6 @@ mlr_ia_no_garrisons = {
 
   ai_strategy = {
     type = garrison
-    value = -100
+    value = -300
   }
 }

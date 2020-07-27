@@ -8,7 +8,7 @@ mlr_ia_africa_garrison_strait = {
 
   abort_when_not_enabled = yes
 
-  # Main
+  # Cairo
   ai_strategy = {
     type = put_unit_buffers
 
@@ -23,6 +23,28 @@ mlr_ia_africa_garrison_strait = {
 
     states = {
       446 # Cairo
+    }
+
+    # by default if you have orders in target areas, the buffer will request less units.
+    # you can override this to disable the feature
+    subtract_invasions_from_need = no
+    subtract_fronts_from_need = no
+  }
+
+  # Eastern Desert
+  ai_strategy = {
+    type = put_unit_buffers
+
+    # ratio of total armeys in country to be buffered
+    ratio = 0.15
+
+    # provinces = {
+    #   4073 # Suez
+    #   12049 # Suez
+    #   9957 # Eastern Desert
+    # }
+
+    states = {
       457 # Eastern Desert
     }
 
@@ -37,7 +59,7 @@ mlr_ia_africa_garrison_strait = {
     type = put_unit_buffers
 
     # ratio of total armeys in country to be buffered
-    ratio = 0.1
+    ratio = 0.2
 
     # provinces = {
     #   4159 # Messina

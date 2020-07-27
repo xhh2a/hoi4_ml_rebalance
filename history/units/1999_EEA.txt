@@ -1,0 +1,210 @@
+@support_division = "Armor Support"
+@gen_one_tsf_division = "Gen 1 TSF"
+@gen_two_tsf_division = "Gen 2 TSF"
+@gen_three_tsf_division = "Gen 3 TSF"
+@amphibious_tsf_division = "Amphibious TSF"
+@tsa_division = "TSA Division"
+@defensive_division = "Defensive Division"
+
+units = {
+  division = {
+      location = 11047
+      division_template = @gen_one_tsf_division
+      start_experience_factor = 0.3
+      force_equipment_variants = { tsf_equipment_F4R = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_one_tsf_division
+      start_experience_factor = 0.3
+      force_equipment_variants = { tsf_equipment_M23U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.3
+      force_equipment_variants = { tsf_equipment_M27U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.3
+      force_equipment_variants = { tsf_equipment_M29U = { owner = "EEA" } }
+  }
+  division = {
+      location = 13244
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 1
+      force_equipment_variants = { tsf_equipment_M29U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @support_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @support_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @support_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @support_division
+      start_experience_factor = 0.2
+  }
+
+  # AI
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+  }
+  division = {
+      location = 11047
+      division_template = @gen_one_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_F4R = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_one_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_F4R = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_one_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_M23U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_one_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_M23U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_M27U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_M31U = { owner = "EEA" } }
+  }
+  division = {
+      location = 11047
+      division_template = @gen_two_tsf_division
+      start_experience_factor = 0.2
+      force_equipment_variants = { tsf_equipment_M29U = { owner = "EEA" } }
+  }
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "EEA"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "EEA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "EEA"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+        add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_1
+			creator = "EEA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

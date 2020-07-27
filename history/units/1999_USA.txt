@@ -9,13 +9,13 @@
 units = {
 	####### CONUS Theater #######
 	### Carribean Forces ###
-	division = {			
+	division = {
 		location = 1440
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division = {			
+	}
+	division = {
 		location = 7617
 		division_template = @support_division
 		start_experience_factor = 0.2
@@ -66,7 +66,7 @@ units = {
 
   division = { # "第17師団"
 		location = 9671
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -74,7 +74,7 @@ units = {
 
   division = { # "第17師団"
 		location = 9671
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -82,7 +82,15 @@ units = {
 
   division = { # "第17師団"
 		location = 9671
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
+	}
+
+  division = { # "第17師団"
+		location = 4067
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -93,14 +101,7 @@ units = {
 		division_template = @gen_three_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
-	}
-
-  division = { # "第17師団"
-		location = 4067
-		division_template = @gen_three_tsf_division
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
+    force_equipment_variants = { tsf_equipment_RAFU = { owner = "EUR" } }
 	}
 
 
@@ -109,12 +110,13 @@ units = {
 		division_template = @gen_three_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
+    force_equipment_variants = { tsf_equipment_RAFU = { owner = "EUR" } }
 	}
 
 
   division = { # "第17師団"
 		location = 4067
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -123,7 +125,7 @@ units = {
 
   division = { # "第17師団"
 		location = 4067
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -131,7 +133,7 @@ units = {
 
   division = { # "第17師団"
 		location = 9671
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -152,7 +154,7 @@ units = {
 
   division = { # "第17師団"
 		location = 9671
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -160,7 +162,7 @@ units = {
 
   division = { # "第17師団"
 		location = 3957
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -168,7 +170,7 @@ units = {
 
   division = { # "第17師団"
 		location = 3957
-		division_template = @gen_three_tsf_division
+		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 		force_equipment_variants = { tsf_equipment_F16U = { owner = "USA" } }
@@ -228,7 +230,7 @@ units = {
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 1
 		start_equipment_factor = 1
-		force_equipment_variants = { tsf_equipment_5 = { owner = "USA" } }
+		force_equipment_variants = { tsf_equipment_F15EU = { owner = "USA" } }
 	}
 
   division = { # "第17師団"
@@ -236,11 +238,12 @@ units = {
 		division_template = @gen_three_tsf_division
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
+    force_equipment_variants = { tsf_equipment_RAFU = { owner = "EUR" } }
 	}
 
 	### 1st Army -- note: Armies only paper organizations in 1936 ###
 	# I Army Corps #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 26
@@ -249,8 +252,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
@@ -261,7 +264,7 @@ units = {
 
 	}
 	# II Army Corps #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -269,8 +272,8 @@ units = {
 		location = 3878
 		division_template = @support_division
 		start_experience_factor = 0.3
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
@@ -279,8 +282,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
@@ -289,9 +292,9 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
+	}
 	# III Army Corps #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
@@ -300,8 +303,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
@@ -310,12 +313,12 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
+	}
 
 
 	### 2nd Army -- note: Armies only paper organizations in 1936 ###
 	# V Army Corps #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
@@ -324,8 +327,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 38
@@ -334,9 +337,9 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
+	}
 	# VI Army Corps #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 32
@@ -345,8 +348,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 33
@@ -355,12 +358,12 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
+	}
 
 
 	### 3rd Army -- note: Armies only paper organizations in 1936 ###
 	# IV Army Corps #
-	division = {			
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 30
@@ -369,8 +372,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
@@ -379,9 +382,9 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
+	}
 	# VIII Army Corps #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -390,8 +393,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
@@ -400,8 +403,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 45
@@ -410,8 +413,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -419,11 +422,11 @@ units = {
 		location = 12782
 		division_template = @gen_two_tsf_division
 		start_experience_factor = 0.3
-	}			
-					
+	}
+
 	### 4th Army -- note: Armies only paper organizations in 1936 ###
 	# VII Army Corps (CO: Bishop) #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 34
@@ -432,8 +435,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
@@ -442,9 +445,9 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
+	}
 	# IX Army Corps (CO: DeWitt) #
-	division= {			
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -452,8 +455,8 @@ units = {
 		location = 9671
 		division_template = @support_division
 		start_experience_factor = 0.3
-	}			
-	division = {			
+	}
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 40
@@ -462,8 +465,8 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 41
@@ -472,26 +475,26 @@ units = {
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-					
+	}
+
 
 	####### Pacific Theater	#######
 	### Alaska Defense Command ###
-	division = {			
+	division = {
 		location = 13091
 		division_template = @support_division
 		start_experience_factor = 0.2
 
-	}			
-	division= {			
+	}
+	division= {
 		location = 13067
 		division_template = @support_division
 		start_experience_factor = 0.1
 
 	}
-			
+
 	### Hawaiian Department ###
-	division = {			
+	division = {
 		location = 4180
 		division_template = @support_division		# older equipment, less training than NG division
 		start_experience_factor = 0.2
@@ -499,63 +502,63 @@ units = {
 	}
 
 	# North Pacific Defenses #
-	division= {				
+	division= {
 		location = 13052
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}				
-	division= {				
+	}
+	division= {
 		location = 13047
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}				
-	division= {				
+	}
+	division= {
 		location = 12140
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}				
-	
+	}
+
 	# South Pacific Defenses #
-	division= {			
+	division= {
 		location = 13048
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}			
-	division= {			
+	}
+	division= {
 		location = 13049
 		division_template = @support_division
 		start_experience_factor = 0.1
-	}			
-	division= {			
+	}
+	division= {
 		location = 13050
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}			
-	division= {			
+	}
+	division= {
 		location = 13053
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}			
-	division= {			
+	}
+	division= {
 		location = 13051
 		division_template = @support_division
 		start_experience_factor = 0.1
 
-	}			
+	}
 
-	### U.S. Army Forces in the Far East ###		
-	division = {										
+	### U.S. Army Forces in the Far East ###
+	division = {
 		location = 10265
 		division_template = @support_division			# older equipment, less training than NG division
 		start_experience_factor = 0.2
 
-	}				
+	}
 }
 
 #########################
@@ -563,12 +566,37 @@ units = {
 #########################
 
 instant_effect = {
-		
+  create_production_license = {
+    target = USA
+    equipment = {
+      type = tsf_equipment_RAFU
+      creator = EUR
+    }
+    cost_factor = 0
+  }
+
+  add_equipment_production = {
+    equipment = {
+      type = tsf_equipment_RAFU
+      creator = EUR
+    }
+    requested_factories = 10
+    efficiency = 100
+  }
+
+  add_equipment_production = {
+    equipment = {
+      type = tsf_equipment_F15EU
+    }
+    requested_factories = 20
+    efficiency = 100
+  }
+
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
 		}
-		requested_factories = 6
+		requested_factories = 2
 		progress = 0.1
 		efficiency = 100
 	}
@@ -584,13 +612,13 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = artillery_equipment_3
 		}
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 100
 	}
- 
+
   add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -599,10 +627,10 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 100
 	}
- 
+
   add_equipment_production = {
 		equipment = {
-			type = medium_tank_equipment_1
+			type = medium_tank_equipment_3
 		}
 		requested_factories = 1
 		progress = 0.3
